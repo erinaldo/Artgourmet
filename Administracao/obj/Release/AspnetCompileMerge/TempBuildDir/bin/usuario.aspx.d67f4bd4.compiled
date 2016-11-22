@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Sistema/Usuario.aspx" hash="cf13ef477" filehash="3196cfe1d897" flags="110000" assembly="App_Web_wzu5pioz" type="ASP.sistema_usuario_aspx">
+    <filedeps>
+        <filedep name="/Sistema/Usuario.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,156 @@
+﻿<UserControl x:Class="Artebit.Restaurante.Caixa.Cadastro.Aliquota"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" mc:Ignorable="d" d:DesignHeight="630"
+             d:DesignWidth="990" xmlns:Controles="clr-namespace:Artebit.Restaurante.Caixa.Controles">
+
+    <!--Definição da Grid-->
+    <StackPanel>
+        <Grid>
+            <Controles:Cabecalho1 x:Name="Cabecalho" Titulo="Cadastro / Alíquotas" BotaoInicioEvento="True" />
+        </Grid>
+
+        <Grid MinHeight="630" Height="630" Margin="15 0 0 0">
+            <Grid.Resources>
+                <Style x:Key="Headerstyle" TargetType="telerik:GridViewHeaderRow">
+                    <Setter Property="Height" Value="25" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type telerik:GridViewHeaderRow}">
+
+                                <Border x:Name="borda1" Background="#B68944" BorderBrush="#49181A" Margin="0 0 0 0">
+                                    <Grid>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="70" />
+                                            <ColumnDefinition Width="70" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="100" />
+                                            <ColumnDefinition Width="70" />
+                                            <ColumnDefinition Width="70" />
+                                            <ColumnDefinition Width="50" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="0">
+
+                                            <Label Margin="0 0 0 0" Foreground="GhostWhite" VerticalAlignment="Center"
+                                                   FontSize="11" Content="Código" />
+                                        </Border>
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="1">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="Posição" />
+                                        </Border>
+
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="2">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="Alíquota" />
+                                        </Border>
+
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="3">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="Tipo de Imposto" />
+                                        </Border>
+
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="4">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="ALQ" />
+                                        </Border>
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="5">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="CST" />
+                                        </Border>
+
+                                        <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="6">
+
+                                            <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                   VerticalAlignment="Center" FontSize="11" Content="Status" />
+                                        </Border>
+
+                                    </Grid>
+                                </Border>
+
+
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="43*" />
+                <RowDefinition Height="492*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*" />
+            </Grid.ColumnDefinitions>
+
+
+            <Button Name="Adicionar" Grid.Column="0" Grid.Row="1" Width="100" Height="27" HorizontalAlignment="Left"
+                    Margin="5,10,0,0" Click="Adicionar_Click" VerticalAlignment="Top" Style="{StaticResource BotaoMenor2}">
+                <Button.ContentTemplate>
+                    <DataTemplate>
+                        <Canvas>
+                            <Canvas Margin="-40 -10 0 0">
+                                <Image Canvas.Left="0" Canvas.Top="0"
+                                       Source="pack://application:,,,/Img/adicionarItens.png" Height="20" Width="20" Stretch="Fill" HorizontalAlignment="Left" />
+                            </Canvas>
+                            <TextBlock Text="Adicionar" FontWeight="Bold" FontSize="12" Margin="-10 -9 0 0" />
+
+                        </Canvas>
+                    </DataTemplate>
+                </Button.ContentTemplate>
+            </Button>
+            <Button Name="Editar" Grid.Column="0" Grid.Row="1" Width="100" Height="27" HorizontalAlignment="Left"
+                    VerticalAlignment="Top" Margin="115,10,0,11" Click="Editar_Click" Style="{StaticResource BotaoMenor2}">
+                <Button.ContentTemplate>
+                    <DataTemplate>
+                        <Canvas>
+                            <Canvas Margin="-40 -10 0 0">
+                                <Image Canvas.Left="0" Canvas.Top="0" Source="pack://application:,,,/Img/editar.png"
+                                       Height="20" Width="20" Stretch="Fill" HorizontalAlignment="Left" />
+                            </Canvas>
+                            <TextBlock Text="Editar" FontWeight="Bold" FontSize="12" Margin="-10 -9 0 0" />
+                        </Canvas>
+                    </DataTemplate>
+                </Button.ContentTemplate>
+            </Button>
+
+
+            <telerik:RadGridView x:Name="gridDados" MaxHeight="520" Height="520" Width="980" Grid.Column="0"
+                                 Grid.Row="2" Opacity="0.9" CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" AutoGenerateColumns="False"
+                                 IsReadOnly="True" VerticalAlignment="Top" ShowGroupPanel="False" RowActivated="gridDados_RowActivated"
+                                 HeaderRowStyle="{StaticResource Headerstyle}">
+                <telerik:RadGridView.Columns>
+                    <telerik:GridViewDataColumn Header="Código" DataMemberBinding="{Binding idAliquota}" Width="70"
+                                                IsGroupable="False" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Plano" DataMemberBinding="{Binding posicao}" Width="70"
+                                                IsGroupable="True" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Tipo" DataMemberBinding="{Binding aliquota}" Width="*"
+                                                IsGroupable="False" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Moeda" DataMemberBinding="{Binding tpImposto}" Width="100"
+                                                IsGroupable="False" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Moeda" DataMemberBinding="{Binding alq}" Width="70"
+                                                IsGroupable="False" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Moeda" DataMemberBinding="{Binding cst}" Width="70"
+                                                IsGroupable="False" IsFilterable="False" />
+                    <telerik:GridViewDataColumn Header="Status" DataMemberBinding="{Binding ativo}" Width="50"
+                                                IsGroupable="False" IsFilterable="False" />
+                </telerik:RadGridView.Columns>
+            </telerik:RadGridView>
+
+
+        </Grid>
+    </StackPanel>
+</UserControl>

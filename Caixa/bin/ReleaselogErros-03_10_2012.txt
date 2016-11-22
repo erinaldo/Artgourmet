@@ -1,0 +1,1631 @@
+--------------------------------- 03/10/2012 16:21:10--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:21:29--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.SubtotalizaCupom(Decimal descontoAcrescimo, String mensagemRodape)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 0
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:23:28--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:23:36--------------------------------- 
+ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:28:32--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:29:37--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:30:26--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.EfetuaPagamento(String codFormaPagto, Decimal valor, String observacao, Boolean imprimeVinculado)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 330
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:46:26--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:47:20--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:48:14--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:51:51--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 16:53:59--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:00:41--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:09:39--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:09:48--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 489
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:09:49--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 489
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:10--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:21--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:29--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:39--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:49--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:13:58--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:16:12--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:16:46--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o est? respondendo
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:16:56--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:17:03--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:17:21--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:18:33--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:18:39--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:18:45--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:18:50--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:18:56--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:21:11--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:21:40--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.436,40
+Valor do Arquivo: R$ 22.418,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:00--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:09--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:16--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:20--------------------------------- 
+ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:35--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint, Int32 bufferLen)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint)
+   at ACBr.Net.ACBrECF.get_NumCOO()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 465
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:35--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint, Int32 bufferLen)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint)
+   at ACBr.Net.ACBrECF.get_NumCOO()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 465
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:44--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:44--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:22:55--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:23:04--------------------------------- 
+ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:23:22--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:23:22--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:23:35--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:23:51--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:25:31--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:26:41--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:30:05--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:30:49--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.699,20
+Valor do Arquivo: R$ 22.639,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:33:02--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 22.699,20
+Valor do Arquivo: R$ 22.639,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:33:23--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:33:31--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:33:43--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.SubtotalizaCupom(Decimal descontoAcrescimo, String mensagemRodape)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 0
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:33:48--------------------------------- 
+ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:01--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint, Int32 bufferLen)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint)
+   at ACBr.Net.ACBrECF.get_NumCOO()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 465
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:01--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint, Int32 bufferLen)
+   at ACBr.Net.ACBrComponent.GetString(GetStringEntryPointDelegate entryPoint)
+   at ACBr.Net.ACBrECF.get_NumCOO()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 465
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:11--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:11--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:20--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:20--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cancelamento j? efetuado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaCupom()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.CancelaUltimoCupom() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 490
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1160
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:34:30--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:06--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:17--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:25--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:29--------------------------------- 
+ACBr.Net.ACBrECFException: Componente ACBrECF ocupado
+Aguardando resposta do comando anterior
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:41--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:35:55--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Forma de pagamento aberta
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.SubtotalizaCupom(Decimal descontoAcrescimo, String mensagemRodape)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 0
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:36:04--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:36:10--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:36:18--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:36:26--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:39:20--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 23.115,20
+Valor do Arquivo: R$ 23.039,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:39:47--------------------------------- 
+ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 23.115,20
+Valor do Arquivo: R$ 23.115,40
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:40:04--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:40:19--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.VendeItem(String codigo, String descricao, String aliquotaICMS, Decimal qtd, Decimal valorUnitario, Decimal descontoPorc, String unidade, String tipoDescontoAcrescimo, String descontoAcrescimo)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 289
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:40:30--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:40:45--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:41:03--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Forma de pagamento aberta
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.SubtotalizaCupom(Decimal descontoAcrescimo, String mensagemRodape)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 0
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:41:19--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:41:32--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:49:08--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:49:31--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:49:50--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Formas de pagamento encerradas
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.EfetuaPagamento(String codFormaPagto, Decimal valor, String observacao, Boolean imprimeVinculado)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 341
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:51:18--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Formas de pagamento encerradas
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.EfetuaPagamento(String codFormaPagto, Decimal valor, String observacao, Boolean imprimeVinculado)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 341
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:51:33--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:51:51--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Forma de pagamento aberta
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.SubtotalizaCupom(Decimal descontoAcrescimo, String mensagemRodape)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 0
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:52:05--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:52:24--------------------------------- 
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 377
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:57:29--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:57:40--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:57:49--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:58:01--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:58:16--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:58:29--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:58:41--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:58:55--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:59:13--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:59:26--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 17:59:38--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 18:00:57--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 18:01:08--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 18:01:17--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 18:01:27--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Cupom fiscal aberto
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 254
+------------------------------------------------------
+
+
+--------------------------------- 03/10/2012 18:04:22--------------------------------- 
+ACBr.Net.ACBrECFException: Erro retornado pela Impressora: Bematech
+
+Item n?o existe ou j? cancelado
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.CancelaItemVendido(Int32 numItem)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 302
+------------------------------------------------------
+
+

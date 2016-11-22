@@ -1,0 +1,25 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Caixas.Janelas.Desconto"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Header="Desconto" ResizeMode="NoResize"
+                   WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="210" Width="414" Background="GhostWhite">
+    <Grid>
+        <Image Margin="19,32,0,37" Source="/Artebit.Restaurante.Caixa;component/Img/dinheiro.png" Stretch="Fill"
+               HorizontalAlignment="Left" Width="107" />
+
+        <Label Content="Desconto :" Height="28" HorizontalAlignment="Left" Margin="135,45,0,0" Name="label1" FontSize="15px"
+               VerticalAlignment="Top" />
+        <telerik:RadNumericUpDown Margin="140,69,88,0" Name="txtDesconto" VerticalAlignment="Top" KeyDown="txtDesconto_KeyDown"
+                                  NumberDecimalDigits="2" Minimum="0" Maximum="20000" ValueFormat="Currency" />
+
+        <Border VerticalAlignment="Bottom" Grid.Row="1" Background="GhostWhite" Width="400" Height="35">
+            <Grid>
+                <telerik:RadButton Name="btnOK" Content="OK" Margin="0 0 100 0" HorizontalAlignment="Right" Width="80"
+                                   Height="25" Click="btnOK_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 0" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+    </Grid>
+</telerik:RadWindow>

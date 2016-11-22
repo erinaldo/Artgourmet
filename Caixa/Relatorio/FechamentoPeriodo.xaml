@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Artebit.Restaurante.Caixa.Relatorio.FechamentoPeriodo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" mc:Ignorable="d" d:DesignHeight="630"
+             d:DesignWidth="990">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" CornerRadius="3" Background="White" BorderBrush="Gray" BorderThickness="1" Opacity="0.9">
+            <Border.Effect>
+                <DropShadowEffect Color="Gray" Opacity="1" ShadowDepth="6" />
+            </Border.Effect>
+            <Grid VerticalAlignment="Top" Height="109.96">
+                <TextBlock HorizontalAlignment="Left" Height="17" Margin="39,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top"
+                           Width="79" FontFamily="Arial" FontSize="14" FontWeight="Bold">
+                    <Run Language="pt-br" Text="Data Inicial:" />
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="39,0,0,30" TextWrapping="Wrap" Width="79" Height="14.96"
+                           VerticalAlignment="Bottom">
+                    <Run Language="pt-br" Text="Data Final:" FontFamily="Arial" FontSize="14" FontWeight="Bold" />
+                </TextBlock>
+                <Button x:Name="btBuscar" Content="Buscar" HorizontalAlignment="Left" Height="24" Margin="319,16.96,0,0"
+                        VerticalAlignment="Top" Width="100" BorderBrush="#B68944" Background="#B68944" Click="btBuscar_Click" />
+                <Button x:Name="btImprimir" Content="Imprimir" HorizontalAlignment="Left" Margin="319,53,0,31" Width="100"
+                        BorderBrush="#B68944" Background="#B68944" Click="btImprimir_Click" />
+                <DatePicker x:Name="dtInicial" HorizontalAlignment="Left" Margin="128,16,0,0" VerticalAlignment="Top" />
+                <telerik:RadMaskedTextBox x:Name="txtHorIni" HorizontalContentAlignment="Left" Culture="pt-BR"
+                                          MaskType="DateTime" Mask="HH:mm" HorizontalAlignment="Left" Margin="268,15,0,69.96" Width="45" Height="25" />
+                <DatePicker x:Name="dtFinal" HorizontalAlignment="Left" Margin="129,0,0,28.96" VerticalAlignment="Bottom" />
+                <telerik:RadMaskedTextBox x:Name="txtHorFim" HorizontalContentAlignment="Left" Culture="pt-BR"
+                                          MaskType="DateTime" Mask="HH:mm" HorizontalAlignment="Left" Margin="268,30,0,0" Width="45" Height="25" />
+            </Grid>
+
+        </Border>
+        <Border Grid.Row="1" CornerRadius="3" Background="White" BorderBrush="Gray" BorderThickness="1" Opacity="0.9">
+            <Border.Effect>
+                <DropShadowEffect Color="Gray" Opacity="1" ShadowDepth="6" />
+            </Border.Effect>
+            <ScrollViewer Height="510">
+                <Grid>
+                    <TextBlock x:Name="txtRelatorio" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" />
+
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

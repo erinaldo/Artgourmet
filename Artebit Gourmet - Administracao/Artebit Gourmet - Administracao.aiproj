@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">All</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3ff444a9-3ed2-4fdc-850f-f0b26a864c7c</ProjectGuid>
+    <OutputType>msi</OutputType>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Artebit Gourmet - Administracao.aip</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <AssemblyName>Artebit Gourmet - Administracao</AssemblyName>
+    <Name>Artebit Gourmet - Administracao</Name>
+    <RootNamespace>Artebit Gourmet - Administracao</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>msi\</OutputPath>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'DefaultBuild' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <PropertyGroup Condition=" '$(Configuration)' == 'All' " />
+  <ItemGroup>
+    <Compile Include="Artebit Gourmet - Administracao.aip">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Target Name="Build">
+    <!--Create the output directory-->
+    <!-- <MakeDir Directories="$(OutputPath)"  Condition="!Exists('$(OutputPath)')" /> -->
+    <!-- Run the advanced installer on the .aip project - build -->
+    <!-- Path to the Advanced Installer version used to build .aip is specified in the registry HKEY_CURRENT_USER\SOFTWARE\Caphyon\Advanced Installer\Extension for VS -->
+    <Exec Condition="Exists(%(Compile.Identity)) AND '$(Configuration)'=='All'" Command="&quot;$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\SOFTWARE\Caphyon\Advanced Installer\Extension for VS`, 9.1))bin\x86\AdvancedInstaller.com&quot; /build &quot;%(Compile.Identity)&quot;" />
+    <Exec Condition="Exists(%(Compile.Identity)) AND '$(Configuration)'!='All'" Command="&quot;$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\SOFTWARE\Caphyon\Advanced Installer\Extension for VS`, 9.1))bin\x86\AdvancedInstaller.com&quot; /build &quot;%(Compile.Identity)&quot; -buildslist $(Configuration)" />
+  </Target>
+  <Target Name="Rebuild">
+    <!--Create the output directory-->
+    <!-- MakeDir Directories="$(OutputPath)"  Condition="!Exists('$(OutputPath)')" /> -->
+    <!-- Run the advanced installer on the .aip project - rebuild -->
+    <Exec Condition="Exists(%(Compile.Identity)) AND '$(Configuration)'=='All'" Command="&quot;$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\SOFTWARE\Caphyon\Advanced Installer\Extension for VS`, 9.1))bin\x86\AdvancedInstaller.com&quot; /rebuild &quot;%(Compile.Identity)&quot;" />
+    <Exec Condition="Exists(%(Compile.Identity)) AND '$(Configuration)'!='All'" Command="&quot;$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\SOFTWARE\Caphyon\Advanced Installer\Extension for VS`, 9.1))bin\x86\AdvancedInstaller.com&quot; /rebuild &quot;%(Compile.Identity)&quot; -buildslist $(Configuration)" />
+  </Target>
+  <Target Name="Clean">
+  </Target>
+  <Target Name="ResolveAssemblyReferences">
+  </Target>
+</Project>

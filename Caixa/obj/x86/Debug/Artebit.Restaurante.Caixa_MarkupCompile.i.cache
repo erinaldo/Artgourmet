@@ -1,0 +1,20 @@
+﻿Artebit.Restaurante.Caixa
+
+
+winexe
+C#
+.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\obj\x86\Debug\
+Artebit.Restaurante.Caixa
+none
+false
+DEBUG;TRACE
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\App.xaml
+63283925066
+9732478541
+812062082794
+37-1135839477
+AltSenha.xaml;Cadastro\Aliquota.xaml;Cadastro\Cardapios.xaml;Cadastro\Clientes.xaml;Cadastro\Fidelidade.xaml;Cadastro\Formularios\FormAliquota.xaml;Cadastro\Formularios\FormAvisos.xaml;Cadastro\Formularios\FormFidelidade.xaml;Cadastro\Formularios\FormGrupoMesa.xaml;Cadastro\Formularios\FormPerfil.xaml;Cadastro\Formularios\FormProdutos.xaml;Cadastro\GrupoMesa.xaml;Cadastro\Formularios\FormCardProduto.xaml;Cadastro\Formularios\FormClientes.xaml;Cadastro\Formularios\FormImpressoras.xaml;Cadastro\Formularios\FormMesas.xaml;Cadastro\Formularios\FormMonitor.xaml;Cadastro\Formularios\FormTipoRecebimento.xaml;Cadastro\Formularios\FormUsuario.xaml;Cadastro\Mesas.xaml;Cadastro\Monitores.xaml;Cadastro\Formularios\FormVendedor.xaml;Cadastro\Formularios\FormCardapio.xaml;Cadastro\Impressoras.xaml;Cadastro\Perfil.xaml;Cadastro\Posts.xaml;Cadastro\Produtos.xaml;Cadastro\TipoRecebimento.xaml;Cadastro\Usuarios.xaml;Caixas\Cartao.xaml;Caixas\Janelas\Adicionar.xaml;Caixas\Balcao.xaml;Caixas\Janelas\Cliente.xaml;Caixas\Janelas\FecharPeriodo.xaml;Caixas\Janelas\CupomFiscal.xaml;Caixas\JuntarMesa.xaml;Caixas\Delivery.xaml;Caixas\Janelas\Desconto.xaml;Caixas\Janelas\FecharConta.xaml;Cadastro\Vendedores.xaml;Caixas\Janelas\UsuarioPermissao.xaml;Controles\Cabecalho1.xaml;Caixas\Pedido2.xaml;Caixas\Janelas\Pedido2Adicional.xaml;Caixas\Janelas\Pessoas.xaml;Caixas\Janelas\PlanoFidelidade.xaml;Caixas\Janelas\SepararMesa.xaml;Caixas\Janelas\Transferir.xaml;ErrosWindow.xaml;Fiscal\Estoque.xaml;Fiscal\LeituraMFD.xaml;Fiscal\AberturaDia.xaml;Fiscal\Sangria.xaml;Fiscal\Suprimento.xaml;MainWindow.xaml;Login.xaml;Caixas\Mesas.xaml;Fiscal\MemoriaFiscal.xaml;Fiscal\MenuFiscal.xaml;PDV\Mesas.xaml;Relatorio\FechamentoPeriodo.xaml;Splash.xaml;Inicial.xaml;
+
+True
+

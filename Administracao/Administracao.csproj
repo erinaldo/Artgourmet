@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97E50231-DF7F-4055-8260-11E96E82C4F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artebit.Restaurante.Administracao</RootNamespace>
+    <AssemblyName>Administracao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PrecompileBeforePublish>true</PrecompileBeforePublish>
+    <UseFixedNames>false</UseFixedNames>
+    <WDPMergeOption>DonotMerge</WDPMergeOption>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <UseMerge>false</UseMerge>
+    <SingleAssemblyName>
+    </SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ext.Net, Version=1.3.0.1840, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=1.3.0.39155, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.UX, Version=1.1.0.20601, Culture=neutral, PublicKeyToken=6bdcf653bea99529, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Ext.Net.UX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b9a188c8922137c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WebFx, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AltSenha.aspx" />
+    <Content Include="Compras\Estoque.aspx" />
+    <Content Include="Compras\NotaFiscal.aspx" />
+    <Content Include="Compras\OrdemCompra.aspx" />
+    <Content Include="Compras\Movimentacao.aspx" />
+    <Content Include="Compras\SolicitacaoCompra.aspx" />
+    <Content Include="Estoque\Estoque.aspx" />
+    <Content Include="Funcao\Paginas\observacao.aspx" />
+    <Content Include="Img\fundo3.png" />
+    <Content Include="Img\fundo4.jpg" />
+    <Content Include="Img\fundoMenu1.jpg" />
+    <Content Include="Img\fundoMenu2.jpg" />
+    <Content Include="Img\header1.jpg" />
+    <Content Include="Img\iconCompras.png" />
+    <Content Include="Img\iconComprasHover.png" />
+    <Content Include="Img\iconComprasOpaco.png" />
+    <Content Include="Img\icones\config.png" />
+    <Content Include="Img\icones\financeiro.png" />
+    <Content Include="Img\icones\global.png" />
+    <Content Include="Img\icones\pdv.png" />
+    <Content Include="Img\icones\producao.png" />
+    <Content Include="Img\icones\relatorio.png" />
+    <Content Include="Img\icones\sair.png" />
+    <Content Include="Img\icones\suprimento.png" />
+    <Content Include="Img\iconFinanceiroHover.png" />
+    <Content Include="Img\iconFinanceiroOpaco.png" />
+    <Content Include="Img\iconGlobalHover.png" />
+    <Content Include="Img\iconGlobalOpaco.png" />
+    <Content Include="Img\iconProducao.png" />
+    <Content Include="Img\iconProducaoHover.png" />
+    <Content Include="Img\iconProducaoOpaco.png" />
+    <Content Include="Img\iconRelatorios.png" />
+    <Content Include="Img\iconRelatoriosHover.png" />
+    <Content Include="Img\iconRelatoriosOpaco.png" />
+    <Content Include="Img\iconSistemaHover.png" />
+    <Content Include="Img\iconSistemaOpaco.png" />
+    <Content Include="Img\iconVendasHover.png" />
+    <Content Include="Img\iconVendasOpaco.png" />
+    <Content Include="Img\logo1.png" />
+    <Content Include="Img\logoGourmet2.png" />
+    <Content Include="PDV\Aliquota.aspx" />
+    <Content Include="PDV\Mesas.aspx" />
+    <Content Include="Relatorios\Lista.aspx" />
+    <Content Include="Relatorios\Localization\ar.xml" />
+    <Content Include="Relatorios\Localization\be.xml" />
+    <Content Include="Relatorios\Localization\cro.xml" />
+    <Content Include="Relatorios\Localization\cz.xml" />
+    <Content Include="Relatorios\Localization\de.xml" />
+    <Content Include="Relatorios\Localization\en.xml" />
+    <Content Include="Relatorios\Localization\es.xml" />
+    <Content Include="Relatorios\Localization\fa.xml" />
+    <Content Include="Relatorios\Localization\fr.xml" />
+    <Content Include="Relatorios\Localization\hu.xml" />
+    <Content Include="Relatorios\Localization\it.xml" />
+    <Content Include="Relatorios\Localization\ka.xml" />
+    <Content Include="Relatorios\Localization\lt.xml" />
+    <Content Include="Relatorios\Localization\nl.xml" />
+    <Content Include="Relatorios\Localization\pl.xml" />
+    <Content Include="Relatorios\Localization\pt-BR.xml" />
+    <Content Include="Relatorios\Localization\ro.xml" />
+    <Content Include="Relatorios\Localization\ru.xml" />
+    <Content Include="Relatorios\Localization\ser.xml" />
+    <Content Include="Relatorios\Localization\sk.xml" />
+    <Content Include="Relatorios\Localization\sv.xml" />
+    <Content Include="Relatorios\Localization\tr.xml" />
+    <Content Include="Relatorios\Localization\ua.xml" />
+    <Content Include="Relatorios\Localization\zh-CHS.xml" />
+    <Content Include="Relatorios\Localization\zh-CHT.xml" />
+    <Content Include="Relatorios\Teste.aspx" />
+    <Content Include="Relatorios\VerRelatorio.aspx" />
+    <Content Include="Sistema\CarregaImagem.aspx" />
+    <Content Include="Css\csshover.htc" />
+    <Content Include="Css\Login.css" />
+    <Content Include="Css\Producao\AddProduto.css" />
+    <Content Include="Css\reset.css" />
+    <Content Include="Css\reset_rtl.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DLL\Ext.Net.dll" />
+    <Content Include="DLL\Ext.Net.Utilities.dll" />
+    <Content Include="DLL\Ext.Net.Utilities.xml" />
+    <Content Include="DLL\Ext.Net.UX.dll" />
+    <Content Include="DLL\Ext.Net.xml" />
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+    <Content Include="DLL\Newtonsoft.Json.xml" />
+    <Content Include="Sistema\Empresa.aspx" />
+    <Content Include="Sistema\Filial.aspx" />
+    <Content Include="Funcao\Funcoes.aspx" />
+    <Content Include="Funcao\Paginas\planoFidelidade.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Img\anterior.png" />
+    <Content Include="Img\botaoAddGrupos.png" />
+    <Content Include="Img\botaoEditarGrupo.png" />
+    <Content Include="Img\botaoExcluirGrupos.png" />
+    <Content Include="Img\empresa.ico" />
+    <Content Include="Img\fundo1.jpg" />
+    <Content Include="Img\fundo2.png" />
+    <Content Include="Img\fundoHome.jpg" />
+    <Content Include="Img\fundoLogin.png" />
+    <Content Include="Img\fundoSobMenu.png" />
+    <Content Include="Img\homeWall.png" />
+    <Content Include="Img\iconAdmin.png" />
+    <Content Include="Img\iconBi.png" />
+    <Content Include="Img\iconCancelar.png" />
+    <Content Include="Img\iconComprasEstoque.png" />
+    <Content Include="Img\iconeEditar.jpg" />
+    <Content Include="Img\iconFinanceiro.png" />
+    <Content Include="Img\iconGlobal.png" />
+    <Content Include="Img\iconSistema.png" />
+    <Content Include="Img\iconVendas.png" />
+    <Content Include="Img\imagemFundo.jpg" />
+    <Content Include="Img\imagemSistema.png" />
+    <Content Include="Img\logoAdmin.png" />
+    <Content Include="Img\logoGourmet.png" />
+    <Content Include="Img\primeiro.png" />
+    <Content Include="Img\proximo.png" />
+    <Content Include="Img\sair.png" />
+    <Content Include="Img\ultimo.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Sistema\Parametro.aspx" />
+    <Content Include="PDV\Fidelidade.aspx" />
+    <Content Include="PDV\Impressoras.aspx" />
+    <Content Include="PDV\Monitores.aspx" />
+    <Content Include="PDV\Vendedores.aspx" />
+    <Content Include="Sistema\Perfil.aspx" />
+    <Content Include="Producao\Cardapio.aspx" />
+    <Content Include="Producao\Fornecedores.aspx" />
+    <Content Include="Producao\Grupos.aspx" />
+    <Content Include="Producao\Observacoes.aspx" />
+    <Content Include="Producao\Produtos.aspx" />
+    <Content Include="Producao\Unidades.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Sistema\Usuario.aspx" />
+    <Content Include="temas\css\xtheme-Beige.css" />
+    <Content Include="temas\css\xtheme-Beige_ie6.css" />
+    <Content Include="temas\css\xtheme-Gourmet.css" />
+    <Content Include="temas\css\xtheme-Gourmet_ie6.css" />
+    <Content Include="temas\images\Beige\box\corners-blue.gif" />
+    <Content Include="temas\images\Beige\box\corners.gif" />
+    <Content Include="temas\images\Beige\box\l-blue.gif" />
+    <Content Include="temas\images\Beige\box\l.gif" />
+    <Content Include="temas\images\Beige\box\r-blue.gif" />
+    <Content Include="temas\images\Beige\box\r.gif" />
+    <Content Include="temas\images\Beige\box\tb-blue.gif" />
+    <Content Include="temas\images\Beige\box\tb.gif" />
+    <Content Include="temas\images\Beige\button\arrow.gif" />
+    <Content Include="temas\images\Beige\button\btn-arrow.gif" />
+    <Content Include="temas\images\Beige\button\btn-sprite.gif" />
+    <Content Include="temas\images\Beige\button\btn.gif" />
+    <Content Include="temas\images\Beige\button\group-cs.gif" />
+    <Content Include="temas\images\Beige\button\group-lr.gif" />
+    <Content Include="temas\images\Beige\button\group-tb.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow-b-noline.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow-b.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow-bo.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow-noline.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow-o.gif" />
+    <Content Include="temas\images\Beige\button\s-arrow.gif" />
+    <Content Include="temas\images\Beige\dd\drop-add.gif" />
+    <Content Include="temas\images\Beige\dd\drop-no.gif" />
+    <Content Include="temas\images\Beige\dd\drop-yes.gif" />
+    <Content Include="temas\images\Beige\editor\tb-sprite.gif" />
+    <Content Include="temas\images\Beige\form\checkbox.gif" />
+    <Content Include="temas\images\Beige\form\clear-trigger.gif" />
+    <Content Include="temas\images\Beige\form\date-trigger.gif" />
+    <Content Include="temas\images\Beige\form\error-tip-corners.gif" />
+    <Content Include="temas\images\Beige\form\exclamation.gif" />
+    <Content Include="temas\images\Beige\form\radio.gif" />
+    <Content Include="temas\images\Beige\form\search-trigger.gif" />
+    <Content Include="temas\images\Beige\form\text-bg.gif" />
+    <Content Include="temas\images\Beige\form\trigger-square.gif" />
+    <Content Include="temas\images\Beige\form\trigger-tpl.gif" />
+    <Content Include="temas\images\Beige\form\trigger.gif" />
+    <Content Include="temas\images\Beige\gradient-bg.gif" />
+    <Content Include="temas\images\Beige\grid\arrow-left-white.gif" />
+    <Content Include="temas\images\Beige\grid\arrow-right-white.gif" />
+    <Content Include="temas\images\Beige\grid\col-move-bottom.gif" />
+    <Content Include="temas\images\Beige\grid\col-move-top.gif" />
+    <Content Include="temas\images\Beige\grid\columns.gif" />
+    <Content Include="temas\images\Beige\grid\dirty.gif" />
+    <Content Include="temas\images\Beige\grid\done.gif" />
+    <Content Include="temas\images\Beige\grid\drop-no.gif" />
+    <Content Include="temas\images\Beige\grid\drop-yes.gif" />
+    <Content Include="temas\images\Beige\grid\footer-bg.gif" />
+    <Content Include="temas\images\Beige\grid\grid-blue-hd.gif" />
+    <Content Include="temas\images\Beige\grid\grid-blue-split.gif" />
+    <Content Include="temas\images\Beige\grid\grid-hrow.gif" />
+    <Content Include="temas\images\Beige\grid\grid-loading.gif" />
+    <Content Include="temas\images\Beige\grid\grid-split.gif" />
+    <Content Include="temas\images\Beige\grid\grid-vista-hd.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-hd-btn.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-hrow-over.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-hrow.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-rowheader.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-special-col-bg.gif" />
+    <Content Include="temas\images\Beige\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="temas\images\Beige\grid\group-by.gif" />
+    <Content Include="temas\images\Beige\grid\group-collapse.gif" />
+    <Content Include="temas\images\Beige\grid\group-expand-sprite.gif" />
+    <Content Include="temas\images\Beige\grid\group-expand.gif" />
+    <Content Include="temas\images\Beige\grid\hd-pop.gif" />
+    <Content Include="temas\images\Beige\grid\hmenu-asc.gif" />
+    <Content Include="temas\images\Beige\grid\hmenu-desc.gif" />
+    <Content Include="temas\images\Beige\grid\hmenu-lock.gif" />
+    <Content Include="temas\images\Beige\grid\hmenu-lock.png" />
+    <Content Include="temas\images\Beige\grid\hmenu-unlock.gif" />
+    <Content Include="temas\images\Beige\grid\hmenu-unlock.png" />
+    <Content Include="temas\images\Beige\grid\invalid_line.gif" />
+    <Content Include="temas\images\Beige\grid\loading.gif" />
+    <Content Include="temas\images\Beige\grid\mso-hd.gif" />
+    <Content Include="temas\images\Beige\grid\nowait.gif" />
+    <Content Include="temas\images\Beige\grid\page-first-disabled.gif" />
+    <Content Include="temas\images\Beige\grid\page-first.gif" />
+    <Content Include="temas\images\Beige\grid\page-last-disabled.gif" />
+    <Content Include="temas\images\Beige\grid\page-last.gif" />
+    <Content Include="temas\images\Beige\grid\page-next-disabled.gif" />
+    <Content Include="temas\images\Beige\grid\page-next.gif" />
+    <Content Include="temas\images\Beige\grid\page-prev-disabled.gif" />
+    <Content Include="temas\images\Beige\grid\page-prev.gif" />
+    <Content Include="temas\images\Beige\grid\pick-button.gif" />
+    <Content Include="temas\images\Beige\grid\refresh-disabled.gif" />
+    <Content Include="temas\images\Beige\grid\refresh.gif" />
+    <Content Include="temas\images\Beige\grid\row-check-sprite.gif" />
+    <Content Include="temas\images\Beige\grid\row-expand-sprite.gif" />
+    <Content Include="temas\images\Beige\grid\row-over.gif" />
+    <Content Include="temas\images\Beige\grid\row-sel.gif" />
+    <Content Include="temas\images\Beige\grid\sort-hd.gif" />
+    <Content Include="temas\images\Beige\grid\sort_asc.gif" />
+    <Content Include="temas\images\Beige\grid\sort_desc.gif" />
+    <Content Include="temas\images\Beige\grid\wait.gif" />
+    <Content Include="temas\images\Beige\layout\collapse.gif" />
+    <Content Include="temas\images\Beige\layout\expand.gif" />
+    <Content Include="temas\images\Beige\layout\gradient-bg.gif" />
+    <Content Include="temas\images\Beige\layout\mini-bottom.gif" />
+    <Content Include="temas\images\Beige\layout\mini-left.gif" />
+    <Content Include="temas\images\Beige\layout\mini-right.gif" />
+    <Content Include="temas\images\Beige\layout\mini-top.gif" />
+    <Content Include="temas\images\Beige\layout\ns-collapse.gif" />
+    <Content Include="temas\images\Beige\layout\ns-expand.gif" />
+    <Content Include="temas\images\Beige\layout\panel-close.gif" />
+    <Content Include="temas\images\Beige\layout\panel-title-bg.gif" />
+    <Content Include="temas\images\Beige\layout\panel-title-light-bg.gif" />
+    <Content Include="temas\images\Beige\layout\stick.gif" />
+    <Content Include="temas\images\Beige\layout\stuck.gif" />
+    <Content Include="temas\images\Beige\layout\tab-close-on.gif" />
+    <Content Include="temas\images\Beige\layout\tab-close.gif" />
+    <Content Include="temas\images\Beige\menu\checked.gif" />
+    <Content Include="temas\images\Beige\menu\group-checked.gif" />
+    <Content Include="temas\images\Beige\menu\item-over.gif" />
+    <Content Include="temas\images\Beige\menu\menu-parent.gif" />
+    <Content Include="temas\images\Beige\menu\menu.gif" />
+    <Content Include="temas\images\Beige\menu\unchecked.gif" />
+    <Content Include="temas\images\Beige\multiselect\clear.gif" />
+    <Content Include="temas\images\Beige\multiselect\clearfocus.gif" />
+    <Content Include="temas\images\Beige\multiselect\clearinvalid.gif" />
+    <Content Include="temas\images\Beige\multiselect\close.gif" />
+    <Content Include="temas\images\Beige\multiselect\expand.gif" />
+    <Content Include="temas\images\Beige\multiselect\expandfocus.gif" />
+    <Content Include="temas\images\Beige\multiselect\expandinvalid.gif" />
+    <Content Include="temas\images\Beige\panel\corners-sprite.gif" />
+    <Content Include="temas\images\Beige\panel\corners-sprite_b.gif" />
+    <Content Include="temas\images\Beige\panel\left-right.gif" />
+    <Content Include="temas\images\Beige\panel\light-hd.gif" />
+    <Content Include="temas\images\Beige\panel\tool-sprite-tpl.gif" />
+    <Content Include="temas\images\Beige\panel\tool-sprites.gif" />
+    <Content Include="temas\images\Beige\panel\tool-sprites.png" />
+    <Content Include="temas\images\Beige\panel\tools-sprites-trans.gif" />
+    <Content Include="temas\images\Beige\panel\top-bottom.gif" />
+    <Content Include="temas\images\Beige\panel\top-bottom.png" />
+    <Content Include="temas\images\Beige\panel\top-bottom_bc.gif" />
+    <Content Include="temas\images\Beige\panel\white-corners-sprite.gif" />
+    <Content Include="temas\images\Beige\panel\white-left-right.gif" />
+    <Content Include="temas\images\Beige\panel\white-top-bottom.gif" />
+    <Content Include="temas\images\Beige\progress\progress-bg.gif" />
+    <Content Include="temas\images\Beige\qtip\bg.gif" />
+    <Content Include="temas\images\Beige\qtip\close.gif" />
+    <Content Include="temas\images\Beige\qtip\tip-anchor-sprite.gif" />
+    <Content Include="temas\images\Beige\qtip\tip-sprite.gif" />
+    <Content Include="temas\images\Beige\s.gif" />
+    <Content Include="temas\images\Beige\shadow-c.png" />
+    <Content Include="temas\images\Beige\shadow-lr.png" />
+    <Content Include="temas\images\Beige\shadow.png" />
+    <Content Include="temas\images\Beige\shared\blue-loading.gif" />
+    <Content Include="temas\images\Beige\shared\calendar.gif" />
+    <Content Include="temas\images\Beige\shared\glass-bg.gif" />
+    <Content Include="temas\images\Beige\shared\hd-sprite.gif" />
+    <Content Include="temas\images\Beige\shared\large-loading.gif" />
+    <Content Include="temas\images\Beige\shared\left-btn.gif" />
+    <Content Include="temas\images\Beige\shared\loading-balls.gif" />
+    <Content Include="temas\images\Beige\shared\right-btn.gif" />
+    <Content Include="temas\images\Beige\shared\warning.gif" />
+    <Content Include="temas\images\Beige\sizer\e-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\e-handle.gif" />
+    <Content Include="temas\images\Beige\sizer\ne-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\ne-handle.gif" />
+    <Content Include="temas\images\Beige\sizer\nw-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\nw-handle.gif" />
+    <Content Include="temas\images\Beige\sizer\s-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\s-handle.gif" />
+    <Content Include="temas\images\Beige\sizer\se-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\se-handle.gif" />
+    <Content Include="temas\images\Beige\sizer\square.gif" />
+    <Content Include="temas\images\Beige\sizer\sw-handle-dark.gif" />
+    <Content Include="temas\images\Beige\sizer\sw-handle.gif" />
+    <Content Include="temas\images\Beige\slider\slider-bg.png" />
+    <Content Include="temas\images\Beige\slider\slider-thumb.png" />
+    <Content Include="temas\images\Beige\slider\slider-v-bg.png" />
+    <Content Include="temas\images\Beige\slider\slider-v-thumb.png" />
+    <Content Include="temas\images\Beige\spinner\spinner-split.gif" />
+    <Content Include="temas\images\Beige\spinner\spinner.gif" />
+    <Content Include="temas\images\Beige\tabs\scroll-left.gif" />
+    <Content Include="temas\images\Beige\tabs\scroll-right.gif" />
+    <Content Include="temas\images\Beige\tabs\scroller-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-left-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-btm-right-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-close.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-strip-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tab-strip-bg.png" />
+    <Content Include="temas\images\Beige\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="temas\images\Beige\tabs\tabs-sprite.gif" />
+    <Content Include="temas\images\Beige\toolbar\bg.gif" />
+    <Content Include="temas\images\Beige\toolbar\btn-arrow-light.gif" />
+    <Content Include="temas\images\Beige\toolbar\btn-arrow.gif" />
+    <Content Include="temas\images\Beige\toolbar\btn-over-bg.gif" />
+    <Content Include="temas\images\Beige\toolbar\gray-bg.gif" />
+    <Content Include="temas\images\Beige\toolbar\more.gif" />
+    <Content Include="temas\images\Beige\toolbar\tb-bg.gif" />
+    <Content Include="temas\images\Beige\toolbar\tb-btn-sprite.gif" />
+    <Content Include="temas\images\Beige\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="temas\images\Beige\toolbar\tb-xl-sep.gif" />
+    <Content Include="temas\images\Beige\tree\arrows.gif" />
+    <Content Include="temas\images\Beige\tree\drop-add.gif" />
+    <Content Include="temas\images\Beige\tree\drop-between.gif" />
+    <Content Include="temas\images\Beige\tree\drop-no.gif" />
+    <Content Include="temas\images\Beige\tree\drop-over.gif" />
+    <Content Include="temas\images\Beige\tree\drop-under.gif" />
+    <Content Include="temas\images\Beige\tree\drop-yes.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-end-minus-nl.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-end-minus.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-end-plus-nl.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-end-plus.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-end.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-line.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-minus-nl.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-minus.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-plus-nl.gif" />
+    <Content Include="temas\images\Beige\tree\elbow-plus.gif" />
+    <Content Include="temas\images\Beige\tree\elbow.gif" />
+    <Content Include="temas\images\Beige\tree\folder-open.gif" />
+    <Content Include="temas\images\Beige\tree\folder.gif" />
+    <Content Include="temas\images\Beige\tree\leaf.gif" />
+    <Content Include="temas\images\Beige\tree\loading.gif" />
+    <Content Include="temas\images\Beige\tree\s.gif" />
+    <Content Include="temas\images\Beige\window\icon-error.gif" />
+    <Content Include="temas\images\Beige\window\icon-info.gif" />
+    <Content Include="temas\images\Beige\window\icon-question.gif" />
+    <Content Include="temas\images\Beige\window\icon-warning.gif" />
+    <Content Include="temas\images\Beige\window\left-corners.png" />
+    <Content Include="temas\images\Beige\window\left-corners_ie6.png" />
+    <Content Include="temas\images\Beige\window\left-right.png" />
+    <Content Include="temas\images\Beige\window\left-right_ie6.png" />
+    <Content Include="temas\images\Beige\window\right-corners.png" />
+    <Content Include="temas\images\Beige\window\right-corners_ie6.png" />
+    <Content Include="temas\images\Beige\window\top-bottom.png" />
+    <Content Include="temas\images\Beige\window\top-bottom_ie6.png" />
+    <Content Include="temas\images\Gourmet\box\corners-blue.gif" />
+    <Content Include="temas\images\Gourmet\box\corners.gif" />
+    <Content Include="temas\images\Gourmet\box\l-blue.gif" />
+    <Content Include="temas\images\Gourmet\box\l.gif" />
+    <Content Include="temas\images\Gourmet\box\r-blue.gif" />
+    <Content Include="temas\images\Gourmet\box\r.gif" />
+    <Content Include="temas\images\Gourmet\box\tb-blue.gif" />
+    <Content Include="temas\images\Gourmet\box\tb.gif" />
+    <Content Include="temas\images\Gourmet\button\arrow.gif" />
+    <Content Include="temas\images\Gourmet\button\btn-arrow.gif" />
+    <Content Include="temas\images\Gourmet\button\btn-sprite.gif" />
+    <Content Include="temas\images\Gourmet\button\btn.gif" />
+    <Content Include="temas\images\Gourmet\button\group-cs.gif" />
+    <Content Include="temas\images\Gourmet\button\group-lr.gif" />
+    <Content Include="temas\images\Gourmet\button\group-tb.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow-b-noline.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow-b.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow-bo.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow-noline.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow-o.gif" />
+    <Content Include="temas\images\Gourmet\button\s-arrow.gif" />
+    <Content Include="temas\images\Gourmet\dd\drop-add.gif" />
+    <Content Include="temas\images\Gourmet\dd\drop-no.gif" />
+    <Content Include="temas\images\Gourmet\dd\drop-yes.gif" />
+    <Content Include="temas\images\Gourmet\editor\tb-sprite.gif" />
+    <Content Include="temas\images\Gourmet\form\checkbox.gif" />
+    <Content Include="temas\images\Gourmet\form\clear-trigger.gif" />
+    <Content Include="temas\images\Gourmet\form\date-trigger.gif" />
+    <Content Include="temas\images\Gourmet\form\error-tip-corners.gif" />
+    <Content Include="temas\images\Gourmet\form\exclamation.gif" />
+    <Content Include="temas\images\Gourmet\form\radio.gif" />
+    <Content Include="temas\images\Gourmet\form\search-trigger.gif" />
+    <Content Include="temas\images\Gourmet\form\text-bg.gif" />
+    <Content Include="temas\images\Gourmet\form\trigger-square.gif" />
+    <Content Include="temas\images\Gourmet\form\trigger-tpl.gif" />
+    <Content Include="temas\images\Gourmet\form\trigger.gif" />
+    <Content Include="temas\images\Gourmet\gradient-bg.gif" />
+    <Content Include="temas\images\Gourmet\grid\col-move-bottom.gif" />
+    <Content Include="temas\images\Gourmet\grid\col-move-top.gif" />
+    <Content Include="temas\images\Gourmet\grid\columns.gif" />
+    <Content Include="temas\images\Gourmet\grid\dirty.gif" />
+    <Content Include="temas\images\Gourmet\grid\done.gif" />
+    <Content Include="temas\images\Gourmet\grid\drop-no.gif" />
+    <Content Include="temas\images\Gourmet\grid\drop-yes.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid-hrow.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid-loading.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid-split.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-hd-btn.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-hrow-over.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-hrow-over2.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-hrow.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-hrow2.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-rowheader.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-special-col-bg.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-special-col-bg2.gif" />
+    <Content Include="temas\images\Gourmet\grid\grid3-special-col-sel-bg.gif" />
+    <Content Include="temas\images\Gourmet\grid\group-by.gif" />
+    <Content Include="temas\images\Gourmet\grid\group-collapse.gif" />
+    <Content Include="temas\images\Gourmet\grid\group-expand-sprite.gif" />
+    <Content Include="temas\images\Gourmet\grid\group-expand.gif" />
+    <Content Include="temas\images\Gourmet\grid\hd-pop.gif" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-asc.gif" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-desc.gif" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-lock.gif" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-lock.png" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-unlock.gif" />
+    <Content Include="temas\images\Gourmet\grid\hmenu-unlock.png" />
+    <Content Include="temas\images\Gourmet\grid\invalid_line.gif" />
+    <Content Include="temas\images\Gourmet\grid\loading.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-first-disabled.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-first.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-last-disabled.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-last.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-next-disabled.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-next.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-prev-disabled.gif" />
+    <Content Include="temas\images\Gourmet\grid\page-prev.gif" />
+    <Content Include="temas\images\Gourmet\grid\refresh.gif" />
+    <Content Include="temas\images\Gourmet\grid\row-check-sprite.gif" />
+    <Content Include="temas\images\Gourmet\grid\row-expand-sprite.gif" />
+    <Content Include="temas\images\Gourmet\grid\row-over.gif" />
+    <Content Include="temas\images\Gourmet\grid\row-sel.gif" />
+    <Content Include="temas\images\Gourmet\grid\sort-hd.gif" />
+    <Content Include="temas\images\Gourmet\grid\sort_asc.gif" />
+    <Content Include="temas\images\Gourmet\grid\sort_desc.gif" />
+    <Content Include="temas\images\Gourmet\layout\collapse.gif" />
+    <Content Include="temas\images\Gourmet\layout\expand.gif" />
+    <Content Include="temas\images\Gourmet\layout\gradient-bg.gif" />
+    <Content Include="temas\images\Gourmet\layout\mini-bottom.gif" />
+    <Content Include="temas\images\Gourmet\layout\mini-left.gif" />
+    <Content Include="temas\images\Gourmet\layout\mini-right.gif" />
+    <Content Include="temas\images\Gourmet\layout\mini-top.gif" />
+    <Content Include="temas\images\Gourmet\layout\ns-collapse.gif" />
+    <Content Include="temas\images\Gourmet\layout\ns-expand.gif" />
+    <Content Include="temas\images\Gourmet\layout\panel-close.gif" />
+    <Content Include="temas\images\Gourmet\layout\panel-title-bg.gif" />
+    <Content Include="temas\images\Gourmet\layout\panel-title-light-bg.gif" />
+    <Content Include="temas\images\Gourmet\layout\stick.gif" />
+    <Content Include="temas\images\Gourmet\layout\stuck.gif" />
+    <Content Include="temas\images\Gourmet\layout\tab-close-on.gif" />
+    <Content Include="temas\images\Gourmet\layout\tab-close.gif" />
+    <Content Include="temas\images\Gourmet\menu\checked.gif" />
+    <Content Include="temas\images\Gourmet\menu\group-checked.gif" />
+    <Content Include="temas\images\Gourmet\menu\item-over-disabled.gif" />
+    <Content Include="temas\images\Gourmet\menu\item-over.gif" />
+    <Content Include="temas\images\Gourmet\menu\menu-parent.gif" />
+    <Content Include="temas\images\Gourmet\menu\menu.gif" />
+    <Content Include="temas\images\Gourmet\menu\unchecked.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\clear.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\clearfocus.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\clearinvalid.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\close.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\expand.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\expandfocus.gif" />
+    <Content Include="temas\images\Gourmet\multiselect\expandinvalid.gif" />
+    <Content Include="temas\images\Gourmet\panel\corners-sprite.gif" />
+    <Content Include="temas\images\Gourmet\panel\corners-sprite_b.gif" />
+    <Content Include="temas\images\Gourmet\panel\left-right.gif" />
+    <Content Include="temas\images\Gourmet\panel\light-hd.gif" />
+    <Content Include="temas\images\Gourmet\panel\tool-sprite-tpl.gif" />
+    <Content Include="temas\images\Gourmet\panel\tool-sprites.gif" />
+    <Content Include="temas\images\Gourmet\panel\tool-sprites.png" />
+    <Content Include="temas\images\Gourmet\panel\tools-sprites-trans.gif" />
+    <Content Include="temas\images\Gourmet\panel\top-bottom.gif" />
+    <Content Include="temas\images\Gourmet\panel\top-bottom.png" />
+    <Content Include="temas\images\Gourmet\panel\top-bottom_bc.gif" />
+    <Content Include="temas\images\Gourmet\panel\white-corners-sprite.gif" />
+    <Content Include="temas\images\Gourmet\panel\white-left-right.gif" />
+    <Content Include="temas\images\Gourmet\panel\white-top-bottom.gif" />
+    <Content Include="temas\images\Gourmet\progress\progress-bg.gif" />
+    <Content Include="temas\images\Gourmet\qtip\bg.gif" />
+    <Content Include="temas\images\Gourmet\qtip\close.gif" />
+    <Content Include="temas\images\Gourmet\qtip\tip-anchor-sprite.gif" />
+    <Content Include="temas\images\Gourmet\qtip\tip-sprite.gif" />
+    <Content Include="temas\images\Gourmet\qtip\tip-sprite_old.gif" />
+    <Content Include="temas\images\Gourmet\s.gif" />
+    <Content Include="temas\images\Gourmet\shadow-c.png" />
+    <Content Include="temas\images\Gourmet\shadow-lr.png" />
+    <Content Include="temas\images\Gourmet\shadow.png" />
+    <Content Include="temas\images\Gourmet\shared\calendar.gif" />
+    <Content Include="temas\images\Gourmet\shared\glass-bg.gif" />
+    <Content Include="temas\images\Gourmet\shared\hd-sprite.gif" />
+    <Content Include="temas\images\Gourmet\shared\large-loading.gif" />
+    <Content Include="temas\images\Gourmet\shared\left-btn.gif" />
+    <Content Include="temas\images\Gourmet\shared\loading-balls.gif" />
+    <Content Include="temas\images\Gourmet\shared\right-btn.gif" />
+    <Content Include="temas\images\Gourmet\shared\warning.gif" />
+    <Content Include="temas\images\Gourmet\sizer\e-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\e-handle.gif" />
+    <Content Include="temas\images\Gourmet\sizer\ne-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\ne-handle.gif" />
+    <Content Include="temas\images\Gourmet\sizer\nw-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\nw-handle.gif" />
+    <Content Include="temas\images\Gourmet\sizer\s-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\s-handle.gif" />
+    <Content Include="temas\images\Gourmet\sizer\se-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\se-handle.gif" />
+    <Content Include="temas\images\Gourmet\sizer\square.gif" />
+    <Content Include="temas\images\Gourmet\sizer\sw-handle-dark.gif" />
+    <Content Include="temas\images\Gourmet\sizer\sw-handle.gif" />
+    <Content Include="temas\images\Gourmet\slider\slider-bg.png" />
+    <Content Include="temas\images\Gourmet\slider\slider-thumb.png" />
+    <Content Include="temas\images\Gourmet\slider\slider-v-bg.png" />
+    <Content Include="temas\images\Gourmet\slider\slider-v-thumb.png" />
+    <Content Include="temas\images\Gourmet\spinner\spinner-split.gif" />
+    <Content Include="temas\images\Gourmet\spinner\spinner.gif" />
+    <Content Include="temas\images\Gourmet\tabs\scroll-left.gif" />
+    <Content Include="temas\images\Gourmet\tabs\scroll-right.gif" />
+    <Content Include="temas\images\Gourmet\tabs\scroller-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-inactive-left-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-inactive-right-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-left-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-over-left-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-over-right-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-btm-right-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-close.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-strip-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tab-strip-bg.png" />
+    <Content Include="temas\images\Gourmet\tabs\tab-strip-btm-bg.gif" />
+    <Content Include="temas\images\Gourmet\tabs\tabs-sprite.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\bg.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\btn-arrow-light.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\btn-arrow.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\btn-over-bg.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\gray-bg.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\more.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\tb-bg.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\tb-btn-sprite.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\tb-xl-btn-sprite.gif" />
+    <Content Include="temas\images\Gourmet\toolbar\tb-xl-sep.gif" />
+    <Content Include="temas\images\Gourmet\tree\arrows.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-add.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-between.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-no.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-over.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-under.gif" />
+    <Content Include="temas\images\Gourmet\tree\drop-yes.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-end-minus-nl.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-end-minus.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-end-plus-nl.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-end-plus.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-end.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-line.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-minus-nl.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-minus.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-plus-nl.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow-plus.gif" />
+    <Content Include="temas\images\Gourmet\tree\elbow.gif" />
+    <Content Include="temas\images\Gourmet\tree\folder-open.gif" />
+    <Content Include="temas\images\Gourmet\tree\folder.gif" />
+    <Content Include="temas\images\Gourmet\tree\leaf.gif" />
+    <Content Include="temas\images\Gourmet\tree\loading.gif" />
+    <Content Include="temas\images\Gourmet\tree\s.gif" />
+    <Content Include="temas\images\Gourmet\window\icon-error.gif" />
+    <Content Include="temas\images\Gourmet\window\icon-info.gif" />
+    <Content Include="temas\images\Gourmet\window\icon-question.gif" />
+    <Content Include="temas\images\Gourmet\window\icon-warning.gif" />
+    <Content Include="temas\images\Gourmet\window\left-corners.png" />
+    <Content Include="temas\images\Gourmet\window\left-corners_ie6.png" />
+    <Content Include="temas\images\Gourmet\window\left-right.png" />
+    <Content Include="temas\images\Gourmet\window\left-right_ie6.png" />
+    <Content Include="temas\images\Gourmet\window\right-corners.png" />
+    <Content Include="temas\images\Gourmet\window\right-corners_ie6.png" />
+    <Content Include="temas\images\Gourmet\window\top-bottom.png" />
+    <Content Include="temas\images\Gourmet\window\top-bottom_ie6.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltSenha.aspx.cs">
+      <DependentUpon>AltSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltSenha.aspx.designer.cs">
+      <DependentUpon>AltSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Estoque.aspx.cs">
+      <DependentUpon>Estoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Estoque.aspx.designer.cs">
+      <DependentUpon>Estoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\NotaFiscal.aspx.cs">
+      <DependentUpon>NotaFiscal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\NotaFiscal.aspx.designer.cs">
+      <DependentUpon>NotaFiscal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\OrdemCompra.aspx.cs">
+      <DependentUpon>OrdemCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\OrdemCompra.aspx.designer.cs">
+      <DependentUpon>OrdemCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\Movimentacao.aspx.cs">
+      <DependentUpon>Movimentacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\Movimentacao.aspx.designer.cs">
+      <DependentUpon>Movimentacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\SolicitacaoCompra.aspx.cs">
+      <DependentUpon>SolicitacaoCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compras\SolicitacaoCompra.aspx.designer.cs">
+      <DependentUpon>SolicitacaoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Estoque.aspx.cs">
+      <DependentUpon>Estoque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estoque\Estoque.aspx.designer.cs">
+      <DependentUpon>Estoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao\Paginas\observacao.aspx.cs">
+      <DependentUpon>observacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcao\Paginas\observacao.aspx.designer.cs">
+      <DependentUpon>observacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Aliquota.aspx.cs">
+      <DependentUpon>Aliquota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Aliquota.aspx.designer.cs">
+      <DependentUpon>Aliquota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Mesas.aspx.cs">
+      <DependentUpon>Mesas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Mesas.aspx.designer.cs">
+      <DependentUpon>Mesas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Lista.aspx.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Lista.aspx.designer.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\VerRelatorio.aspx.cs">
+      <DependentUpon>VerRelatorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios\VerRelatorio.aspx.designer.cs">
+      <DependentUpon>VerRelatorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\CarregaImagem.aspx.cs">
+      <DependentUpon>CarregaImagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\CarregaImagem.aspx.designer.cs">
+      <DependentUpon>CarregaImagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Empresa.aspx.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Empresa.aspx.designer.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Filial.aspx.cs">
+      <DependentUpon>Filial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Filial.aspx.designer.cs">
+      <DependentUpon>Filial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao\Funcoes.aspx.cs">
+      <DependentUpon>Funcoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcao\Funcoes.aspx.designer.cs">
+      <DependentUpon>Funcoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao\Paginas\planoFidelidade.aspx.cs">
+      <DependentUpon>planoFidelidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcao\Paginas\planoFidelidade.aspx.designer.cs">
+      <DependentUpon>planoFidelidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Parametro.aspx.cs">
+      <DependentUpon>Parametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Parametro.aspx.designer.cs">
+      <DependentUpon>Parametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Fidelidade.aspx.cs">
+      <DependentUpon>Fidelidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Fidelidade.aspx.designer.cs">
+      <DependentUpon>Fidelidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Impressoras.aspx.cs">
+      <DependentUpon>Impressoras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Impressoras.aspx.designer.cs">
+      <DependentUpon>Impressoras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Monitores.aspx.cs">
+      <DependentUpon>Monitores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Monitores.aspx.designer.cs">
+      <DependentUpon>Monitores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDV\Vendedores.aspx.cs">
+      <DependentUpon>Vendedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDV\Vendedores.aspx.designer.cs">
+      <DependentUpon>Vendedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Cardapio.aspx.cs">
+      <DependentUpon>Cardapio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Cardapio.aspx.designer.cs">
+      <DependentUpon>Cardapio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Fornecedores.aspx.cs">
+      <DependentUpon>Fornecedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Fornecedores.aspx.designer.cs">
+      <DependentUpon>Fornecedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Grupos.aspx.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Grupos.aspx.designer.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Observacoes.aspx.cs">
+      <DependentUpon>Observacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Observacoes.aspx.designer.cs">
+      <DependentUpon>Observacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Produtos.aspx.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Produtos.aspx.designer.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Producao\Unidades.aspx.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producao\Unidades.aspx.designer.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistema\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sistema\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Readme\App_Data\" />
+    <Folder Include="Financeiro\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessoBD\Modelo.csproj">
+      <Project>{13D32F9B-A219-4FCC-A669-C89B444FD003}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegrasNegocio\RegrasNegocio.csproj">
+      <Project>{2BC1E514-DA33-4BFA-9A34-890531F2FCD9}</Project>
+      <Name>RegrasNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{6bfe80f5-56dd-40f5-b5a7-17361a4ed56d}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="Relatorios\MRT\Cancelamento.mrt" />
+    <Content Include="Relatorios\MRT\Descontos.mrt" />
+    <Content Include="Relatorios\MRT\Faturamento.mrt" />
+    <Content Include="Relatorios\MRT\Recebimentos.mrt" />
+    <Content Include="Relatorios\MRT\ResumoFaturamento.mrt" />
+    <Content Include="Relatorios\MRT\Transferencia.mrt" />
+    <Content Include="Relatorios\MRT\ResumoVendas.mrt" />
+    <Content Include="Relatorios\MRT\Cardapio.mrt" />
+    <Content Include="Relatorios\MRT\CurvaAbcPorData.mrt" />
+    <Content Include="Relatorios\MRT\CurvaAbcPorDiaSemana.mrt" />
+    <Content Include="Relatorios\MRT\GerencialVendas.mrt" />
+    <Content Include="Relatorios\MRT\RelacaoDeProdutos.mrt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29505</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

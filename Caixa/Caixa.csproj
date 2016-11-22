@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C35E53AE-71DF-407C-BA70-44BACC3B22AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artebit.Restaurante.Caixa</RootNamespace>
+    <AssemblyName>Artebit.Restaurante.Caixa</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Img\iconCaixa2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ACBr.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\DLL\ACBr.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Stimulsoft Reports.Ultimate 2010.1\Bin\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Stimulsoft Reports.Ultimate 2010.1\Bin\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Wpf, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Stimulsoft Reports.Ultimate 2010.1\Bin\Stimulsoft.Report.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.WpfDesign, Version=2010.1.700.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Stimulsoft Reports.Ultimate 2010.1\Bin\Stimulsoft.Report.WpfDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Charting, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Data, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Docking, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.GridView, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.Navigation, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.RibbonBar, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Data, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AltSenha.xaml.cs">
+      <DependentUpon>AltSenha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormAvisos.xaml.cs">
+      <DependentUpon>FormAvisos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormPerfil.xaml.cs">
+      <DependentUpon>FormPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Perfil.xaml.cs">
+      <DependentUpon>Perfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Posts.xaml.cs">
+      <DependentUpon>Posts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Cartao.xaml.cs">
+      <DependentUpon>Cartao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\CupomFiscal.xaml.cs">
+      <DependentUpon>CupomFiscal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\BinaryImage.cs" />
+    <Compile Include="Cadastro\Aliquota.xaml.cs">
+      <DependentUpon>Aliquota.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Cardapios.xaml.cs">
+      <DependentUpon>Cardapios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Clientes.xaml.cs">
+      <DependentUpon>Clientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Fidelidade.xaml.cs">
+      <DependentUpon>Fidelidade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormAliquota.xaml.cs">
+      <DependentUpon>FormAliquota.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormFidelidade.xaml.cs">
+      <DependentUpon>FormFidelidade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormGrupoMesa.xaml.cs">
+      <DependentUpon>FormGrupoMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormProdutos.xaml.cs">
+      <DependentUpon>FormProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\GrupoMesa.xaml.cs">
+      <DependentUpon>GrupoMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormCardProduto.xaml.cs">
+      <DependentUpon>FormCardProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormClientes.xaml.cs">
+      <DependentUpon>FormClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormImpressoras.xaml.cs">
+      <DependentUpon>FormImpressoras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormMesas.xaml.cs">
+      <DependentUpon>FormMesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormMonitor.xaml.cs">
+      <DependentUpon>FormMonitor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormTipoRecebimento.xaml.cs">
+      <DependentUpon>FormTipoRecebimento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormUsuario.xaml.cs">
+      <DependentUpon>FormUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Mesas.xaml.cs">
+      <DependentUpon>Mesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Monitores.xaml.cs">
+      <DependentUpon>Monitores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormVendedor.xaml.cs">
+      <DependentUpon>FormVendedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Formularios\FormCardapio.xaml.cs">
+      <DependentUpon>FormCardapio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Produtos.xaml.cs">
+      <DependentUpon>Produtos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\TipoRecebimento.xaml.cs">
+      <DependentUpon>TipoRecebimento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Usuarios.xaml.cs">
+      <DependentUpon>Usuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Adicionar.xaml.cs">
+      <DependentUpon>Adicionar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Balcao.xaml.cs">
+      <DependentUpon>Balcao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Cliente.xaml.cs">
+      <DependentUpon>Cliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\FecharPeriodo.xaml.cs">
+      <DependentUpon>FecharPeriodo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\JuntarMesa.xaml.cs">
+      <DependentUpon>JuntarMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Delivery.xaml.cs">
+      <DependentUpon>Delivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Desconto.xaml.cs">
+      <DependentUpon>Desconto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\FecharConta.xaml.cs">
+      <DependentUpon>FecharConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Impressoras.xaml.cs">
+      <DependentUpon>Impressoras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Vendedores.xaml.cs">
+      <DependentUpon>Vendedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\UsuarioPermissao.xaml.cs">
+      <DependentUpon>UsuarioPermissao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ControlePagina.cs" />
+    <Compile Include="Classes\IPagina.cs" />
+    <Compile Include="Classes\PaginaCore.cs" />
+    <Compile Include="Classes\VisibilityConverter.cs" />
+    <Compile Include="Controles\Cabecalho1.xaml.cs">
+      <DependentUpon>Cabecalho1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Pedido2.xaml.cs">
+      <DependentUpon>Pedido2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Pedido2Adicional.xaml.cs">
+      <DependentUpon>Pedido2Adicional.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Pessoas.xaml.cs">
+      <DependentUpon>Pessoas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\PlanoFidelidade.xaml.cs">
+      <DependentUpon>PlanoFidelidade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\SepararMesa.xaml.cs">
+      <DependentUpon>SepararMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Janelas\Transferir.xaml.cs">
+      <DependentUpon>Transferir.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CustomKeyboardCommandProvider.cs" />
+    <Compile Include="Controles\ImageButton.cs" />
+    <Compile Include="ErrosWindow.xaml.cs">
+      <DependentUpon>ErrosWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\Estoque.xaml.cs">
+      <DependentUpon>Estoque.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\LeituraMFD.xaml.cs">
+      <DependentUpon>LeituraMFD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\AberturaDia.xaml.cs">
+      <DependentUpon>AberturaDia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\Sangria.xaml.cs">
+      <DependentUpon>Sangria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\Suprimento.xaml.cs">
+      <DependentUpon>Suprimento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Caixas\Mesas.xaml.cs">
+      <DependentUpon>Mesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\MemoriaFiscal.xaml.cs">
+      <DependentUpon>MemoriaFiscal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscal\MenuFiscal.xaml.cs">
+      <DependentUpon>MenuFiscal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModelView\FidelidadeModel.cs" />
+    <Compile Include="ModelView\ItemConta.cs" />
+    <Compile Include="PDV\Mesas.xaml.cs">
+      <DependentUpon>Mesas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FechamentoPeriodo.xaml.cs">
+      <DependentUpon>FechamentoPeriodo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FechaPeriodo.cs" />
+    <Compile Include="Relatorio\Model\FechamentoPeriodoModelView.cs" />
+    <Compile Include="Relatorio\PreConta.cs" />
+    <Compile Include="Relatorio\ResumoVendas.cs" />
+    <Compile Include="Splash.xaml.cs">
+      <DependentUpon>Splash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial.xaml.cs">
+      <DependentUpon>Inicial.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AltSenha.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Aliquota.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Cardapios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Clientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Fidelidade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormAliquota.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormAvisos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormFidelidade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormGrupoMesa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormPerfil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\GrupoMesa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormCardProduto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormImpressoras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormMesas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormMonitor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormTipoRecebimento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Mesas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Monitores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormVendedor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Formularios\FormCardapio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Impressoras.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastro\Perfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Posts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Produtos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\TipoRecebimento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Usuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Cartao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Adicionar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Balcao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Cliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\FecharPeriodo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\CupomFiscal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\JuntarMesa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Caixas\Delivery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Desconto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\FecharConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastro\Vendedores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Caixas\Janelas\UsuarioPermissao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controles\Cabecalho1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Pedido2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Pedido2Adicional.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Pessoas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\PlanoFidelidade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\SepararMesa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Janelas\Transferir.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrosWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\Estoque.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\LeituraMFD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\AberturaDia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\Sangria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\Suprimento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Caixas\Mesas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\MemoriaFiscal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fiscal\MenuFiscal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PDV\Mesas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Relatorio\FechamentoPeriodo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inicial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Relatorio\MRT\FechamentoPeriodo.mrt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\ArtebitGourmet.Impressoras.csproj">
+      <Project>{8b723104-91f8-470a-bdeb-59b8e9807d3f}</Project>
+      <Name>ArtebitGourmet.Impressoras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcessoBD\Modelo.csproj">
+      <Project>{13D32F9B-A219-4FCC-A669-C89B444FD003}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegrasNegocio\RegrasNegocio.csproj">
+      <Project>{2BC1E514-DA33-4BFA-9A34-890531F2FCD9}</Project>
+      <Name>RegrasNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecaoModelo\AcessoDados.csproj">
+      <Project>{f18dd79b-6eac-454e-9385-5edfe3405d76}</Project>
+      <Name>AcessoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{6BFE80F5-56DD-40F5-B5A7-17361A4ED56D}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\tracoLetra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\cadastro.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\caixa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\pdv.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\relatorio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\adicionarItens.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\bloquear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\cancelarItens.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\desconto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\fecharConta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\pessoas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\preConta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\semServico.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\transferir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\menuFiscal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\opcoes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\sair.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ImpressoraFiscal\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\icones\cadastro_avisos.png" />
+    <Resource Include="Img\fundoLogin.png" />
+    <Resource Include="Img\icones\cadastro_perfil.png" />
+    <Resource Include="Img\icones\cadastro_recebimentos.png" />
+    <Resource Include="Img\icones\cadastro_aliquotas.png" />
+    <Resource Include="Img\icones\cadastro_cardapio.png" />
+    <Resource Include="Img\icones\cadastro_clientes.png" />
+    <Resource Include="Img\icones\cadastro_grupomesa.png" />
+    <Resource Include="Img\icones\cadastro_impressoras.png" />
+    <Resource Include="Img\icones\cadastro_mesas.png" />
+    <Resource Include="Img\icones\cadastro_monitores.png" />
+    <Resource Include="Img\icones\cadastro_planoFidelidade.png" />
+    <Resource Include="Img\icones\cadastro_produtos.png" />
+    <Resource Include="Img\icones\cadastro_usuarios.png" />
+    <Resource Include="Img\icones\cadastro_vendedores.png" />
+    <Resource Include="Img\icones\pdv_mesas.png" />
+    <Resource Include="Img\icones\caixa_balcao.png" />
+    <Resource Include="Img\icones\caixa_cartao.png" />
+    <Resource Include="Img\icones\caixa_delivery.png" />
+    <Resource Include="Img\icones\caixa_mesas.png" />
+    <Resource Include="Img\mapamesas.png" />
+    <Resource Include="Img\icones_Base.png" />
+    <Resource Include="Img\off.png" />
+    <Resource Include="Img\on.png" />
+    <Resource Include="Img\transferir.jpg" />
+    <Resource Include="Img\addPessoas.png" />
+    <Resource Include="Img\transferirMesa.png" />
+    <Resource Include="Img\dinheiro.png" />
+    <Resource Include="Img\caixa2.png" />
+    <Resource Include="Img\key.png" />
+    <Resource Include="Img\edit.png" />
+    <Resource Include="Img\add.png" />
+    <Resource Include="Img\mesaS1.png" />
+    <Resource Include="Img\mesaS2.png" />
+    <Resource Include="Img\mesaS3.png" />
+    <Resource Include="Img\mesaS4.png" />
+    <Resource Include="Img\mesa1.png" />
+    <Resource Include="Img\mesa2.png" />
+    <Resource Include="Img\mesa3.png" />
+    <Resource Include="Img\mesa4.png" />
+    <Resource Include="Img\setaBaixo.png" />
+    <Resource Include="Img\setaCima.png" />
+    <Resource Include="Img\setaDireita.png" />
+    <Resource Include="Img\setaEsquerda.png" />
+    <Resource Include="Img\logoGourmet.png" />
+    <Resource Include="Img\logoHorizontal.png" />
+    <Resource Include="Img\loginTela.jpg" />
+    <Resource Include="Img\logo1.png" />
+    <Resource Include="Img\fundoTopoWPF.png" />
+    <Resource Include="Img\imagemFundo.png" />
+    <Resource Include="Img\fechar1.png" />
+    <Resource Include="Img\pessoaMais.png" />
+    <Resource Include="Img\pessoaMenos.png" />
+    <Resource Include="Img\setaBaixoPedido.png" />
+    <Resource Include="Img\setaBaixoPedidoOpaco.png" />
+    <Resource Include="Img\setaCimaPedido.png" />
+    <Resource Include="Img\setaCimaPedidoOpaco.png" />
+    <Resource Include="Img\setaDireitaPedido.png" />
+    <Resource Include="Img\setaDireitaPedidoOpaco.png" />
+    <Resource Include="Img\setaEsquerdaPedido.png" />
+    <Resource Include="Img\setaEsquerdaPedidoOpaco.png" />
+    <Resource Include="Img\transf.png" />
+    <Resource Include="Img\opcoes2.png" />
+    <Resource Include="Img\pagar.png" />
+    <Resource Include="Img\editar.png" />
+    <Resource Include="Img\caixa3.png" />
+    <Resource Include="Img\iconCaixa2.ico" />
+    <Resource Include="Img\triste.png" />
+    <Resource Include="Img\aumentarPessoas.png" />
+    <Resource Include="Img\diminuirPessoas.png" />
+    <Resource Include="Img\wallpaper-1077197.jpg" />
+    <Resource Include="Img\wallpaper-912316.jpg" />
+    <Resource Include="Img\exit.png" />
+    <Resource Include="Img\fundoSplash.png" />
+    <Resource Include="Img\logoSplash.png" />
+    <Resource Include="Img\databaseconfig.png" />
+    <Content Include="DLL\Telerik.Windows.Controls.Charting.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.Data.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.Docking.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.GridView.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.Input.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.Navigation.dll" />
+    <Content Include="DLL\Telerik.Windows.Controls.RibbonBar.dll" />
+    <Content Include="DLL\Telerik.Windows.Data.dll" />
+    <Resource Include="Img\fundoSplash2.png" />
+    <Resource Include="Img\logoSplash2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

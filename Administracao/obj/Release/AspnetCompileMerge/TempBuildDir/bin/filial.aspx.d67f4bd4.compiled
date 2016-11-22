@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Sistema/Filial.aspx" hash="cf13ef477" filehash="26eeabd00e7c" flags="110000" assembly="App_Web_wzu5pioz" type="ASP.sistema_filial_aspx">
+    <filedeps>
+        <filedep name="/Sistema/Filial.aspx" />
+    </filedeps>
+</preserve>

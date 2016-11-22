@@ -1,0 +1,318 @@
+--------------------------------- 17/09/2012 09:27:08--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o est? respondendo
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 09:27:08--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o est? respondendo
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:04:59--------------------------------- 
+System.InvalidOperationException: Cannot add item on fixed size collection.
+   at Telerik.Windows.Data.QueryableCollectionView.AddNew(Object newItem)
+   at Artebit.Restaurante.Caixa.Cadastro.FormCardapio.btAdd1_Click(Object sender, RoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Cadastro\Formularios\FormCardapio.xaml.cs:line 151
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:04:59--------------------------------- 
+System.InvalidOperationException: Cannot add item on fixed size collection.
+   at Telerik.Windows.Data.QueryableCollectionView.AddNew(Object newItem)
+   at Artebit.Restaurante.Caixa.Cadastro.FormCardapio.btAdd1_Click(Object sender, RoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Cadastro\Formularios\FormCardapio.xaml.cs:line 151
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:13:58--------------------------------- 
+System.InvalidOperationException: Cannot add item on fixed size collection.
+   at Telerik.Windows.Data.QueryableCollectionView.AddNew(Object newItem)
+   at Artebit.Restaurante.Caixa.Cadastro.FormCardapio.btAdd1_Click(Object sender, RoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Cadastro\Formularios\FormCardapio.xaml.cs:line 151
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:13:58--------------------------------- 
+System.InvalidOperationException: Cannot add item on fixed size collection.
+   at Telerik.Windows.Data.QueryableCollectionView.AddNew(Object newItem)
+   at Artebit.Restaurante.Caixa.Cadastro.FormCardapio.btAdd1_Click(Object sender, RoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Cadastro\Formularios\FormCardapio.xaml.cs:line 151
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:46:10--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 10:46:10--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o responde (ACK = 0)
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 16:41:38--------------------------------- 
+ACBr.Net.ACBrECFException: Communication error 2: The system cannot find the file specified.
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 16:41:38--------------------------------- 
+ACBr.Net.ACBrECFException: Communication error 2: The system cannot find the file specified.
+
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 17:56:30--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1151
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 17/09/2012 17:56:30--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1151
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+

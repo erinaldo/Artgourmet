@@ -1,0 +1,20 @@
+﻿Artebit.Restaurante.Caixa
+
+
+winexe
+C#
+.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\obj\Debug\
+Artebit.Restaurante.Caixa
+none
+false
+DEBUG;TRACE
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\App.xaml
+60201797566
+15238083434
+75-779311772
+441671232521
+AltSenha.xaml;Cadastro\Aliquota.xaml;Cadastro\Cardapios.xaml;Cadastro\Clientes.xaml;Cadastro\Fidelidade.xaml;Cadastro\FormAliquota.xaml;Cadastro\FormFidelidade.xaml;Cadastro\FormGrupoMesa.xaml;Cadastro\FormProdutos.xaml;Cadastro\GrupoMesa.xaml;Cadastro\FormCardProduto.xaml;Cadastro\FormCat3.xaml;Cadastro\FormCat2.xaml;Cadastro\FormClientes.xaml;Cadastro\FormImpressoras.xaml;Cadastro\FormMesas.xaml;Cadastro\FormMonitor.xaml;Cadastro\FormTipoRecebimento.xaml;Cadastro\FormUsuario.xaml;Cadastro\Mesas.xaml;Cadastro\Monitores.xaml;Cadastro\FormVendedor.xaml;Cadastro\FormCardapio.xaml;Cadastro\Impressoras.xaml;Cadastro\Produtos.xaml;Cadastro\TipoRecebimento.xaml;Cadastro\Usuarios.xaml;Caixas\Adicionar.xaml;Caixas\Balcao.xaml;Caixas\Cliente.xaml;Caixas\FecharPeriodo.xaml;Caixas\JuntarMesa.xaml;Caixas\Delivery.xaml;Caixas\Desconto.xaml;Caixas\FecharConta.xaml;Cadastro\Vendedores.xaml;Caixas\UsuarioPermissao.xaml;ImpressoraFiscal\MonitorNotaFiscal.xaml;Caixas\Pedido.xaml;Caixas\Pedido2.xaml;Caixas\Pedido2Adicional.xaml;Caixas\Pessoas.xaml;Caixas\PlanoFidelidade.xaml;Caixas\SepararMesa.xaml;Caixas\Transferir.xaml;ErrosWindow.xaml;Fiscal\Estoque.xaml;Fiscal\LeituraMFD.xaml;ImpressoraFiscal\AberturaDia.xaml;ImpressoraFiscal\Sangria.xaml;ImpressoraFiscal\Suprimento.xaml;MainWindow.xaml;Login.xaml;Caixas\Mesas.xaml;Fiscal\MemoriaFiscal.xaml;Fiscal\MenuFiscal.xaml;PDV\Mesas.xaml;Relatorio\FechamentoPeriodo.xaml;Splash.xaml;TelaInicial.xaml;
+
+False
+

@@ -1,0 +1,10 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\AcessoDados.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\bin\Release\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\obj\Release\AcessoDados.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\obj\Release\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\obj\Release\AcessoDados.pdb

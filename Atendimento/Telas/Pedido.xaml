@@ -1,0 +1,857 @@
+﻿<UserControl xmlns:Controles="clr-namespace:Artebit.Restaurante.AtendimentoPDV.Controles"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="Artebit.Restaurante.AtendimentoPDV.Telas.Pedido"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Artebit.Restaurante.AtendimentoPDV.Classes"
+             xmlns:k="clr-namespace:ArtebitGourmet.TecladoVirtual2.Keyboard;assembly=ArtebitGourmet.TecladoVirtual2"
+             xmlns:telerikGridView="clr-namespace:Telerik.Windows.Controls.GridView;assembly=Telerik.Windows.Controls.GridView"
+             xmlns:Controls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls" mc:Ignorable="d"
+             d:DesignHeight="740" d:DesignWidth="1010" Background="Transparent">
+
+    <UserControl.Resources>
+
+        <local:VisibilityConverter x:Key="visibilityConverter" />
+
+        <LinearGradientBrush x:Key="LinearGradient_Orange_H" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FFF9FF09" Offset="0" />
+            <GradientStop Color="#FFF7DE25" Offset="0.959" />
+            <GradientStop Color="#FFFF7000" Offset="0.033" />
+            <GradientStop Color="#FFFF7200" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="Horizontal_Gradient" EndPoint="1,0" StartPoint="0,0">
+            <GradientStop Color="#CCC" Offset="0.0" />
+            <GradientStop Color="#444" Offset="1.0" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="Vertical_Gradient" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#CCC" Offset="0.0" />
+            <GradientStop Color="#444" Offset="1.0" />
+        </LinearGradientBrush>
+
+        <!-- MouseOverBrush is used for MouseOver in Button, Radio Button, CheckBox -->
+        <LinearGradientBrush x:Key="MouseOverBrush" EndPoint="0,1" StartPoint="0,0">
+            <GradientStop Color="#FFF" Offset="0.0" />
+            <GradientStop Color="#AAA" Offset="1.0" />
+        </LinearGradientBrush>
+        <!-- LightBrush is used for content areas such as Menu, Tab Control background -->
+        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0" x:Key="LightBrush">
+            <GradientStop Color="#FFF" Offset="0.0" />
+            <GradientStop Color="#EEE" Offset="1.0" />
+        </LinearGradientBrush>
+
+        <Style x:Key="{x:Type CheckBox}" TargetType="{x:Type CheckBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="Background" Value="{DynamicResource NormalBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource NormalBorderBrush}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+
+                        <!-- BulletDecorator is used to provide baseline alignment between the checkmark and the Content -->
+                        <BulletDecorator Background="Transparent">
+                            <BulletDecorator.Bullet>
+                                <Grid Width="30" Height="30">
+                                    <Border x:Name="Border" Background="{DynamicResource LightBrush}"
+                                            BorderBrush="{DynamicResource Stroke_Gradient}" BorderThickness="1,1,1,1" CornerRadius="1,1,1,1" />
+                                    <Path x:Name="CheckMark" Stroke="Black" StrokeThickness="5"
+                                          SnapsToDevicePixels="False" Data="M1.5000001,1.5833334 L9.7920001,9.6666667 M1.5420001,9.6666667 L9.9083333,1.5000001"
+                                          Margin="9 9 0 0" ClipToBounds="False" StrokeEndLineCap="Round" StrokeStartLineCap="Round" />
+                                </Grid>
+                            </BulletDecorator.Bullet>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              RecognizesAccessKey="True" />
+                        </BulletDecorator>
+
+                        <!-- This uses Visibility to hide and show the CheckMark on IsChecked -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="false">
+                                <Setter Property="Visibility" Value="Collapsed" TargetName="CheckMark" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource MouseOverBrush}"
+                                        TargetName="Border" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" Value="{DynamicResource Normal_Background}"
+                                        TargetName="Border" />
+                                <Setter Property="BorderBrush" Value="{DynamicResource PressedBorderBrush}"
+                                        TargetName="Border" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" Value="{DynamicResource Vertical_Gradient}"
+                                        TargetName="Border" />
+                                <Setter Property="BorderBrush" Value="{DynamicResource DisabledBorderBrush}"
+                                        TargetName="Border" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="LeftButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="IsTabStop" Value="false" />
+            <Setter Property="Height" Value="90" />
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid Width="20" Height="90" Background="Transparent">
+                            <Image x:Name="backImg" Width="20" Height="30" Source="../Img/setaEsquerdaPedido.png" />
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="backImg" Property="Source"
+                                        Value="../Img/setaEsquerdaPedidoOpaco.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="RightButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="IsTabStop" Value="false" />
+            <Setter Property="Height" Value="90" />
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid Width="20" Height="90" Background="Transparent">
+                            <Image x:Name="backImg" Source="../Img/setaDireitaPedido.png" />
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="backImg" Property="Source"
+                                        Value="../Img/setaDireitaPedidoOpaco.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="UpButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="IsTabStop" Value="false" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="Width" Value="30" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid Width="30" Height="60" Background="Transparent">
+                            <Image x:Name="backImg" Source="../Img/setaCimaPedido.png" VerticalAlignment="Top" />
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="backImg" Property="Source" Value="../Img/setaCimaPedidoOpaco.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="DownButton" TargetType="{x:Type RepeatButton}">
+            <Setter Property="Focusable" Value="false" />
+            <Setter Property="IsTabStop" Value="false" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="Width" Value="30" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Grid Width="30" Height="60" Background="Transparent">
+                            <Image x:Name="backImg" Source="../Img/setaBaixoPedido.png" VerticalAlignment="Bottom" />
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="backImg" Property="Source" Value="../Img/setaBaixoPedidoOpaco.png" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+
+    <StackPanel>
+
+        <Grid>
+            <Controles:Cabecalho1 Titulo="Atendimento" x:Name="Cabecalho" />
+        </Grid>
+
+        <Grid MinWidth="1000" MinHeight="650" x:Name="GridGlobal" Margin="15 0 0 0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="420" />
+                <ColumnDefinition Width="220" />
+                <ColumnDefinition Width="210" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="152" />
+                <RowDefinition Height="152" />
+                <RowDefinition Height="152" />
+                <RowDefinition Height="93" />
+                <RowDefinition Height="97" />
+            </Grid.RowDefinitions>
+        
+
+            <!-- ======================================================= -->
+            <!-- Quadro de pedidos -->
+            <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="3" Margin="0 0 0 0">
+
+                <Grid.Resources>
+                    <Style x:Key="RowStyle" TargetType="telerikGridView:GridViewRow">
+                        <Setter Property="Height" Value="45" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type telerikGridView:GridViewRow}">
+
+                                    <Border x:Name="borda1" Background="White" Opacity="0.8">
+
+                                        <Grid x:Name="SelectedRow">
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="51" />
+                                                <ColumnDefinition Width="289" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="80" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Border Background="#49181A" BorderThickness="0" Grid.Column="0"
+                                                    Opacity="0.8">
+
+                                                <CheckBox x:Name="chk" HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" Click="chk_Click" CommandParameter="{Binding nuItem}" />
+
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="1">
+
+                                                <Label Margin="5 0 0 0" VerticalAlignment="Center"
+                                                       Content="{Binding nome}" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="2">
+
+                                                <Label HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                       Content="{Binding und}" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="3">
+
+                                                <Label HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                       Content="{Binding qtd}" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="4">
+
+                                                <Label HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                       Content="{Binding precoView, StringFormat={}{0:c}}" />
+                                            </Border>
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsSelected" Value="true">
+                                            <Setter Property="Background" TargetName="borda1" Value="Yellow" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+                    <Style x:Key="Headerstyle" TargetType="telerikGridView:GridViewHeaderRow">
+                        <Setter Property="Height" Value="51" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type telerikGridView:GridViewHeaderRow}">
+
+                                    <Border x:Name="borda1" Background="#B68944" BorderBrush="#49181A" Margin="0 0 0 3">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="Black" ShadowDepth="5" Opacity="0.9" />
+                                        </Border.Effect>
+
+                                        <Grid>
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="340" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="80" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="0">
+
+                                                <Label Margin="35 0 0 0" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="15" Content="Produto" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="1">
+
+                                                <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="15" Content="Und" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="2">
+
+                                                <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="14" Content="Qtd" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="1" Grid.Column="3">
+
+                                                <Label HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                       Foreground="GhostWhite" FontSize="14" Content="Preço (R$)" />
+                                            </Border>
+
+                                        </Grid>
+                                    </Border>
+
+
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+
+                    <Style x:Key="Footerstyle" TargetType="telerikGridView:GridViewFooterRow">
+                        <Setter Property="Height" Value="53" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type telerikGridView:GridViewFooterRow}">
+
+                                    <Border x:Name="borda1" Background="#6B4523" BorderBrush="#49181A" Margin="0 2 0 0">
+
+                                        <Border.Effect>
+                                            <DropShadowEffect Color="Black" ShadowDepth="5" Opacity="0.9" />
+                                        </Border.Effect>
+
+                                        <Grid>
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="51" />
+                                                <ColumnDefinition Width="28" />
+                                                <ColumnDefinition Width="201" />
+                                                <ColumnDefinition Width="120" />
+                                                <ColumnDefinition Width="59" />
+                                                <ColumnDefinition Width="2" />
+                                                <ColumnDefinition Width="80" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Border Background="#49181A" BorderThickness="0" Grid.Column="0"
+                                                    Opacity="0.8">
+
+                                                <CheckBox x:Name="chk_total" Click="chk_Total_Click"
+                                                          HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                                            </Border>
+
+                                            <Border BorderThickness="0" Grid.Column="1">
+
+                                                <Label Margin="5 0 0 0" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="15" x:Name="nupedido"
+                                                       Content="{Binding Path=Pedidos, 
+                                                            RelativeSource={RelativeSource AncestorType=telerik:RadGridView}}" />
+                                            </Border>
+
+                                            <Border BorderThickness="0" Grid.Column="2">
+
+                                                <Label Foreground="GhostWhite" VerticalAlignment="Center"
+                                                       HorizontalAlignment="Left" FontSize="15" Content="Pedidos" />
+                                            </Border>
+
+                                            <Border BorderThickness="0" Grid.Column="3">
+
+                                                <Label HorizontalAlignment="Right" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="15" Content="Total de produtos:" />
+                                            </Border>
+
+                                            <Border BorderThickness="0" Grid.Column="4">
+
+                                                <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="15" x:Name="cont" Content="" />
+                                            </Border>
+
+                                            <Border BorderBrush="#49181A" BorderThickness="2" Grid.Column="5">
+                                            </Border>
+
+                                            <Border BorderThickness="0" Grid.Column="6">
+
+                                                <Label HorizontalAlignment="Center" Foreground="GhostWhite"
+                                                       VerticalAlignment="Center" FontSize="15" x:Name="totpreco" Content="" />
+                                            </Border>
+
+                                        </Grid>
+
+                                    </Border>
+
+
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+                </Grid.Resources>
+
+                <Controls:RadBusyIndicator x:Name="busyIndicator">
+
+
+                    <telerik:RadGridView x:Name="gridDados" SelectionMode="Single" Width="570" Background="Transparent"
+                                         CanUserFreezeColumns="False" RowIndicatorVisibility="Collapsed" AutoGenerateColumns="False" IsReadOnly="True"
+                                         ShowGroupPanel="False" SelectionUnit="FullRow" HorizontalAlignment="Left" BorderThickness="0" BorderBrush="Transparent"
+                                         RowStyle="{StaticResource RowStyle}" HeaderRowStyle="{StaticResource Headerstyle}"
+                                         FooterRowStyle="{StaticResource Footerstyle}" ShowColumnFooters="True"
+                                         ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         SelectionChanged="gridDados_SelectionChanged" MouseDoubleClick="gridDados_MouseDoubleClick">
+                        <telerik:RadGridView.Columns>
+                            <telerik:GridViewSelectColumn></telerik:GridViewSelectColumn>
+                            <telerik:GridViewDataColumn Header="Cód." DataMemberBinding="{Binding nuItem}"
+                                                        IsGroupable="False" IsVisible="False" IsFilterable="False">
+                            </telerik:GridViewDataColumn>
+                            <telerik:GridViewDataColumn Header="Descrição" DataMemberBinding="{Binding nome}"
+                                                        IsGroupable="True" IsFilterable="True" />
+                            <telerik:GridViewDataColumn Header="Preço" DataMemberBinding="{Binding preco}"
+                                                        IsGroupable="True" IsFilterable="True" DataFormatString="{}{0:c}">
+                            </telerik:GridViewDataColumn>
+                        </telerik:RadGridView.Columns>
+                    </telerik:RadGridView>
+
+                </Controls:RadBusyIndicator>
+
+            </Grid>
+            <!-- Fim do quadro de pedidos -->
+            <!-- ======================================================= -->
+        
+        
+
+            <!-- ======================================================= -->
+            <!-- Quadro de Categoria -->
+            <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="0" Margin="0 3 0 2"
+                    Style="{StaticResource BordaClara}">
+
+                <Grid>
+
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Margin="5 15 0 0">
+                        <StackPanel>
+                            <TextBlock>C</TextBlock>
+                            <TextBlock>A</TextBlock>
+                            <TextBlock>T</TextBlock>
+                            <TextBlock>E</TextBlock>
+                            <TextBlock>G</TextBlock>
+                            <TextBlock>O</TextBlock>
+                            <TextBlock>R</TextBlock>
+                            <TextBlock>I</TextBlock>
+                            <TextBlock>A</TextBlock>
+
+                        </StackPanel>
+                    </Label>
+
+                    <ScrollViewer x:Name="VerticalScroller1" HorizontalScrollBarVisibility="Disabled"
+                                  VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Margin="20,3,40,2">
+
+                        <ItemsControl x:Name="grid1" VerticalAlignment="Top">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="3">
+                                    </UniformGrid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                            Foreground="{Binding corFonte}" Background="{Binding cor}" Click="Escolhe_Cat1" DataContext="{Binding}"
+                                            FontFamily="Segoe UI" FontSize="14" Visibility="{Binding ativo,Converter={StaticResource visibilityConverter}}"
+                                            Content="{Binding descricao}" Width="118" Height="30" CommandParameter="{Binding id}" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+
+                    <Grid HorizontalAlignment="Right">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="ubtCat1" Grid.Column="1" Style="{StaticResource UpButton}"
+                                      Click="ubtCat1_Click" VerticalAlignment="Top" Margin="2 7 3 0" />
+
+                        <RepeatButton x:Name="dbtCat1" Grid.Column="1" Style="{StaticResource DownButton}"
+                                      Click="dbtCat1_Click" VerticalAlignment="Bottom" Margin="2 0 3 0" />
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!-- Fim do quadro de Categoria -->
+            <!-- ======================================================= -->
+
+        
+        
+
+            <!-- ======================================================= -->
+            <!-- Quadro de Opção -->
+            <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" Margin="0 3 0 2"
+                    Style="{StaticResource BordaClara}">
+
+                <Grid>
+
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Margin="5 7 0 0">
+                        <StackPanel>
+                            <TextBlock>G</TextBlock>
+                            <TextBlock>U</TextBlock>
+                            <TextBlock>A</TextBlock>
+                            <TextBlock>R</TextBlock>
+                            <TextBlock>N</TextBlock>
+                            <TextBlock Margin="2 0 0 0">I</TextBlock>
+                            <TextBlock>Ç</TextBlock>
+                            <TextBlock>Ã</TextBlock>
+                            <TextBlock>O</TextBlock>
+
+                        </StackPanel>
+                    </Label>
+
+                    <ToggleButton Margin="5 3 50 0" x:Name="btAdd" VerticalAlignment="Top" HorizontalAlignment="Right"
+                                  Content="Adicional" Click="btAdd_Click" Opacity="0.8" Width="110" Height="23" />
+
+                    <ScrollViewer x:Name="VerticalScroller2" HorizontalScrollBarVisibility="Disabled"
+                                  VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Margin="22 30 40 10">
+
+                        <ItemsControl x:Name="grid2" VerticalAlignment="Top">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="3">
+                                    </UniformGrid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Margin="2 2 2 2" BorderBrush="{Binding cor}" Background="{Binding cor}"
+                                            Foreground="{Binding corFonte}" Click="Escolhe_Cat2" DataContext="{Binding}" FontFamily="Segoe UI" FontSize="14"
+                                            Visibility="{Binding ativo,Converter={StaticResource visibilityConverter}}" Content="{Binding descricao}" Width="118"
+                                            Height="30" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+
+                    <Grid HorizontalAlignment="Right">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="ubtCat2" Grid.Column="1" Style="{StaticResource UpButton}"
+                                      Click="ubtCat2_Click" VerticalAlignment="Top" Margin="2 7 3 0" />
+
+                        <RepeatButton x:Name="dbtCat2" Grid.Column="1" Style="{StaticResource DownButton}"
+                                      Click="dbtCat2_Click" VerticalAlignment="Bottom" Margin="2 0 3 7" />
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!-- Fim do quadro de Opção -->
+            <!-- ======================================================= -->
+
+
+
+            <!-- ======================================================= -->
+            <!-- Quadro de Observações -->
+            <Border Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" Margin="0 3 0 2"
+                    Style="{StaticResource BordaClara}">
+
+                <Grid>
+
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="9" Margin="5 0 0 0">
+                        <StackPanel>
+                            <TextBlock>O</TextBlock>
+                            <TextBlock>B</TextBlock>
+                            <TextBlock>S</TextBlock>
+                            <TextBlock>E</TextBlock>
+                            <TextBlock>R</TextBlock>
+                            <TextBlock>V</TextBlock>
+                            <TextBlock>A</TextBlock>
+                            <TextBlock>Ç</TextBlock>
+                            <TextBlock>Õ</TextBlock>
+                            <TextBlock>E</TextBlock>
+                            <TextBlock>S</TextBlock>
+                        </StackPanel>
+                    </Label>
+                    <TextBox x:Name="txt_obs" TextWrapping="Wrap" AcceptsReturn="True"
+                             VerticalScrollBarVisibility="Auto" Width="342" IsEnabled="True" HorizontalAlignment="Left" Margin="28,115,0,5"
+                             Background="White" Opacity="1" PreviewMouseDown="txt_OBS_PreviewMouseDown"
+                             k:TouchScreenKeyboard.TouchScreenKeyboard="true" />
+
+                    <ScrollViewer x:Name="VerticalScroller3" HorizontalScrollBarVisibility="Disabled"
+                                  VerticalScrollBarVisibility="Hidden" CanContentScroll="True" Margin="20 3 40 35">
+
+                        <ItemsControl x:Name="grid3">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="3">
+                                    </UniformGrid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <ToggleButton Margin="3 4 5 4" x:Name="btObs" CommandParameter="{Binding idObs}"
+                                                  Content="{Binding descricao}" DataContext="{Binding}" Click="btObs_Click" Width="110" Height="30" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+
+                    <Grid HorizontalAlignment="Right">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="ubtObs" Grid.Column="1" Click="ubtObs_Click"
+                                      Style="{StaticResource UpButton}" VerticalAlignment="Top" Margin="2 7 3 0" />
+
+                        <RepeatButton x:Name="dbtObs" Grid.Column="1" Click="dbtObs_Click"
+                                      Style="{StaticResource DownButton}" VerticalAlignment="Bottom" Margin="2 0 3 7" />
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!-- Fim do quadro de Observações -->
+            <!-- ======================================================= -->
+
+
+
+
+            <!-- ======================================================= -->
+            <!-- Quadro de Cozinha -->
+            <Border Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="10 2 0 2"
+                    Style="{StaticResource BordaClara}">
+
+                <Grid>
+
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Margin="28 0 0 0">
+                        <StackPanel>
+                            <TextBlock>C</TextBlock>
+                            <TextBlock>O</TextBlock>
+                            <TextBlock>M</TextBlock>
+                            <TextBlock Margin="2.5 0 0 0">I</TextBlock>
+                            <TextBlock>D</TextBlock>
+                            <TextBlock>A</TextBlock>
+                        </StackPanel>
+                    </Label>
+
+                    <ScrollViewer x:Name="HorizontalScroller1" HorizontalScrollBarVisibility="Hidden"
+                                  VerticalScrollBarVisibility="Disabled" CanContentScroll="True" Margin="45 5 35 5">
+                        <ItemsControl x:Name="grid_cozinha">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="6">
+                                    </UniformGrid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                            Foreground="{Binding corFonte}" Background="{Binding cor}" Click="Escolhe_Grupo" FontFamily="Segoe UI" FontSize="14"
+                                            DataContext="{Binding}" Visibility="{Binding ativo,Converter={StaticResource visibilityConverter}}"
+                                            Content="{Binding descricao}" Width="120" Height="35" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+
+
+                    <Grid HorizontalAlignment="left">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="lbtGrupo1" Grid.Column="0" Style="{StaticResource LeftButton}"
+                                      Click="lbtGrupo1_Click" VerticalAlignment="Center" Margin="5 7 4 0" />
+
+                    </Grid>
+
+                    <Grid HorizontalAlignment="Right">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="rbtGrupo1" Grid.Column="1" Style="{StaticResource RightButton}"
+                                      Click="rbtGrupo1_Click" VerticalAlignment="Center" Margin="5 7 7 0" />
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!-- Fim do quadro de cozinha -->
+            <!-- ======================================================= -->
+            
+            
+            <!-- ======================================================= -->
+            <!-- Quadro de Bar -->
+            <Border Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Margin="10 2 0 2"
+                    Style="{StaticResource BordaClara}">
+
+                <Grid>
+
+                    <Label HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10" Margin="28 0 0 0">
+                        <StackPanel>
+                            <TextBlock>B</TextBlock>
+                            <TextBlock>E</TextBlock>
+                            <TextBlock>B</TextBlock>
+                            <TextBlock Margin="1.5 0 0 0">I</TextBlock>
+                            <TextBlock>D</TextBlock>
+                            <TextBlock>A</TextBlock>
+                        </StackPanel>
+                    </Label>
+
+                    <ScrollViewer x:Name="HorizontalScroller2" HorizontalScrollBarVisibility="Hidden"
+                                  VerticalScrollBarVisibility="Disabled" CanContentScroll="True" Margin="45 5 35 5">
+                        <ItemsControl x:Name="grid_bar">
+
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <UniformGrid Columns="6">
+                                    </UniformGrid>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                            Foreground="{Binding corFonte}" Background="{Binding cor}" CommandParameter="{Binding idItemCard}"
+                                            Click="Escolhe_Grupo" FontFamily="Segoe UI" FontSize="14" DataContext="{Binding}"
+                                            Visibility="{Binding ativo,Converter={StaticResource visibilityConverter}}" Content="{Binding descricao}" Width="120"
+                                            Height="35" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+                    </ScrollViewer>
+
+                    <Grid HorizontalAlignment="left">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="lbtGrupo2" Grid.Column="0" Style="{StaticResource LeftButton}"
+                                      Click="lbtGrupo2_Click" VerticalAlignment="Center" Margin="5 7 4 0" />
+
+                    </Grid>
+
+                    <Grid HorizontalAlignment="Right">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="#E8E8E8" BorderThickness="1" />
+
+                        <RepeatButton x:Name="rbtGrupo2" Grid.Column="1" Style="{StaticResource RightButton}"
+                                      Click="rbtGrupo2_Click" VerticalAlignment="Center" Margin="5 7 7 0" />
+
+
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!-- Fim do quadro de bar -->
+            <!-- ======================================================= -->
+
+        
+        
+        
+            <!-- ======================================================= -->
+            <!-- Quadro de Opções -->
+            <Border Style="{StaticResource BordaEscura}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Margin="0 2 0 2">
+
+                <StackPanel VerticalAlignment="Center">
+
+                    <Button x:Name="Finalizar" Click="Finalizar_Click" Margin="0 0 0 0" FontSize="23"
+                            Content="Concluir" Width="140" Height="35" />
+
+                    <Button x:Name="Exluir" Click="Exluir_Click" Margin="0 10 0 0" FontSize="23" Content="Excluir"
+                            Width="140" Height="35" />
+
+                    <Button x:Name="Quantidade" Click="Quantidade_Click" Margin="0 10 0 0" FontSize="23"
+                            Content="Quantidade" Width="140" Height="35" />
+
+                    <Button x:Name="btVoltar" Click="btVoltar_Click" Margin="0 10 0 0" FontSize="23" Content="Voltar"
+                            Width="140" Height="35" />
+
+                </StackPanel>
+
+            </Border>
+            <!-- Fim do quadro de opções -->
+            <!-- ======================================================= -->
+
+
+        
+        </Grid>
+
+    </StackPanel>
+</UserControl>

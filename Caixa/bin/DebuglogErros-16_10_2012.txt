@@ -1,0 +1,166 @@
+--------------------------------- 16/10/2012 10:26:57--------------------------------- 
+System.InvalidOperationException: The property 'idPerfil' is part of the object's key information and cannot be modified. 
+   at System.Data.Objects.EntityEntry.VerifyEntityValueIsEditable(StateManagerTypeMetadata typeMetadata, Int32 ordinal, String memberName)
+   at System.Data.Objects.EntityEntry.GetAndValidateChangeMemberInfo(String entityMemberName, Object complexObject, String complexObjectMemberName, StateManagerTypeMetadata& typeMetadata, String& changingMemberName, Object& changingObject)
+   at System.Data.Objects.EntityEntry.EntityMemberChanging(String entityMemberName, Object complexObject, String complexObjectMemberName)
+   at System.Data.Objects.EntityEntry.EntityMemberChanging(String entityMemberName)
+   at System.Data.Objects.ObjectStateEntry.System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanging(String entityMemberName)
+   at System.Data.Objects.DataClasses.EntityObject.ReportPropertyChanging(String property)
+   at Artebit.Restaurante.Global.Modelo.GPERFIL.set_idPerfil(Int32 value) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\Model1.cs:line 44605
+   at Artebit.Restaurante.Caixa.Inicial.InicializarObjetos() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Inicial.xaml.cs:line 65
+   at Artebit.Restaurante.Caixa.Inicial.Carregar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Inicial.xaml.cs:line 32
+   at Artebit.Restaurante.Caixa.Classes.ControlePagina.NavigateTo(Object target) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Classes\ControlePagina.cs:line 18
+   at Artebit.Restaurante.Caixa.Login.login() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Login.xaml.cs:line 86
+   at Artebit.Restaurante.Caixa.Login.txtbox_Senha_KeyDown(Object sender, KeyEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Login.xaml.cs:line 105
+   at System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   at System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   at System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 16/10/2012 10:26:57--------------------------------- 
+System.InvalidOperationException: The property 'idPerfil' is part of the object's key information and cannot be modified. 
+   at System.Data.Objects.EntityEntry.VerifyEntityValueIsEditable(StateManagerTypeMetadata typeMetadata, Int32 ordinal, String memberName)
+   at System.Data.Objects.EntityEntry.GetAndValidateChangeMemberInfo(String entityMemberName, Object complexObject, String complexObjectMemberName, StateManagerTypeMetadata& typeMetadata, String& changingMemberName, Object& changingObject)
+   at System.Data.Objects.EntityEntry.EntityMemberChanging(String entityMemberName, Object complexObject, String complexObjectMemberName)
+   at System.Data.Objects.EntityEntry.EntityMemberChanging(String entityMemberName)
+   at System.Data.Objects.ObjectStateEntry.System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanging(String entityMemberName)
+   at System.Data.Objects.DataClasses.EntityObject.ReportPropertyChanging(String property)
+   at Artebit.Restaurante.Global.Modelo.GPERFIL.set_idPerfil(Int32 value) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\Model1.cs:line 44605
+   at Artebit.Restaurante.Caixa.Inicial.InicializarObjetos() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Inicial.xaml.cs:line 65
+   at Artebit.Restaurante.Caixa.Inicial.Carregar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Inicial.xaml.cs:line 32
+   at Artebit.Restaurante.Caixa.Classes.ControlePagina.NavigateTo(Object target) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Classes\ControlePagina.cs:line 18
+   at Artebit.Restaurante.Caixa.Login.login() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Login.xaml.cs:line 86
+   at Artebit.Restaurante.Caixa.Login.txtbox_Senha_KeyDown(Object sender, KeyEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Login.xaml.cs:line 105
+   at System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   at System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   at System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 16/10/2012 13:19:19--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Windows.Markup.XamlParseException: A 'Binding' cannot be set on the 'SourceField' property of type 'SumFunction'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at Artebit.Restaurante.Caixa.Caixas.Janelas.FecharPeriodo.InitializeComponent() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Janelas\FecharPeriodo.xaml:line 1
+   at Artebit.Restaurante.Caixa.Caixas.Janelas.FecharPeriodo..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Janelas\FecharPeriodo.xaml.cs:line 31
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1285
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 16/10/2012 13:19:19--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Windows.Markup.XamlParseException: A 'Binding' cannot be set on the 'SourceField' property of type 'SumFunction'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at Artebit.Restaurante.Caixa.Caixas.Janelas.FecharPeriodo.InitializeComponent() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Janelas\FecharPeriodo.xaml:line 1
+   at Artebit.Restaurante.Caixa.Caixas.Janelas.FecharPeriodo..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Janelas\FecharPeriodo.xaml.cs:line 31
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1285
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+

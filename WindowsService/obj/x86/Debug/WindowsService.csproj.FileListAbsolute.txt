@@ -1,0 +1,16 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\WindowsService.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\ArtebitGourmetWS.ProjectInstaller.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\Artebit.Restaurante.ArtebitGourmetWS.Service1.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\WindowsService.csproj.GenerateResource.Cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\ArtebitGourmetWS.exe.config
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\ArtebitGourmetWS.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\ArtebitGourmetWS.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Debug\AcessoDados.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\ArtebitGourmetWS.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Debug\ArtebitGourmetWS.pdb

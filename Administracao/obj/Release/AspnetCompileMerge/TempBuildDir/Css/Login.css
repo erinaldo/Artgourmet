@@ -1,0 +1,135 @@
+﻿body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI,Verdana, Arial, sans-serif;  
+}
+
+#tracoLogin
+{
+    height: 10px;
+    background: #AC2622;
+    margin: 0;
+    width: 79px;
+    padding:0;
+}
+
+.labelErro
+{
+    color: Red;
+    font-size: 14px;
+}
+.panelErro
+{
+    margin-top: 234px;
+    text-align: center;
+}
+
+/* --------------------- */
+
+#fundo2 {
+   
+    height: 158px;
+    left: 50%;
+    margin-left: -682px;
+    margin-top: -228px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#divLogo {
+    position: relative;
+    background: url("../Img/logoGourmet2.png") no-repeat;
+    height: 298px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 7%;
+    width: 369px; 
+}
+
+#divLogin
+{
+    position: relative;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 7%;
+    width: 350px;
+    height: 209px;
+    text-align: center;
+
+   /*
+    background: white;
+    
+    Arredondar bordas
+ 
+    -moz-border-radius: 10px; - Para Firefox 
+    -webkit-border-radius: 10px; - Para Safari e Chrome 
+    border-radius: 10px; - Para Opera 10.5+
+    
+    Efeito de transparência
+ 
+    opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);  
+    */
+	  
+}
+
+.labelLogin
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.panelLogin
+{
+    position: relative;
+    height:90px;
+    padding: 15px;
+    width:300px;
+    top: 10px;
+    left: 25px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    z-index: 1; /* Necessário para o IE */
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+   
+}
+
+#imagemSistema {
+    background: url("../Img/imagemSistema.png") no-repeat;
+    height: 62px;
+    left: 76.7%;
+    position: absolute;
+    top: 80%;
+    width: 319px;
+}
+
+.labelSistema
+{
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    left: 3%;
+    position: absolute;
+    top: 62%;
+}
+
+#divFundo
+{
+    background: url("../Img/fundo4.jpg") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;  
+}   

@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Artebit.Restaurante.AtendimentoProducao.MenuProducao"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="598" d:DesignWidth="500">
+    
+    <Grid Width="500">
+        
+        <Button x:Name="btnBar" 
+                Margin="48,-200,310,68" 
+                Width="138" 
+                Height="138" 
+                CommandParameter="Bar"
+                Background="{x:Null}" BorderBrush="{x:Null}"
+                Command="GoToPage">
+            <Grid>
+                
+                <Image HorizontalAlignment="Center" Name="image1" Stretch="Fill" VerticalAlignment="Center" Source="/AtendimentoProducao;component/Img/MenuBar.png" Width="138" Height="138" Margin="-1" />
+               
+            </Grid>
+        </Button>
+
+        <Button x:Name="btnCozinha" 
+                Margin="313,-200,46,74" 
+                Width="138" 
+                Height="138" 
+                CommandParameter="Cozinha"
+                Command="GoToPage"
+                Background="{x:Null}" BorderBrush="{x:Null}">
+            <Grid>
+                <Image Height="138" HorizontalAlignment="Center"  Name="image2" Stretch="Fill" VerticalAlignment="Center" Width="138" Source="/AtendimentoProducao;component/Img/MenuCozinha.png" Margin="-2,2,0,-4" />
+            </Grid>
+        </Button>
+
+        <Label Content="BAR" Height="28" HorizontalAlignment="Center" Margin="97,-50,359,37" Name="label1" VerticalAlignment="Center" FontWeight="Bold" FontSize="16" FontFamily="Arial" Width="44" Foreground="White" />
+        <Label Content="COZINHA" Height="28" HorizontalAlignment="Center" Margin="343,-50,74,37" Name="label2" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="White" />
+        
+    </Grid>
+    
+</UserControl>

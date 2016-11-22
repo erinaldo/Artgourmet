@@ -1,0 +1,40 @@
+--------------------------------- 29/08/2012 18:50:44--------------------------------- 
+System.ArgumentNullException: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at ACBr.Net.ACBrComponent.ToUTF8(String value)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 66
+------------------------------------------------------
+
+
+--------------------------------- 29/08/2012 18:54:16--------------------------------- 
+System.ArgumentNullException: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at ACBr.Net.ACBrComponent.ToUTF8(String value)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 66
+------------------------------------------------------
+
+
+--------------------------------- 29/08/2012 19:00:18--------------------------------- 
+System.ArgumentNullException: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at ACBr.Net.ACBrComponent.ToUTF8(String value)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 66
+------------------------------------------------------
+
+
+--------------------------------- 29/08/2012 19:01:18--------------------------------- 
+System.ArgumentNullException: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at ACBr.Net.ACBrComponent.ToUTF8(String value)
+   at ACBr.Net.ACBrECF.AbreCupom(String cpfCnpj, String nome, String endereco)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 66
+------------------------------------------------------
+
+

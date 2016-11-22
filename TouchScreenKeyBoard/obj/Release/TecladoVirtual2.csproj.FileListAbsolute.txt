@@ -1,0 +1,17 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\bin\Release\ArtebitGourmet.TecladoVirtual2.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\bin\Release\ArtebitGourmet.TecladoVirtual2.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\Window1.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\App.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\Login\LoginView.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\Window1.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\App.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2_MarkupCompile.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2_MarkupCompile.lref
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\Login\LoginView.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\Themes\Generic.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2.g.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2.Properties.Resources.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\TecladoVirtual2.csproj.GenerateResource.Cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\TouchScreenKeyBoard\obj\Release\ArtebitGourmet.TecladoVirtual2.pdb

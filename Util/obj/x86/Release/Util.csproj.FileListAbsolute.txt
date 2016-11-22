@@ -1,0 +1,9 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\Util.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\RegrasNegocio.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\bin\x86\Release\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\obj\x86\Release\Util.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Util\obj\x86\Release\Util.dll

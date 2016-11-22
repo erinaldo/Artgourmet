@@ -1,0 +1,1472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RestauranteBDStoreContainer" CdmEntityContainer="Restaurante">
+    <FunctionImportMapping FunctionImportName="SP_RESERVAID" FunctionName="RestauranteBD.Store.SP_RESERVAID" />
+    <FunctionImportMapping FunctionImportName="SP_BUSCARECURSOS" FunctionName="RestauranteBD.Store.SP_BUSCARECURSOS" />
+    <EntitySetMapping Name="AASSOCIACAO">
+      <EntityTypeMapping TypeName="RestauranteBD.AASSOCIACAO">
+        <MappingFragment StoreEntitySet="AASSOCIACAO">
+          <ScalarProperty Name="nuCartao" ColumnName="nuCartao" />
+          <ScalarProperty Name="idCliFor" ColumnName="idCliFor" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="nuAssociacao" ColumnName="nuAssociacao" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACAIXA">
+      <EntityTypeMapping TypeName="RestauranteBD.ACAIXA">
+        <MappingFragment StoreEntitySet="ACAIXA">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idCaixa" ColumnName="idCaixa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACLIFORFIDELIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.ACLIFORFIDELIDADE">
+        <MappingFragment StoreEntitySet="ACLIFORFIDELIDADE">
+          <ScalarProperty Name="idCLifor" ColumnName="idCLifor" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idFidelidade" ColumnName="idFidelidade" />
+          <ScalarProperty Name="idClienteFidelidade" ColumnName="idClienteFidelidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACUPOMECF">
+      <EntityTypeMapping TypeName="RestauranteBD.ACUPOMECF">
+        <MappingFragment StoreEntitySet="ACUPOMECF">
+          <ScalarProperty Name="icms" ColumnName="icms" />
+          <ScalarProperty Name="servico" ColumnName="servico" />
+          <ScalarProperty Name="GNF" ColumnName="GNF" />
+          <ScalarProperty Name="CDC" ColumnName="CDC" />
+          <ScalarProperty Name="CRG" ColumnName="CRG" />
+          <ScalarProperty Name="CRZ" ColumnName="CRZ" />
+          <ScalarProperty Name="CRO" ColumnName="CRO" />
+          <ScalarProperty Name="CCF" ColumnName="CCF" />
+          <ScalarProperty Name="dataCancelado" ColumnName="dataCancelado" />
+          <ScalarProperty Name="cancelado" ColumnName="cancelado" />
+          <ScalarProperty Name="dataEstorno" ColumnName="dataEstorno" />
+          <ScalarProperty Name="estorno" ColumnName="estorno" />
+          <ScalarProperty Name="totalizdNaoFiscal" ColumnName="totalizdNaoFiscal" />
+          <ScalarProperty Name="troco" ColumnName="troco" />
+          <ScalarProperty Name="valorRecebido" ColumnName="valorRecebido" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="adiantamento" ColumnName="adiantamento" />
+          <ScalarProperty Name="acrescimo" ColumnName="acrescimo" />
+          <ScalarProperty Name="desconto" ColumnName="desconto" />
+          <ScalarProperty Name="subTotal" ColumnName="subTotal" />
+          <ScalarProperty Name="COOVinculo" ColumnName="COOVinculo" />
+          <ScalarProperty Name="COONR" ColumnName="COONR" />
+          <ScalarProperty Name="dataEmitido" ColumnName="dataEmitido" />
+          <ScalarProperty Name="vinculado" ColumnName="vinculado" />
+          <ScalarProperty Name="fiscal" ColumnName="fiscal" />
+          <ScalarProperty Name="tipoCupom" ColumnName="tipoCupom" />
+          <ScalarProperty Name="CPF_CNPJ" ColumnName="CPF_CNPJ" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idECF" ColumnName="idECF" />
+          <ScalarProperty Name="idOpCaixa" ColumnName="idOpCaixa" />
+          <ScalarProperty Name="idCupomECF" ColumnName="idCupomECF" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AECF">
+      <EntityTypeMapping TypeName="RestauranteBD.AECF">
+        <MappingFragment StoreEntitySet="AECF">
+          <ScalarProperty Name="versaoImpressora" ColumnName="versaoImpressora" />
+          <ScalarProperty Name="tipoECF" ColumnName="tipoECF" />
+          <ScalarProperty Name="numeroSerie" ColumnName="numeroSerie" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="dataRegistro" ColumnName="dataRegistro" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="numeroDesignado" ColumnName="numeroDesignado" />
+          <ScalarProperty Name="operacional" ColumnName="operacional" />
+          <ScalarProperty Name="idECF" ColumnName="idECF" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AFECHAMENTO">
+      <EntityTypeMapping TypeName="RestauranteBD.AFECHAMENTO">
+        <MappingFragment StoreEntitySet="AFECHAMENTO">
+          <ScalarProperty Name="valorFisico" ColumnName="valorFisico" />
+          <ScalarProperty Name="valorSistema" ColumnName="valorSistema" />
+          <ScalarProperty Name="idTipoRecebimento" ColumnName="idTipoRecebimento" />
+          <ScalarProperty Name="idPeriodoFiscal" ColumnName="idPeriodoFiscal" />
+          <ScalarProperty Name="idFechamento" ColumnName="idFechamento" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AFIDELIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.AFIDELIDADE">
+        <MappingFragment StoreEntitySet="AFIDELIDADE">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="diaTodo" ColumnName="diaTodo" />
+          <ScalarProperty Name="horarioFinal" ColumnName="horarioFinal" />
+          <ScalarProperty Name="horarioInicial" ColumnName="horarioInicial" />
+          <ScalarProperty Name="usrAlteracao" ColumnName="usrAlteracao" />
+          <ScalarProperty Name="usrCriacao" ColumnName="usrCriacao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="valorPorReal" ColumnName="valorPorReal" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="moeda" ColumnName="moeda" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idFidelidade" ColumnName="idFidelidade" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AFORMAPGTO">
+      <EntityTypeMapping TypeName="RestauranteBD.AFORMAPGTO">
+        <MappingFragment StoreEntitySet="AFORMAPGTO">
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idFormaPGTO" ColumnName="idFormaPGTO" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AHISTTRANS">
+      <EntityTypeMapping TypeName="RestauranteBD.AHISTTRANS">
+        <MappingFragment StoreEntitySet="AHISTTRANS">
+          <ScalarProperty Name="codvendedor" ColumnName="codvendedor" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="contaDestino" ColumnName="contaDestino" />
+          <ScalarProperty Name="contaOrigem" ColumnName="contaOrigem" />
+          <ScalarProperty Name="mesaDestino" ColumnName="mesaDestino" />
+          <ScalarProperty Name="mesaOrigem" ColumnName="mesaOrigem" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idHistorico" ColumnName="idHistorico" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AIMPRESSMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.AIMPRESSMESA">
+        <MappingFragment StoreEntitySet="AIMPRESSMESA">
+          <ScalarProperty Name="idImpressora" ColumnName="idImpressora" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AIMPRESSORA">
+      <EntityTypeMapping TypeName="RestauranteBD.AIMPRESSORA">
+        <MappingFragment StoreEntitySet="AIMPRESSORA">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="imprimeProdutos" ColumnName="imprimeProdutos" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="ligadoa" ColumnName="ligadoa" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idImpressora" ColumnName="idImpressora" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AIMPRESSORAPRD">
+      <EntityTypeMapping TypeName="RestauranteBD.AIMPRESSORAPRD">
+        <MappingFragment StoreEntitySet="AIMPRESSORAPRD">
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idImpressora" ColumnName="idImpressora" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AITEMCUPOM">
+      <EntityTypeMapping TypeName="RestauranteBD.AITEMCUPOM">
+        <MappingFragment StoreEntitySet="AITEMCUPOM">
+          <ScalarProperty Name="dataEstorno" ColumnName="dataEstorno" />
+          <ScalarProperty Name="estorno" ColumnName="estorno" />
+          <ScalarProperty Name="aliquotaDesc" ColumnName="aliquotaDesc" />
+          <ScalarProperty Name="cancelado" ColumnName="cancelado" />
+          <ScalarProperty Name="aliquotaPerc" ColumnName="aliquotaPerc" />
+          <ScalarProperty Name="tipoTributo" ColumnName="tipoTributo" />
+          <ScalarProperty Name="sitTributaria" ColumnName="sitTributaria" />
+          <ScalarProperty Name="subTotal" ColumnName="subTotal" />
+          <ScalarProperty Name="acrescimo" ColumnName="acrescimo" />
+          <ScalarProperty Name="desconto" ColumnName="desconto" />
+          <ScalarProperty Name="unidade" ColumnName="unidade" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="precoUnit" ColumnName="precoUnit" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codigoItem" ColumnName="codigoItem" />
+          <ScalarProperty Name="idAliquota" ColumnName="idAliquota" />
+          <ScalarProperty Name="idCupomECF" ColumnName="idCupomECF" />
+          <ScalarProperty Name="idItem" ColumnName="idItem" />
+          <ScalarProperty Name="idOpCaixa" ColumnName="idOpCaixa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ALOG">
+      <EntityTypeMapping TypeName="RestauranteBD.ALOG">
+        <MappingFragment StoreEntitySet="ALOG">
+          <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+          <ScalarProperty Name="acao" ColumnName="acao" />
+          <ScalarProperty Name="contaDestino" ColumnName="contaDestino" />
+          <ScalarProperty Name="mesaDestino" ColumnName="mesaDestino" />
+          <ScalarProperty Name="conta" ColumnName="conta" />
+          <ScalarProperty Name="mesa" ColumnName="mesa" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="idLog" ColumnName="idLog" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMONITOR">
+      <EntityTypeMapping TypeName="RestauranteBD.AMONITOR">
+        <MappingFragment StoreEntitySet="AMONITOR">
+          <ScalarProperty Name="listaDetalhes" ColumnName="listaDetalhes" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idMonitor" ColumnName="idMonitor" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMONMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.AMONMESA">
+        <MappingFragment StoreEntitySet="AMONMESA">
+          <ScalarProperty Name="idMonitor" ColumnName="idMonitor" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AMONPRD">
+      <EntityTypeMapping TypeName="RestauranteBD.AMONPRD">
+        <MappingFragment StoreEntitySet="AMONPRD">
+          <ScalarProperty Name="idMonitor" ColumnName="idMonitor" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AOPCAIXA">
+      <EntityTypeMapping TypeName="RestauranteBD.AOPCAIXA">
+        <MappingFragment StoreEntitySet="AOPCAIXA">
+          <ScalarProperty Name="codErroECF" ColumnName="codErroECF" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="idECF" ColumnName="idECF" />
+          <ScalarProperty Name="idCaixa" ColumnName="idCaixa" />
+          <ScalarProperty Name="idOpCaixa" ColumnName="idOpCaixa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APERIODOFISCAL">
+      <EntityTypeMapping TypeName="RestauranteBD.APERIODOFISCAL">
+        <MappingFragment StoreEntitySet="APERIODOFISCAL">
+          <ScalarProperty Name="usuarioFechamento" ColumnName="usuarioFechamento" />
+          <ScalarProperty Name="usuarioAbertura" ColumnName="usuarioAbertura" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dataFim" ColumnName="dataFim" />
+          <ScalarProperty Name="dataInicio" ColumnName="dataInicio" />
+          <ScalarProperty Name="idPeriodo" ColumnName="idPeriodo" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APRDFIDELIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.APRDFIDELIDADE">
+        <MappingFragment StoreEntitySet="APRDFIDELIDADE">
+          <ScalarProperty Name="valorMoeda" ColumnName="valorMoeda" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idFidelidade" ColumnName="idFidelidade" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ARECEBIMENTO">
+      <EntityTypeMapping TypeName="RestauranteBD.ARECEBIMENTO">
+        <MappingFragment StoreEntitySet="ARECEBIMENTO">
+          <ScalarProperty Name="idCupomECF" ColumnName="idCupomECF" />
+          <ScalarProperty Name="valorRecebido" ColumnName="valorRecebido" />
+          <ScalarProperty Name="idFormaPGTO" ColumnName="idFormaPGTO" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idRecebimento" ColumnName="idRecebimento" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ARECFIDELIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.ARECFIDELIDADE">
+        <MappingFragment StoreEntitySet="ARECFIDELIDADE">
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="cpf" ColumnName="cpf" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idFidelidade" ColumnName="idFidelidade" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AREDUCAOALIQ">
+      <EntityTypeMapping TypeName="RestauranteBD.AREDUCAOALIQ">
+        <MappingFragment StoreEntitySet="AREDUCAOALIQ">
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="idReducao" ColumnName="idReducao" />
+          <ScalarProperty Name="idAliquota" ColumnName="idAliquota" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AREDUCOES">
+      <EntityTypeMapping TypeName="RestauranteBD.AREDUCOES">
+        <MappingFragment StoreEntitySet="AREDUCOES">
+          <ScalarProperty Name="isencao" ColumnName="isencao" />
+          <ScalarProperty Name="naoTrib" ColumnName="naoTrib" />
+          <ScalarProperty Name="substrib" ColumnName="substrib" />
+          <ScalarProperty Name="suprimento" ColumnName="suprimento" />
+          <ScalarProperty Name="sangria" ColumnName="sangria" />
+          <ScalarProperty Name="grandeTotal" ColumnName="grandeTotal" />
+          <ScalarProperty Name="totalNaoFiscal" ColumnName="totalNaoFiscal" />
+          <ScalarProperty Name="totalAcrescimos" ColumnName="totalAcrescimos" />
+          <ScalarProperty Name="totalCancelamentos" ColumnName="totalCancelamentos" />
+          <ScalarProperty Name="totalDescontos" ColumnName="totalDescontos" />
+          <ScalarProperty Name="totalVendaBruta" ColumnName="totalVendaBruta" />
+          <ScalarProperty Name="CRO" ColumnName="CRO" />
+          <ScalarProperty Name="CRZ" ColumnName="CRZ" />
+          <ScalarProperty Name="COOFinal" ColumnName="COOFinal" />
+          <ScalarProperty Name="COOInicial" ColumnName="COOInicial" />
+          <ScalarProperty Name="dataEmissao" ColumnName="dataEmissao" />
+          <ScalarProperty Name="dataMovimento" ColumnName="dataMovimento" />
+          <ScalarProperty Name="idECF" ColumnName="idECF" />
+          <ScalarProperty Name="idReducao" ColumnName="idReducao" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ARETCAIXA">
+      <EntityTypeMapping TypeName="RestauranteBD.ARETCAIXA">
+        <MappingFragment StoreEntitySet="ARETCAIXA">
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="dataRetirada" ColumnName="dataRetirada" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="idTpPgto" ColumnName="idTpPgto" />
+          <ScalarProperty Name="idCaixa" ColumnName="idCaixa" />
+          <ScalarProperty Name="idOpCaixa" ColumnName="idOpCaixa" />
+          <ScalarProperty Name="idRetCaixa" ColumnName="idRetCaixa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASTATCONTA">
+      <EntityTypeMapping TypeName="RestauranteBD.ASTATCONTA">
+        <MappingFragment StoreEntitySet="ASTATCONTA">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASTATCONTITEM">
+      <EntityTypeMapping TypeName="RestauranteBD.ASTATCONTITEM">
+        <MappingFragment StoreEntitySet="ASTATCONTITEM">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATIPOCONTA">
+      <EntityTypeMapping TypeName="RestauranteBD.ATIPOCONTA">
+        <MappingFragment StoreEntitySet="ATIPOCONTA">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATIPOCUPOM">
+      <EntityTypeMapping TypeName="RestauranteBD.ATIPOCUPOM">
+        <MappingFragment StoreEntitySet="ATIPOCUPOM">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipoCupom" ColumnName="tipoCupom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATIPOFIDELIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.ATIPOFIDELIDADE">
+        <MappingFragment StoreEntitySet="ATIPOFIDELIDADE">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATIPOIMPOSTO">
+      <EntityTypeMapping TypeName="RestauranteBD.ATIPOIMPOSTO">
+        <MappingFragment StoreEntitySet="ATIPOIMPOSTO">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipoImposto" ColumnName="tipoImposto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATIPOPGTO">
+      <EntityTypeMapping TypeName="RestauranteBD.ATIPOPGTO">
+        <MappingFragment StoreEntitySet="ATIPOPGTO">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATRANSTEF">
+      <EntityTypeMapping TypeName="RestauranteBD.ATRANSTEF">
+        <MappingFragment StoreEntitySet="ATRANSTEF">
+          <ScalarProperty Name="conteudoTEF" ColumnName="conteudoTEF" />
+          <ScalarProperty Name="idOpCaixa" ColumnName="idOpCaixa" />
+          <ScalarProperty Name="idCupomECF" ColumnName="idCupomECF" />
+          <ScalarProperty Name="idTransTEF" ColumnName="idTransTEF" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CCONDPAGTO">
+      <EntityTypeMapping TypeName="RestauranteBD.CCONDPAGTO">
+        <MappingFragment StoreEntitySet="CCONDPAGTO">
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idCondPagto" ColumnName="idCondPagto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CITEMMOV">
+      <EntityTypeMapping TypeName="RestauranteBD.CITEMMOV">
+        <MappingFragment StoreEntitySet="CITEMMOV">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="valorTotal" ColumnName="valorTotal" />
+          <ScalarProperty Name="valorDesconto" ColumnName="valorDesconto" />
+          <ScalarProperty Name="dataEntrega" ColumnName="dataEntrega" />
+          <ScalarProperty Name="quantidadeReceber" ColumnName="quantidadeReceber" />
+          <ScalarProperty Name="codUnd" ColumnName="codUnd" />
+          <ScalarProperty Name="precoUnitario" ColumnName="precoUnitario" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="sequencialMov" ColumnName="sequencialMov" />
+          <ScalarProperty Name="idMov" ColumnName="idMov" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idClifor" ColumnName="idClifor" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CITEMMOVRELAC">
+      <EntityTypeMapping TypeName="RestauranteBD.CITEMMOVRELAC">
+        <MappingFragment StoreEntitySet="CITEMMOVRELAC">
+          <ScalarProperty Name="seqItemDes" ColumnName="seqItemDes" />
+          <ScalarProperty Name="idFilialDes" ColumnName="idFilialDes" />
+          <ScalarProperty Name="idMovDes" ColumnName="idMovDes" />
+          <ScalarProperty Name="idEmpresaDes" ColumnName="idEmpresaDes" />
+          <ScalarProperty Name="seqItemOri" ColumnName="seqItemOri" />
+          <ScalarProperty Name="idFilialOri" ColumnName="idFilialOri" />
+          <ScalarProperty Name="idMovOri" ColumnName="idMovOri" />
+          <ScalarProperty Name="idEmpresaOri" ColumnName="idEmpresaOri" />
+          <ScalarProperty Name="idItemMovRelac" ColumnName="idItemMovRelac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMOVIMENTO">
+      <EntityTypeMapping TypeName="RestauranteBD.CMOVIMENTO">
+        <MappingFragment StoreEntitySet="CMOVIMENTO">
+          <ScalarProperty Name="numMov" ColumnName="numMov" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="dataentrega" ColumnName="dataentrega" />
+          <ScalarProperty Name="codTipoMov" ColumnName="codTipoMov" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="valorDesconto" ColumnName="valorDesconto" />
+          <ScalarProperty Name="percDesconto" ColumnName="percDesconto" />
+          <ScalarProperty Name="valorFrete" ColumnName="valorFrete" />
+          <ScalarProperty Name="percFrete" ColumnName="percFrete" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="valorTotal" ColumnName="valorTotal" />
+          <ScalarProperty Name="idCondPgto" ColumnName="idCondPgto" />
+          <ScalarProperty Name="dataEmissao" ColumnName="dataEmissao" />
+          <ScalarProperty Name="codStatus" ColumnName="codStatus" />
+          <ScalarProperty Name="idFilialLoc" ColumnName="idFilialLoc" />
+          <ScalarProperty Name="idLoc" ColumnName="idLoc" />
+          <ScalarProperty Name="idClifor" ColumnName="idClifor" />
+          <ScalarProperty Name="idFilialCxa" ColumnName="idFilialCxa" />
+          <ScalarProperty Name="idCxa" ColumnName="idCxa" />
+          <ScalarProperty Name="idMov" ColumnName="idMov" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMOVRATCCU">
+      <EntityTypeMapping TypeName="RestauranteBD.CMOVRATCCU">
+        <MappingFragment StoreEntitySet="CMOVRATCCU">
+          <ScalarProperty Name="perc" ColumnName="perc" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idCentroCusto" ColumnName="idCentroCusto" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idMov" ColumnName="idMov" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMOVRELAC">
+      <EntityTypeMapping TypeName="RestauranteBD.CMOVRELAC">
+        <MappingFragment StoreEntitySet="CMOVRELAC">
+          <ScalarProperty Name="idFilialDes" ColumnName="idFilialDes" />
+          <ScalarProperty Name="idMovDes" ColumnName="idMovDes" />
+          <ScalarProperty Name="idEmpresaDes" ColumnName="idEmpresaDes" />
+          <ScalarProperty Name="idFilialOri" ColumnName="idFilialOri" />
+          <ScalarProperty Name="idMovOri" ColumnName="idMovOri" />
+          <ScalarProperty Name="idEmpresaOri" ColumnName="idEmpresaOri" />
+          <ScalarProperty Name="idMovRelac" ColumnName="idMovRelac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CNUMMOV">
+      <EntityTypeMapping TypeName="RestauranteBD.CNUMMOV">
+        <MappingFragment StoreEntitySet="CNUMMOV">
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="codTipoMov" ColumnName="codTipoMov" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPARCELA">
+      <EntityTypeMapping TypeName="RestauranteBD.CPARCELA">
+        <MappingFragment StoreEntitySet="CPARCELA">
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="intervalo" ColumnName="intervalo" />
+          <ScalarProperty Name="prazo" ColumnName="prazo" />
+          <ScalarProperty Name="numVezes" ColumnName="numVezes" />
+          <ScalarProperty Name="perc" ColumnName="perc" />
+          <ScalarProperty Name="idParcela" ColumnName="idParcela" />
+          <ScalarProperty Name="idCondPagto" ColumnName="idCondPagto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CSTATMOV">
+      <EntityTypeMapping TypeName="RestauranteBD.CSTATMOV">
+        <MappingFragment StoreEntitySet="CSTATMOV">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="CodStatus" ColumnName="CodStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTPMOV">
+      <EntityTypeMapping TypeName="RestauranteBD.CTPMOV">
+        <MappingFragment StoreEntitySet="CTPMOV">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codTipoMov" ColumnName="codTipoMov" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ECARDAPIO">
+      <EntityTypeMapping TypeName="RestauranteBD.ECARDAPIO">
+        <MappingFragment StoreEntitySet="ECARDAPIO">
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="diaTodo" ColumnName="diaTodo" />
+          <ScalarProperty Name="horFinal" ColumnName="horFinal" />
+          <ScalarProperty Name="horInicio" ColumnName="horInicio" />
+          <ScalarProperty Name="domingo" ColumnName="domingo" />
+          <ScalarProperty Name="sabado" ColumnName="sabado" />
+          <ScalarProperty Name="sexta" ColumnName="sexta" />
+          <ScalarProperty Name="quinta" ColumnName="quinta" />
+          <ScalarProperty Name="quarta" ColumnName="quarta" />
+          <ScalarProperty Name="terca" ColumnName="terca" />
+          <ScalarProperty Name="segunda" ColumnName="segunda" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idCardapio" ColumnName="idCardapio" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ECARDAPIOITEM">
+      <EntityTypeMapping TypeName="RestauranteBD.ECARDAPIOITEM">
+        <MappingFragment StoreEntitySet="ECARDAPIOITEM">
+          <ScalarProperty Name="localPreco" ColumnName="localPreco" />
+          <ScalarProperty Name="idPrdCat3" ColumnName="idPrdCat3" />
+          <ScalarProperty Name="idPrdCat2" ColumnName="idPrdCat2" />
+          <ScalarProperty Name="idPrdCat1" ColumnName="idPrdCat1" />
+          <ScalarProperty Name="grupo" ColumnName="grupo" />
+          <ScalarProperty Name="nuPreco" ColumnName="nuPreco" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="idCardapio" ColumnName="idCardapio" />
+          <ScalarProperty Name="idItemCard" ColumnName="idItemCard" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ECTESTOQUE">
+      <EntityTypeMapping TypeName="RestauranteBD.ECTESTOQUE">
+        <MappingFragment StoreEntitySet="ECTESTOQUE">
+          <ScalarProperty Name="idFilialLocDest" ColumnName="idFilialLocDest" />
+          <ScalarProperty Name="vlrInicial" ColumnName="vlrInicial" />
+          <ScalarProperty Name="vlrTotal" ColumnName="vlrTotal" />
+          <ScalarProperty Name="custoMedio" ColumnName="custoMedio" />
+          <ScalarProperty Name="qtdeAtual" ColumnName="qtdeAtual" />
+          <ScalarProperty Name="vlrUnitSaida" ColumnName="vlrUnitSaida" />
+          <ScalarProperty Name="qtdeSaida" ColumnName="qtdeSaida" />
+          <ScalarProperty Name="vlrUnitEntrada" ColumnName="vlrUnitEntrada" />
+          <ScalarProperty Name="qtdeEntrada" ColumnName="qtdeEntrada" />
+          <ScalarProperty Name="qtdeInicial" ColumnName="qtdeInicial" />
+          <ScalarProperty Name="undControle" ColumnName="undControle" />
+          <ScalarProperty Name="dataMovimento" ColumnName="dataMovimento" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="sequencialMov" ColumnName="sequencialMov" />
+          <ScalarProperty Name="idMov" ColumnName="idMov" />
+          <ScalarProperty Name="idLocDest" ColumnName="idLocDest" />
+          <ScalarProperty Name="idFilialLoc" ColumnName="idFilialLoc" />
+          <ScalarProperty Name="idLoc" ColumnName="idLoc" />
+          <ScalarProperty Name="idCtEstoque" ColumnName="idCtEstoque" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EGRUPO">
+      <EntityTypeMapping TypeName="RestauranteBD.EGRUPO">
+        <MappingFragment StoreEntitySet="EGRUPO">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="codReduzido" ColumnName="codReduzido" />
+          <ScalarProperty Name="codGrupo" ColumnName="codGrupo" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idGrupoPai" ColumnName="idGrupoPai" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EHISTPRECO">
+      <EntityTypeMapping TypeName="RestauranteBD.EHISTPRECO">
+        <MappingFragment StoreEntitySet="EHISTPRECO">
+          <ScalarProperty Name="valorNovo" ColumnName="valorNovo" />
+          <ScalarProperty Name="valorAntigo" ColumnName="valorAntigo" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="idTabPreco" ColumnName="idTabPreco" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ELOC">
+      <EntityTypeMapping TypeName="RestauranteBD.ELOC">
+        <MappingFragment StoreEntitySet="ELOC">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idLoc" ColumnName="idLoc" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ENUPRECO">
+      <EntityTypeMapping TypeName="RestauranteBD.ENUPRECO">
+        <MappingFragment StoreEntitySet="ENUPRECO">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="nuPreco" ColumnName="nuPreco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EOBSERVACAO">
+      <EntityTypeMapping TypeName="RestauranteBD.EOBSERVACAO">
+        <MappingFragment StoreEntitySet="EOBSERVACAO">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idObs" ColumnName="idObs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPRDLISTA">
+      <EntityTypeMapping TypeName="RestauranteBD.EPRDLISTA">
+        <MappingFragment StoreEntitySet="EPRDLISTA">
+          <ScalarProperty Name="Qtde" ColumnName="Qtde" />
+          <ScalarProperty Name="CodUnd" ColumnName="CodUnd" />
+          <ScalarProperty Name="IdInsumo" ColumnName="IdInsumo" />
+          <ScalarProperty Name="IdProduto" ColumnName="IdProduto" />
+          <ScalarProperty Name="NroItem" ColumnName="NroItem" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPRODADD">
+      <EntityTypeMapping TypeName="RestauranteBD.EPRODADD">
+        <MappingFragment StoreEntitySet="EPRODADD">
+          <ScalarProperty Name="nuPreco" ColumnName="nuPreco" />
+          <ScalarProperty Name="idPrdAdd" ColumnName="idPrdAdd" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EPRODOBSBAIXA">
+      <EntityTypeMapping TypeName="RestauranteBD.EPRODOBSBAIXA">
+        <MappingFragment StoreEntitySet="EPRODOBSBAIXA">
+          <ScalarProperty Name="TipoBaixa" ColumnName="TipoBaixa" />
+          <ScalarProperty Name="Und" ColumnName="Und" />
+          <ScalarProperty Name="Qtd" ColumnName="Qtd" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idObs" ColumnName="idObs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ERECURSO">
+      <EntityTypeMapping TypeName="RestauranteBD.ERECURSO">
+        <MappingFragment StoreEntitySet="ERECURSO">
+          <ScalarProperty Name="codUnd" ColumnName="codUnd" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="idProdFilho" ColumnName="idProdFilho" />
+          <ScalarProperty Name="idProdPai" ColumnName="idProdPai" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ETABPRECO">
+      <EntityTypeMapping TypeName="RestauranteBD.ETABPRECO">
+        <MappingFragment StoreEntitySet="ETABPRECO">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="preco3" ColumnName="preco3" />
+          <ScalarProperty Name="preco2" ColumnName="preco2" />
+          <ScalarProperty Name="preco1" ColumnName="preco1" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idTabPreco" ColumnName="idTabPreco" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ETIPOITEM">
+      <EntityTypeMapping TypeName="RestauranteBD.ETIPOITEM">
+        <MappingFragment StoreEntitySet="ETIPOITEM">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idTipoItem" ColumnName="idTipoItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ETPTRIBUT">
+      <EntityTypeMapping TypeName="RestauranteBD.ETPTRIBUT">
+        <MappingFragment StoreEntitySet="ETPTRIBUT">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codTribut" ColumnName="codTribut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUNIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.EUNIDADE">
+        <MappingFragment StoreEntitySet="EUNIDADE">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="fatorConversao" ColumnName="fatorConversao" />
+          <ScalarProperty Name="codUndBase" ColumnName="codUndBase" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codUnd" ColumnName="codUnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FCONTACAIXA">
+      <EntityTypeMapping TypeName="RestauranteBD.FCONTACAIXA">
+        <MappingFragment StoreEntitySet="FCONTACAIXA">
+          <ScalarProperty Name="idCxa" ColumnName="idCxa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GCENTROCUSTO">
+      <EntityTypeMapping TypeName="RestauranteBD.GCENTROCUSTO">
+        <MappingFragment StoreEntitySet="GCENTROCUSTO">
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="permLanca" ColumnName="permLanca" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="codReduzido" ColumnName="codReduzido" />
+          <ScalarProperty Name="codCentroCusto" ColumnName="codCentroCusto" />
+          <ScalarProperty Name="idCentroCusto" ColumnName="idCentroCusto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GCLIFOR">
+      <EntityTypeMapping TypeName="RestauranteBD.GCLIFOR">
+        <MappingFragment StoreEntitySet="GCLIFOR">
+          <ScalarProperty Name="insSuframa" ColumnName="insSuframa" />
+          <ScalarProperty Name="insMunicipal" ColumnName="insMunicipal" />
+          <ScalarProperty Name="cnae" ColumnName="cnae" />
+          <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
+          <ScalarProperty Name="usuarioAlteracao" ColumnName="usuarioAlteracao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="usuarioCriacao" ColumnName="usuarioCriacao" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="tipoPessoa" ColumnName="tipoPessoa" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="uf" ColumnName="uf" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="tpClifor" ColumnName="tpClifor" />
+          <ScalarProperty Name="insEstadual" ColumnName="insEstadual" />
+          <ScalarProperty Name="cpfcpnj" ColumnName="cpfcpnj" />
+          <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+          <ScalarProperty Name="idClifor" ColumnName="idClifor" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GCLIFORCONTATOS">
+      <EntityTypeMapping TypeName="RestauranteBD.GCLIFORCONTATOS">
+        <MappingFragment StoreEntitySet="GCLIFORCONTATOS">
+          <ScalarProperty Name="assistente" ColumnName="assistente" />
+          <ScalarProperty Name="chefe" ColumnName="chefe" />
+          <ScalarProperty Name="funcao" ColumnName="funcao" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="foneComercial" ColumnName="foneComercial" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="contato" ColumnName="contato" />
+          <ScalarProperty Name="nuRelacionamento" ColumnName="nuRelacionamento" />
+          <ScalarProperty Name="idClifor" ColumnName="idClifor" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GCLIFOREND">
+      <EntityTypeMapping TypeName="RestauranteBD.GCLIFOREND">
+        <MappingFragment StoreEntitySet="GCLIFOREND">
+          <ScalarProperty Name="ddd2" ColumnName="ddd2" />
+          <ScalarProperty Name="ddd1" ColumnName="ddd1" />
+          <ScalarProperty Name="tipoEndereco" ColumnName="tipoEndereco" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefone2" ColumnName="telefone2" />
+          <ScalarProperty Name="telefone1" ColumnName="telefone1" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="uf" ColumnName="uf" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="nuEndereco" ColumnName="nuEndereco" />
+          <ScalarProperty Name="idClifor" ColumnName="idClifor" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GDEPARTAMENTO">
+      <EntityTypeMapping TypeName="RestauranteBD.GDEPARTAMENTO">
+        <MappingFragment StoreEntitySet="GDEPARTAMENTO">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="ramalContato" ColumnName="ramalContato" />
+          <ScalarProperty Name="telContato" ColumnName="telContato" />
+          <ScalarProperty Name="endContato" ColumnName="endContato" />
+          <ScalarProperty Name="contato" ColumnName="contato" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codDepto" ColumnName="codDepto" />
+          <ScalarProperty Name="idDepto" ColumnName="idDepto" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GEMPRESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GEMPRESA">
+        <MappingFragment StoreEntitySet="GEMPRESA">
+          <ScalarProperty Name="uf" ColumnName="uf" />
+          <ScalarProperty Name="municipio" ColumnName="municipio" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="nomeEmpresarial" ColumnName="nomeEmpresarial" />
+          <ScalarProperty Name="RazaoSocial" ColumnName="RazaoSocial" />
+          <ScalarProperty Name="InscricaoMunicipal" ColumnName="InscricaoMunicipal" />
+          <ScalarProperty Name="InscricaoEstadual" ColumnName="InscricaoEstadual" />
+          <ScalarProperty Name="cnpj" ColumnName="cnpj" />
+          <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFILAIMPRESSAO">
+      <EntityTypeMapping TypeName="RestauranteBD.GFILAIMPRESSAO">
+        <MappingFragment StoreEntitySet="GFILAIMPRESSAO">
+          <ScalarProperty Name="nomeVendedor" ColumnName="nomeVendedor" />
+          <ScalarProperty Name="impresso" ColumnName="impresso" />
+          <ScalarProperty Name="tipoImpressao" ColumnName="tipoImpressao" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFILIAL">
+      <EntityTypeMapping TypeName="RestauranteBD.GFILIAL">
+        <MappingFragment StoreEntitySet="GFILIAL">
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="uf" ColumnName="uf" />
+          <ScalarProperty Name="municipio" ColumnName="municipio" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="logradouro" ColumnName="logradouro" />
+          <ScalarProperty Name="nomeEmpresarial" ColumnName="nomeEmpresarial" />
+          <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+          <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
+          <ScalarProperty Name="inscricaoMunicipal" ColumnName="inscricaoMunicipal" />
+          <ScalarProperty Name="inscricaoEstadual" ColumnName="inscricaoEstadual" />
+          <ScalarProperty Name="cnpj" ColumnName="cnpj" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GFUNCIONALIDADE">
+      <EntityTypeMapping TypeName="RestauranteBD.GFUNCIONALIDADE">
+        <MappingFragment StoreEntitySet="GFUNCIONALIDADE">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idFuncionalidade" ColumnName="idFuncionalidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIMAGEM">
+      <EntityTypeMapping TypeName="RestauranteBD.GIMAGEM">
+        <MappingFragment StoreEntitySet="GIMAGEM">
+          <ScalarProperty Name="mime" ColumnName="mime" />
+          <ScalarProperty Name="extensao" ColumnName="extensao" />
+          <ScalarProperty Name="dado" ColumnName="dado" />
+          <ScalarProperty Name="idImagem" ColumnName="idImagem" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIMGMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GIMGMESA">
+        <MappingFragment StoreEntitySet="GIMGMESA">
+          <ScalarProperty Name="idImagem" ColumnName="idImagem" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GINCREMENTO">
+      <EntityTypeMapping TypeName="RestauranteBD.GINCREMENTO">
+        <MappingFragment StoreEntitySet="GINCREMENTO">
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="tabela" ColumnName="tabela" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GITMATRIZMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GITMATRIZMESA">
+        <MappingFragment StoreEntitySet="GITMATRIZMESA">
+          <ScalarProperty Name="texto" ColumnName="texto" />
+          <ScalarProperty Name="rowspan" ColumnName="rowspan" />
+          <ScalarProperty Name="colspan" ColumnName="colspan" />
+          <ScalarProperty Name="idImagem" ColumnName="idImagem" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="tpObjeto" ColumnName="tpObjeto" />
+          <ScalarProperty Name="coluna" ColumnName="coluna" />
+          <ScalarProperty Name="linha" ColumnName="linha" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idItem" ColumnName="idItem" />
+          <ScalarProperty Name="idMatriz" ColumnName="idMatriz" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GJANELA">
+      <EntityTypeMapping TypeName="RestauranteBD.GJANELA">
+        <MappingFragment StoreEntitySet="GJANELA">
+          <ScalarProperty Name="nomeJanela" ColumnName="nomeJanela" />
+          <ScalarProperty Name="codSistema" ColumnName="codSistema" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idJanela" ColumnName="idJanela" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GLOGOPERACAO">
+      <EntityTypeMapping TypeName="RestauranteBD.GLOGOPERACAO">
+        <MappingFragment StoreEntitySet="GLOGOPERACAO">
+          <ScalarProperty Name="nomeProduto" ColumnName="nomeProduto" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+          <ScalarProperty Name="idTipoOperacao" ColumnName="idTipoOperacao" />
+          <ScalarProperty Name="mesaDestino" ColumnName="mesaDestino" />
+          <ScalarProperty Name="mesaOrigem" ColumnName="mesaOrigem" />
+          <ScalarProperty Name="contaDestino" ColumnName="contaDestino" />
+          <ScalarProperty Name="contaOrigem" ColumnName="contaOrigem" />
+          <ScalarProperty Name="idOperacao" ColumnName="idOperacao" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMATRIZMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GMATRIZMESA">
+        <MappingFragment StoreEntitySet="GMATRIZMESA">
+          <ScalarProperty Name="colunas" ColumnName="colunas" />
+          <ScalarProperty Name="linhas" ColumnName="linhas" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idMatriz" ColumnName="idMatriz" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPARAMETROS">
+      <EntityTypeMapping TypeName="RestauranteBD.GPARAMETROS">
+        <MappingFragment StoreEntitySet="GPARAMETROS">
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPERFIL">
+      <EntityTypeMapping TypeName="RestauranteBD.GPERFIL">
+        <MappingFragment StoreEntitySet="GPERFIL">
+          <ScalarProperty Name="valSenha" ColumnName="valSenha" />
+          <ScalarProperty Name="codSistema" ColumnName="codSistema" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GPERMISSAO">
+      <EntityTypeMapping TypeName="RestauranteBD.GPERMISSAO">
+        <MappingFragment StoreEntitySet="GPERMISSAO">
+          <ScalarProperty Name="idJanela" ColumnName="idJanela" />
+          <ScalarProperty Name="idFuncionalidade" ColumnName="idFuncionalidade" />
+          <ScalarProperty Name="idPermissao" ColumnName="idPermissao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GSISTEMA">
+      <EntityTypeMapping TypeName="RestauranteBD.GSISTEMA">
+        <MappingFragment StoreEntitySet="GSISTEMA">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="codSistema" ColumnName="codSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GTIPOOPERACAO">
+      <EntityTypeMapping TypeName="RestauranteBD.GTIPOOPERACAO">
+        <MappingFragment StoreEntitySet="GTIPOOPERACAO">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idTipoOperacao" ColumnName="idTipoOperacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GTPCLIFOR">
+      <EntityTypeMapping TypeName="RestauranteBD.GTPCLIFOR">
+        <MappingFragment StoreEntitySet="GTPCLIFOR">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="tpCliFor" ColumnName="tpCliFor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GTPENDERECO">
+      <EntityTypeMapping TypeName="RestauranteBD.GTPENDERECO">
+        <MappingFragment StoreEntitySet="GTPENDERECO">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idTipoEnd" ColumnName="idTipoEnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GUSRFILMOD">
+      <EntityTypeMapping TypeName="RestauranteBD.GUSRFILMOD">
+        <MappingFragment StoreEntitySet="GUSRFILMOD">
+          <ScalarProperty Name="supervisor" ColumnName="supervisor" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="codSistema" ColumnName="codSistema" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GUSUARIO">
+      <EntityTypeMapping TypeName="RestauranteBD.GUSUARIO">
+        <MappingFragment StoreEntitySet="GUSUARIO">
+          <ScalarProperty Name="dataUpdSenha" ColumnName="dataUpdSenha" />
+          <ScalarProperty Name="usuInclusao" ColumnName="usuInclusao" />
+          <ScalarProperty Name="usuAlteracao" ColumnName="usuAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codusuario" ColumnName="codusuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GVENDEDOR">
+      <EntityTypeMapping TypeName="RestauranteBD.GVENDEDOR">
+        <MappingFragment StoreEntitySet="GVENDEDOR">
+          <ScalarProperty Name="dataUpdSenha" ColumnName="dataUpdSenha" />
+          <ScalarProperty Name="usuInclusao" ColumnName="usuInclusao" />
+          <ScalarProperty Name="usuAlteracao" ColumnName="usuAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="comissao" ColumnName="comissao" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="idVen" ColumnName="idVen" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RFILAESPERA">
+      <EntityTypeMapping TypeName="RestauranteBD.RFILAESPERA">
+        <MappingFragment StoreEntitySet="RFILAESPERA">
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="qtdLugares" ColumnName="qtdLugares" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="idFila" ColumnName="idFila" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGRUPOMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.RGRUPOMESA">
+        <MappingFragment StoreEntitySet="RGRUPOMESA">
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="quantMaxima" ColumnName="quantMaxima" />
+          <ScalarProperty Name="quantMinima" ColumnName="quantMinima" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPARAM">
+      <EntityTypeMapping TypeName="RestauranteBD.RPARAM">
+        <MappingFragment StoreEntitySet="RPARAM">
+          <ScalarProperty Name="assuntoEmail2" ColumnName="assuntoEmail2" />
+          <ScalarProperty Name="corpoEmail2" ColumnName="corpoEmail2" />
+          <ScalarProperty Name="assuntoEmail1" ColumnName="assuntoEmail1" />
+          <ScalarProperty Name="corpoEmail1" ColumnName="corpoEmail1" />
+          <ScalarProperty Name="horFinReserva" ColumnName="horFinReserva" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RRESERVA">
+      <EntityTypeMapping TypeName="RestauranteBD.RRESERVA">
+        <MappingFragment StoreEntitySet="RRESERVA">
+          <ScalarProperty Name="identificador" ColumnName="identificador" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="emailCliente" ColumnName="emailCliente" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="qtdLugares" ColumnName="qtdLugares" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="horarioLimite" ColumnName="horarioLimite" />
+          <ScalarProperty Name="horario" ColumnName="horario" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="idReserva" ColumnName="idReserva" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RRESMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.RRESMESA">
+        <MappingFragment StoreEntitySet="RRESMESA">
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idReserva" ColumnName="idReserva" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSTATFILA">
+      <EntityTypeMapping TypeName="RestauranteBD.RSTATFILA">
+        <MappingFragment StoreEntitySet="RSTATFILA">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSTATRESERVA">
+      <EntityTypeMapping TypeName="RestauranteBD.RSTATRESERVA">
+        <MappingFragment StoreEntitySet="RSTATRESERVA">
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="RestauranteBD.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EGRUPOOBS" TypeName="RestauranteBD.EGRUPOOBS" StoreEntitySet="EGRUPOOBS">
+      <EndProperty Name="EOBSERVACAO">
+        <ScalarProperty Name="idObs" ColumnName="IdObs" />
+      </EndProperty>
+      <EndProperty Name="EGRUPO">
+        <ScalarProperty Name="idEmpresa" ColumnName="IdEmpresa" />
+        <ScalarProperty Name="idGrupo" ColumnName="IdGrupo" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GPERMPERFIL" TypeName="RestauranteBD.GPERMPERFIL" StoreEntitySet="GPERMPERFIL">
+      <EndProperty Name="GPERMISSAO">
+        <ScalarProperty Name="idPermissao" ColumnName="idPermissao" />
+      </EndProperty>
+      <EndProperty Name="GPERFIL">
+        <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+        <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="ACONTA">
+      <EntityTypeMapping TypeName="RestauranteBD.ACONTA">
+        <MappingFragment StoreEntitySet="ACONTA">
+          <ScalarProperty Name="nuCartao" ColumnName="nuCartao" />
+          <ScalarProperty Name="idCliFor" ColumnName="idCliFor" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="usuarioAbertura" ColumnName="usuarioAbertura" />
+          <ScalarProperty Name="usuarioCancelamento" ColumnName="usuarioCancelamento" />
+          <ScalarProperty Name="usuarioFechamento" ColumnName="usuarioFechamento" />
+          <ScalarProperty Name="usuarioDesconto" ColumnName="usuarioDesconto" />
+          <ScalarProperty Name="vendedorAbertura" ColumnName="vendedorAbertura" />
+          <ScalarProperty Name="vendedorCancelamento" ColumnName="vendedorCancelamento" />
+          <ScalarProperty Name="vendedorDesconto" ColumnName="vendedorDesconto" />
+          <ScalarProperty Name="vendedorFechamento" ColumnName="vendedorFechamento" />
+          <ScalarProperty Name="desconto" ColumnName="desconto" />
+          <ScalarProperty Name="pessoas" ColumnName="pessoas" />
+          <ScalarProperty Name="servico" ColumnName="servico" />
+          <ScalarProperty Name="dataDesconto" ColumnName="dataDesconto" />
+          <ScalarProperty Name="dataCancelamento" ColumnName="dataCancelamento" />
+          <ScalarProperty Name="dataFechamento" ColumnName="dataFechamento" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="tpConta" ColumnName="tpConta" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GMESA">
+        <MappingFragment StoreEntitySet="GMESA">
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="observacao" ColumnName="observacao" />
+          <ScalarProperty Name="idImpressora" ColumnName="idImpressora" />
+          <ScalarProperty Name="qtdLugares" ColumnName="qtdLugares" />
+          <ScalarProperty Name="nuMesa" ColumnName="nuMesa" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GSTATMESA">
+      <EntityTypeMapping TypeName="RestauranteBD.GSTATMESA">
+        <MappingFragment StoreEntitySet="GSTATMESA">
+          <ScalarProperty Name="icone" ColumnName="icone" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACONTITEM">
+      <EntityTypeMapping TypeName="RestauranteBD.ACONTITEM">
+        <MappingFragment StoreEntitySet="ACONTITEM">
+          <ScalarProperty Name="usuarioDesconto" ColumnName="usuarioDesconto" />
+          <ScalarProperty Name="usuarioCancelamento" ColumnName="usuarioCancelamento" />
+          <ScalarProperty Name="vendedorDesconto" ColumnName="vendedorDesconto" />
+          <ScalarProperty Name="vendedorCancelamento" ColumnName="vendedorCancelamento" />
+          <ScalarProperty Name="dataDesconto" ColumnName="dataDesconto" />
+          <ScalarProperty Name="dataCancelamento" ColumnName="dataCancelamento" />
+          <ScalarProperty Name="impresso" ColumnName="impresso" />
+          <ScalarProperty Name="produzido" ColumnName="produzido" />
+          <ScalarProperty Name="dataInclusao" ColumnName="dataInclusao" />
+          <ScalarProperty Name="opcao" ColumnName="opcao" />
+          <ScalarProperty Name="nuItemPai" ColumnName="nuItemPai" />
+          <ScalarProperty Name="adicional" ColumnName="adicional" />
+          <ScalarProperty Name="idStatus" ColumnName="idStatus" />
+          <ScalarProperty Name="txtObs" ColumnName="txtObs" />
+          <ScalarProperty Name="preco" ColumnName="preco" />
+          <ScalarProperty Name="quantidade" ColumnName="quantidade" />
+          <ScalarProperty Name="desconto" ColumnName="desconto" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idVen" ColumnName="idVen" />
+          <ScalarProperty Name="nuItem" ColumnName="nuItem" />
+          <ScalarProperty Name="idConta" ColumnName="idConta" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AITEMOBS" TypeName="RestauranteBD.AITEMOBS" StoreEntitySet="AITEMOBS">
+      <EndProperty Name="EOBSERVACAO">
+        <ScalarProperty Name="idObs" ColumnName="idObs" />
+      </EndProperty>
+      <EndProperty Name="ACONTITEM">
+        <ScalarProperty Name="nuItem" ColumnName="nuItem" />
+        <ScalarProperty Name="idConta" ColumnName="idConta" />
+        <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+        <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="EPRODUTO">
+      <EntityTypeMapping TypeName="RestauranteBD.EPRODUTO">
+        <MappingFragment StoreEntitySet="EPRODUTO">
+          <ScalarProperty Name="selecionavel" ColumnName="selecionavel" />
+          <ScalarProperty Name="ordemPDV" ColumnName="ordemPDV" />
+          <ScalarProperty Name="corPDV" ColumnName="corPDV" />
+          <ScalarProperty Name="codigoPDV" ColumnName="codigoPDV" />
+          <ScalarProperty Name="rendimento" ColumnName="rendimento" />
+          <ScalarProperty Name="tempoPreparo" ColumnName="tempoPreparo" />
+          <ScalarProperty Name="idImagemHD" ColumnName="idImagemHD" />
+          <ScalarProperty Name="grupo" ColumnName="grupo" />
+          <ScalarProperty Name="nomeResumo" ColumnName="nomeResumo" />
+          <ScalarProperty Name="aliquota" ColumnName="aliquota" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="dataUltimaCompra" ColumnName="dataUltimaCompra" />
+          <ScalarProperty Name="afetaEstoque" ColumnName="afetaEstoque" />
+          <ScalarProperty Name="tipoTributacao" ColumnName="tipoTributacao" />
+          <ScalarProperty Name="modoPreparo" ColumnName="modoPreparo" />
+          <ScalarProperty Name="custoAtual" ColumnName="custoAtual" />
+          <ScalarProperty Name="custoMedio" ColumnName="custoMedio" />
+          <ScalarProperty Name="pontoDePedido" ColumnName="pontoDePedido" />
+          <ScalarProperty Name="estoqueMaximo" ColumnName="estoqueMaximo" />
+          <ScalarProperty Name="estoqueMinimo" ColumnName="estoqueMinimo" />
+          <ScalarProperty Name="pesavel" ColumnName="pesavel" />
+          <ScalarProperty Name="NCM" ColumnName="NCM" />
+          <ScalarProperty Name="CST" ColumnName="CST" />
+          <ScalarProperty Name="usuarioAlteracao" ColumnName="usuarioAlteracao" />
+          <ScalarProperty Name="dataAlteracao" ColumnName="dataAlteracao" />
+          <ScalarProperty Name="usuarioCriacao" ColumnName="usuarioCriacao" />
+          <ScalarProperty Name="dataCriacao" ColumnName="dataCriacao" />
+          <ScalarProperty Name="idImagem" ColumnName="idImagem" />
+          <ScalarProperty Name="idFilialLoc" ColumnName="idFilialLoc" />
+          <ScalarProperty Name="idLoc" ColumnName="idLoc" />
+          <ScalarProperty Name="diasValidade" ColumnName="diasValidade" />
+          <ScalarProperty Name="estocavel" ColumnName="estocavel" />
+          <ScalarProperty Name="undControle" ColumnName="undControle" />
+          <ScalarProperty Name="undVenda" ColumnName="undVenda" />
+          <ScalarProperty Name="undCompra" ColumnName="undCompra" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="codigoEAN2" ColumnName="codigoEAN2" />
+          <ScalarProperty Name="codigoEAN1" ColumnName="codigoEAN1" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="tipoItem" ColumnName="tipoItem" />
+          <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EPRDCLIFOR" TypeName="RestauranteBD.EPRDCLIFOR" StoreEntitySet="EPRDCLIFOR">
+      <EndProperty Name="GCLIFOR">
+        <ScalarProperty Name="idClifor" ColumnName="idclifor" />
+        <ScalarProperty Name="idEmpresa" ColumnName="idempresaClifor" />
+      </EndProperty>
+      <EndProperty Name="EPRODUTO">
+        <ScalarProperty Name="idProduto" ColumnName="idproduto" />
+        <ScalarProperty Name="idEmpresa" ColumnName="idempresaProduto" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EPRODOBS" TypeName="RestauranteBD.EPRODOBS" StoreEntitySet="EPRODOBS">
+      <EndProperty Name="EPRODUTO">
+        <ScalarProperty Name="idProduto" ColumnName="idProduto" />
+        <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+      </EndProperty>
+      <EndProperty Name="EOBSERVACAO">
+        <ScalarProperty Name="idObs" ColumnName="idObs" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="AALIQUOTA">
+      <EntityTypeMapping TypeName="RestauranteBD.AALIQUOTA">
+        <MappingFragment StoreEntitySet="AALIQUOTA">
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="tpImposto" ColumnName="tpImposto" />
+          <ScalarProperty Name="aliquota" ColumnName="aliquota" />
+          <ScalarProperty Name="idFilial" ColumnName="idFilial" />
+          <ScalarProperty Name="idAliquota" ColumnName="idAliquota" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

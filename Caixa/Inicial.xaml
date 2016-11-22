@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="Artebit.Restaurante.Caixa.Inicial"
+             xmlns:Controles="clr-namespace:Artebit.Restaurante.Caixa.Controles"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Artebit.Restaurante.Caixa.Controles"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="1024">
+    <StackPanel>
+        <Grid>
+            <Controles:Cabecalho1 x:Name="Cabecalho" Titulo="Caixa" />
+        </Grid>
+        <Grid MinHeight="960" Height="630" Margin="25">
+            <Grid.Resources>
+                <Style TargetType="{x:Type local:ImageButton}">
+                    <Setter Property="SnapsToDevicePixels" Value="true"/>
+                    <Setter Property="OverridesDefaultStyle" Value="true"/>
+                    <Setter Property="BorderBrush" Value="Transparent" />
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Opacity" Value="0.9" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type local:ImageButton}">
+                                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5">
+                                    <Image  Source="{TemplateBinding Image}" HorizontalAlignment="Center" Width="82" Height="66" />
+                                    <TextBlock Text="{TemplateBinding Content}" FontSize="16" Foreground="#CCB992" HorizontalAlignment="Center" />
+                                </StackPanel>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="true">
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </Trigger>
+                                    <Trigger Property="IsEnabled" Value="false">
+                                        <Setter Property="Foreground" Value="#DDDDDD"/>
+                                        <Setter Property="Opacity" Value="0.2"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+                <ColumnDefinition Width="102" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.ColumnSpan="5" Grid.Column="0" Grid.Row="0" BorderBrush="#CCB992" BorderThickness="0 0 0 5" >
+                <TextBlock Text="Caixas"  FontFamily="Segoe UI" FontSize="30" Foreground="#BFA87B"
+                       VerticalAlignment="Bottom">
+                </TextBlock>
+            </Border>
+
+            <local:ImageButton x:Name="btCaixaMesas" Image="pack://application:,,,/Img/icones/caixa_mesas.png" Content="Mesas" Grid.Column="0" Grid.Row="1" NomeJanela="Mesa" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCaixaBalcao" Image="pack://application:,,,/Img/icones/caixa_balcao.png" Content="Balcão" Grid.Column="1" Grid.Row="1" NomeJanela="Balcao" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCaixaDelivery" Image="pack://application:,,,/Img/icones/caixa_delivery.png" Content="Delivery" Grid.Column="2" Grid.Row="1" NomeJanela="Delivery" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCaixaCartao" Image="pack://application:,,,/Img/icones/caixa_cartao.png" Content="Cartão" Grid.Column="3" Grid.Row="1" NomeJanela="Cartao" Click="Botoes_Click" />
+
+
+            <Border Grid.ColumnSpan="3" Grid.Column="6" Grid.Row="0" BorderBrush="#BDC9C9" BorderThickness="0 0 0 5" >
+                <TextBlock Text="Pdv"  FontFamily="Segoe UI" FontSize="30" Foreground="#BDC9C9"
+                       VerticalAlignment="Bottom">
+                </TextBlock>
+            </Border>
+
+            <local:ImageButton x:Name="btPdvMesas" Image="pack://application:,,,/Img/icones/pdv_mesas.png" Content="Mesas" Grid.Column="6" Grid.Row="1" NomeJanela="MesaPDV" Click="Botoes_Click" />
+
+
+            <Border Grid.ColumnSpan="9" Grid.Column="0" Grid.Row="3" BorderBrush="#ADC2AA" BorderThickness="0 0 0 5" >
+                <TextBlock Text="Cadastro"  FontFamily="Segoe UI" FontSize="30" Foreground="#ADC2AA"
+                       VerticalAlignment="Bottom">
+                </TextBlock>
+            </Border>
+
+
+            <local:ImageButton x:Name="btCadCardapio" Image="pack://application:,,,/Img/icones/cadastro_cardapio.png" Content="Cardápio" Grid.Column="0" Grid.Row="4" NomeJanela="Cardapio" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadClientes" Image="pack://application:,,,/Img/icones/cadastro_clientes.png" Content="Clientes" Grid.Column="1" Grid.Row="4" NomeJanela="Clientes" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadUsuarios" Image="pack://application:,,,/Img/icones/cadastro_usuarios.png" Content="Usuários" Grid.Column="2" Grid.Row="4" NomeJanela="Usuarios" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadImpressoras" Image="pack://application:,,,/Img/icones/cadastro_impressoras.png" Content="Impressoras" Grid.Column="3" Grid.Row="4" NomeJanela="Impressoras" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadMonitores" Image="pack://application:,,,/Img/icones/cadastro_monitores.png" Content="Monitores" Grid.Column="4" Grid.Row="4" NomeJanela="Monitores" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadVendedores" Image="pack://application:,,,/Img/icones/cadastro_vendedores.png" Content="Vendedores" Grid.Column="5" Grid.Row="4" NomeJanela="Vendedores" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadProdutos" Image="pack://application:,,,/Img/icones/cadastro_produtos.png" Content="Produtos" Grid.Column="6" Grid.Row="4" NomeJanela="Produtos" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadPerfil" Image="pack://application:,,,/Img/icones/cadastro_perfil.png" Content="Perfil" Grid.Column="7" Grid.Row="4" NomeJanela="Perfil" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadMesas" Image="pack://application:,,,/Img/icones/cadastro_mesas.png" Content="Mesas" Grid.Column="0" Grid.Row="5" NomeJanela="CadMesas" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadGrupoMesas" Image="pack://application:,,,/Img/icones/cadastro_grupoMesa.png" Content="Grupo Mesas" Grid.Column="1" Grid.Row="5" NomeJanela="GrupoMesas" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadFidelidade" Image="pack://application:,,,/Img/icones/cadastro_planoFidelidade.png" Content="Fidelidade" Grid.Column="2" Grid.Row="5" NomeJanela="Fidelidade" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadAliquotas" Image="pack://application:,,,/Img/icones/cadastro_aliquotas.png" Content="Alíquotas" Grid.Column="3" Grid.Row="5" NomeJanela="Alicotas" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadRecebimentos" Image="pack://application:,,,/Img/icones/cadastro_recebimentos.png" Content="Recebimento" Grid.Column="4" Grid.Row="5" NomeJanela="TiposRecebimentos" Click="Botoes_Click" />
+
+            <local:ImageButton x:Name="btCadAvisos" Image="pack://application:,,,/Img/icones/cadastro_avisos.png" Content="Avisos" Grid.Column="5" Grid.Row="5" NomeJanela="Avisos" Click="Botoes_Click" />
+        </Grid>
+    </StackPanel>
+</UserControl>

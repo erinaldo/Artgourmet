@@ -1,0 +1,22 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\MainWindow.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\MainWindow.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\App.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host_MarkupCompile.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host.g.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet___Host.Properties.Resources.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host.csproj.GenerateResource.Cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\ArtebitGourmet - Host.exe.config
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\ArtebitGourmet - Host.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\ArtebitGourmet - Host.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\RegrasNegocio.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\RegrasNegocio.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\bin\Release\AcessoDados.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\ArtebitGourmet - Host\obj\Release\ArtebitGourmet - Host.pdb

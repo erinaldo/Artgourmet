@@ -1,0 +1,12 @@
+--------------------------------- 08/11/2012 10:15:42--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 274
+------------------------------------------------------
+
+
+--------------------------------- 08/11/2012 10:22:52--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.RegistraPreVenda(AOPCAIXA operacao, INotificaTela win) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 274
+------------------------------------------------------
+
+

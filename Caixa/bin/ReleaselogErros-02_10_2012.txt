@@ -1,0 +1,510 @@
+--------------------------------- 02/10/2012 15:18:09--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 15:18:09--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 15:18:22--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 15:18:22--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 15:21:07--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 15:21:07--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 16:27:39--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 16:27:39--------------------------------- 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> ACBr.Net.ACBrECFException: H? diverg?ncia no Valor do Grande Total
+Valor do ECF....: R$ 0,00
+Valor do Arquivo: R$ 721,90
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.AbreRelatorioGerencial(Int32 indice)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.NaoFiscal.OperacaoNaoFiscal.ImprimirRelatorio(String texto) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\NaoFiscal\OperacaoNaoFiscal.cs:line 138
+   at Artebit.Restaurante.Caixa.Relatorio.PreConta.ImprimeRelatorio(ACONTA conta) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Relatorio\PreConta.cs:line 243
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.MenuOpcoes_ItemClick(Object sender, RadRoutedEventArgs e) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1099
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.RoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at Telerik.Windows.Controls.RadMenuItem.OnClickImpl()
+   at Telerik.Windows.Controls.RadMenuItem.OnClick()
+   at Telerik.Windows.Controls.RadMenuItem.HandleMouseUp()
+   at Telerik.Windows.Controls.RadMenuItem.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 16:53:59--------------------------------- 
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.ImprimirLeituraX() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 418
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.<MenuOpcoes_ItemClick>b__42(Object w, WindowClosedEventArgs en) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1078
+   at Telerik.Windows.Controls.RadWindow.<>c__DisplayClass1b.<ConfigureModal>b__19(Object s, WindowClosedEventArgs args)
+   at Telerik.Windows.Controls.RadWindow.OnClosed(WindowClosedEventArgs args)
+   at Telerik.Windows.Controls.RadWindow.OnClosed()
+   at Telerik.Windows.Controls.WindowBase.TryClose(Boolean shouldCloseHost)
+   at Telerik.Windows.Controls.RadAlert.OnOk(EventArgs e)
+   at Telerik.Windows.Controls.RadAlert.OnConfirmExecuted(RadAlert alert)
+   at Telerik.Windows.Controls.CommandsHelper.TryCast[T](Object value, Action`1 action)
+   at Telerik.Windows.Controls.CommandsHelper.<>c__DisplayClass1`1.<RegisterClassHandler>b__0(Object s, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(CommandBindingCollection commandBindings, Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.ExecuteCore(Object parameter, IInputElement target, Boolean userInitiated)
+   at MS.Internal.Commands.CommandHelpers.CriticalExecuteCommandSource(ICommandSource commandSource, Boolean userInitiated)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnKeyDown(KeyEventArgs e)
+   at Telerik.Windows.Controls.RadButton.OnKeyDown(KeyEventArgs e)
+   at System.Windows.UIElement.OnKeyDownThunk(Object sender, KeyEventArgs e)
+   at System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   at System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   at System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 02/10/2012 16:53:59--------------------------------- 
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.ImprimirLeituraX() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 418
+   at Artebit.Restaurante.Caixa.Caixas.Mesas.<MenuOpcoes_ItemClick>b__42(Object w, WindowClosedEventArgs en) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Caixas\Mesas.xaml.cs:line 1078
+   at Telerik.Windows.Controls.RadWindow.<>c__DisplayClass1b.<ConfigureModal>b__19(Object s, WindowClosedEventArgs args)
+   at Telerik.Windows.Controls.RadWindow.OnClosed(WindowClosedEventArgs args)
+   at Telerik.Windows.Controls.RadWindow.OnClosed()
+   at Telerik.Windows.Controls.WindowBase.TryClose(Boolean shouldCloseHost)
+   at Telerik.Windows.Controls.RadAlert.OnOk(EventArgs e)
+   at Telerik.Windows.Controls.RadAlert.OnConfirmExecuted(RadAlert alert)
+   at Telerik.Windows.Controls.CommandsHelper.TryCast[T](Object value, Action`1 action)
+   at Telerik.Windows.Controls.CommandsHelper.<>c__DisplayClass1`1.<RegisterClassHandler>b__0(Object s, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(CommandBindingCollection commandBindings, Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.ExecuteCore(Object parameter, IInputElement target, Boolean userInitiated)
+   at MS.Internal.Commands.CommandHelpers.CriticalExecuteCommandSource(ICommandSource commandSource, Boolean userInitiated)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at Telerik.Windows.Controls.RadButton.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnKeyDown(KeyEventArgs e)
+   at Telerik.Windows.Controls.RadButton.OnKeyDown(KeyEventArgs e)
+   at System.Windows.UIElement.OnKeyDownThunk(Object sender, KeyEventArgs e)
+   at System.Windows.Input.KeyEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawKeyboardActions actions, Int32 scanCode, Boolean isExtendedKey, Boolean isSystemKey, Int32 virtualKey)
+   at System.Windows.Interop.HwndKeyboardInputProvider.ProcessKeyAction(MSG& msg, Boolean& handled)
+   at System.Windows.Interop.HwndSource.CriticalTranslateAccelerator(MSG& msg, ModifierKeys modifiers)
+   at System.Windows.Interop.HwndSource.OnPreprocessMessage(Object param)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+

@@ -1,0 +1,91 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:VKbrd">
+
+    
+
+    <Style TargetType="{x:Type local:VKeyboard}">
+        <Setter Property="Topmost" Value="True"/>
+        <Setter Property="ShowInTaskbar" Value="False"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="300"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:VKeyboard}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Focusable="False">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.Resources>
+                                <Path x:Key="CallImg" Stretch="Uniform" Fill="#FFFFFFFF" Margin="8,8,8,8" Data="F1 M 0.65625,31L 0,30.5C 0.247479,21.7008 -0.845665,11.3964 4.625,4.5C 5.99938,2.76746 7.50086,0.945534 9.5,0C 10.8189,-0.623779 25.7734,-0.289833 27,0.5C 30.6887,2.87514 30.7009,8.45779 32.4063,12.5C 34.0938,16.5 36.8862,20.1979 37.4688,24.5C 38.2858,30.5337 30.8386,34.8158 28.6563,40.5C 27.4057,43.7572 32.0234,46.625 34,49.5C 38.7071,56.3467 44.4278,62.889 51.5,67.25C 54.5603,69.1371 57.6135,71.0564 60.8333,72.6563C 61.9444,73.2083 63.0556,73.7604 64.1667,74.3125C 65.2778,74.8646 66.3323,76.388 67.5,75.9688C 69.4896,75.2544 70.659,73.1342 72,71.5C 72.5881,70.7833 75.9005,66.8194 77,65.5C 78.7419,63.4098 80.8023,60.2078 83.5,60.5625C 88.2582,61.1881 92.1,64.825 96.4,66.9563C 97.8333,67.6667 99.2667,68.3771 100.7,69.0875C 102.133,69.7979 103.57,70.5016 105,71.2188C 106.337,71.8891 108.2,71.9867 109,73.25C 109.725,74.3947 108.906,75.9583 108.859,77.3125C 108.813,78.6667 108.766,80.0208 108.719,81.375C 108.672,82.7292 108.625,84.0833 108.578,85.4375C 108.531,86.7917 109.037,88.285 108.438,89.5C 105.738,94.9684 99.4967,98.9543 93.5,100.063C 89.3677,100.826 73.8381,99.7891 72.5,99.375C 71.6472,99.1111 66.269,97.6981 65.5,97.375C 58.3355,94.3649 51.1421,91.284 44.5,87.25C 24.181,74.9095 8.33594,53.4982 0.65625,31 Z "/>
+                                <Path x:Key="EndCallImg" Stretch="Uniform" Fill="#FFFFFFFF" Margin="15,15,15,15" Data="F1 M 108.66,31.2772L 109.485,31.2593C 114.774,38.2957 122.05,45.6741 122.068,54.4768C 122.073,56.6882 122.033,59.0488 121.059,61.034C 120.416,62.3437 108.512,71.4007 107.06,71.5473C 102.695,71.988 99.2068,67.6293 95.3543,65.5303C 91.5421,63.4532 87.0538,62.3009 83.9175,59.2991C 79.5188,55.089 82.6754,47.0995 80.8404,41.2938C 79.7889,37.967 74.3904,38.6013 71.0529,37.5842C 63.1051,35.1622 54.5542,33.6098 46.3054,34.6056C 42.736,35.0365 39.152,35.4378 35.6368,36.1928C 34.4237,36.4534 33.2107,36.7139 31.9976,36.9744C 30.7846,37.235 29.0106,36.7005 28.3585,37.756C 27.2475,39.5545 27.654,41.9414 27.6234,44.0552C 27.6099,44.9822 27.4891,50.1465 27.4513,51.8635C 27.3914,54.5837 27.7749,58.372 25.444,59.7755C 21.3326,62.2511 16.0616,61.8004 11.3704,62.8128C 9.80669,63.1502 8.24296,63.4877 6.67923,63.8252C 5.1155,64.1627 3.55334,64.5075 1.98804,64.8376C 0.524829,65.1462 -0.993193,66.2309 -2.40619,65.7413C -3.68651,65.2977 -4.02044,63.5646 -4.82757,62.4762C -5.63469,61.3879 -6.44182,60.2995 -7.24894,59.2112C -8.05607,58.1228 -8.86319,57.0345 -9.67032,55.9461C -10.4774,54.8578 -11.8037,54.0051 -12.0917,52.6811C -13.388,46.7222 -10.9898,39.7154 -6.99004,35.1121C -4.23386,31.94 8.5586,23.0745 9.86325,22.5646C 10.6947,22.2396 15.7816,19.9936 16.5844,19.7672C 24.0637,17.6572 31.6096,15.5847 39.3183,14.6011C 62.8999,11.5922 88.6345,18.4657 108.66,31.2772 Z "/>
+                                <LinearGradientBrush x:Key="BackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFBADAC0" Offset="0"/>
+                                    <GradientStop Color="#FF3EAF44" Offset="0.379"/>
+                                </LinearGradientBrush>
+                                <LinearGradientBrush x:Key="BackgroundPressBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFBADAC0" Offset="1"/>
+                                    <GradientStop Color="#FF3EAF44" Offset="0.308"/>
+                                </LinearGradientBrush>
+                                <Style TargetType="{x:Type Button}" BasedOn="{x:Null}">
+                                    <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+                                    <Setter Property="BorderBrush" Value="{StaticResource BackgroundBrush}"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontStretch" Value="UltraExpanded"/>
+                                    <Setter Property="FontWeight" Value="Black"/>
+                                    <Setter Property="FontSize" Value="20"/>
+                                    <Setter Property="Margin" Value="2,2,2,2"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Grid x:Name="Grid">
+                                                    <Rectangle x:Name="Background" RadiusX="3" RadiusY="3" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding BorderBrush}"/>
+                                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" RecognizesAccessKey="True"/>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsPressed" Value="true">
+                                                        <Setter Property="Fill" Value="{StaticResource BackgroundPressBrush}" TargetName="Background"/>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Grid.Resources>
+                            <Button Command="local:VKeyboard.ButtonCallPressedCommand" Grid.Column="0" Grid.Row="0" Content="{StaticResource CallImg}"/>
+                            <Button Command="local:VKeyboard.ButtonEndPressedCommand" Grid.Column="2" Grid.Row="0" Content="{StaticResource EndCallImg}"/>
+                            <Button Command="local:VKeyboard.Button1PressedCommand" Grid.Column="0" Grid.Row="1" Content="1"/>
+                            <Button Command="local:VKeyboard.Button2PressedCommand" Grid.Column="1" Grid.Row="1" Content="2"/>
+                            <Button Command="local:VKeyboard.Button3PressedCommand" Grid.Column="2" Grid.Row="1" Content="3"/>
+                            <Button Command="local:VKeyboard.Button4PressedCommand" Grid.Column="0" Grid.Row="2" Content="4"/>
+                            <Button Command="local:VKeyboard.Button5PressedCommand" Grid.Column="1" Grid.Row="2" Content="5"/>
+                            <Button Command="local:VKeyboard.Button6PressedCommand" Grid.Column="2" Grid.Row="2" Content="6"/>
+                            <Button Command="local:VKeyboard.Button7PressedCommand" Grid.Column="0" Grid.Row="3" Content="7"/>
+                            <Button Command="local:VKeyboard.Button8PressedCommand" Grid.Column="1" Grid.Row="3" Content="8"/>
+                            <Button Command="local:VKeyboard.Button9PressedCommand" Grid.Column="2" Grid.Row="3" Content="9"/>
+                            <Button Command="local:VKeyboard.ButtonStarPressedCommand" Grid.Column="0" Grid.Row="4" Content="*"/>
+                            <Button Command="local:VKeyboard.Button0PressedCommand" Grid.Column="1" Grid.Row="4" Content="0"/>
+                            <Button Command="local:VKeyboard.ButtonHashPressedCommand" Grid.Column="2" Grid.Row="4" Content="#"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

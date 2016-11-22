@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/PDV/Aliquota.aspx" hash="cf13ef477" filehash="ffffbd79254b70e4" flags="110000" assembly="App_Web_tinmbj54" type="ASP.pdv_aliquota_aspx">
+    <filedeps>
+        <filedep name="/PDV/Aliquota.aspx" />
+    </filedeps>
+</preserve>

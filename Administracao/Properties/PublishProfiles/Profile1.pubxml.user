@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <File Include="AltSenha.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="bin/AcessoDados.dll">
+      <publishTime>09/18/2012 09:52:43</publishTime>
+    </File>
+    <File Include="bin/Administracao.dll">
+      <publishTime>09/18/2012 09:52:45</publishTime>
+    </File>
+    <File Include="bin/Ext.Net.dll">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="bin/Ext.Net.Utilities.dll">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="bin/Ext.Net.UX.dll">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="bin/Modelo.dll">
+      <publishTime>09/18/2012 09:52:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="bin/RegrasNegocio.dll">
+      <publishTime>09/18/2012 09:52:43</publishTime>
+    </File>
+    <File Include="bin/Stimulsoft.Base.dll">
+      <publishTime>03/26/2010 21:05:40</publishTime>
+    </File>
+    <File Include="bin/Stimulsoft.Report.dll">
+      <publishTime>03/26/2010 21:05:48</publishTime>
+    </File>
+    <File Include="bin/Stimulsoft.Report.Web.dll">
+      <publishTime>03/26/2010 21:00:16</publishTime>
+    </File>
+    <File Include="bin/Stimulsoft.Report.WebFx.dll">
+      <publishTime>03/26/2010 21:00:56</publishTime>
+    </File>
+    <File Include="bin/Util.dll">
+      <publishTime>09/13/2012 09:01:46</publishTime>
+    </File>
+    <File Include="Compras/Estoque.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Compras/Movimentacao.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Compras/NotaFiscal.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Compras/OrdemCompra.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Compras/SolicitacaoCompra.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Css/csshover.htc">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Css/Login.css">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Css/Producao/AddProduto.css">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Css/reset.css">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Css/reset_rtl.css">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="DLL/Ext.Net.dll">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="DLL/Ext.Net.Utilities.dll">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="DLL/Ext.Net.UX.dll">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="DLL/Newtonsoft.Json.dll">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Estoque/Estoque.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Funcao/Funcoes.aspx">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Funcao/Paginas/observacao.aspx">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Funcao/Paginas/planoFidelidade.aspx">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="Img/anterior.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/botaoAddGrupos.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/botaoEditarGrupo.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/botaoExcluirGrupos.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/empresa.ico">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/fundo1.jpg">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/fundo2.png">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Img/fundoHome.jpg">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/fundoLogin.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/fundoSobMenu.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Img/homeWall.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconAdmin.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconBi.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconCancelar.png">
+      <publishTime>08/22/2012 10:58:49</publishTime>
+    </File>
+    <File Include="Img/iconCompras.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconComprasEstoque.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconComprasHover.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconComprasOpaco.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconeEditar.jpg">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconFinanceiro.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconFinanceiroHover.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconFinanceiroOpaco.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconGlobal.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconGlobalHover.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconGlobalOpaco.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconProducao.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconProducaoHover.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconProducaoOpaco.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconRelatorios.png">
+      <publishTime>08/22/2012 10:58:50</publishTime>
+    </File>
+    <File Include="Img/iconRelatoriosHover.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconRelatoriosOpaco.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconSistema.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconSistemaHover.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Img/iconSistemaOpaco.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconVendas.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconVendasHover.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/iconVendasOpaco.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/imagemFundo.jpg">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/imagemSistema.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/logoAdmin.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Img/logoGourmet.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Img/primeiro.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/proximo.png">
+      <publishTime>08/22/2012 10:58:51</publishTime>
+    </File>
+    <File Include="Img/sair.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Img/ultimo.png">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="LogOut.aspx">
+      <publishTime>08/22/2012 10:58:48</publishTime>
+    </File>
+    <File Include="PDV/Aliquota.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="PDV/Fidelidade.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="PDV/Impressoras.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="PDV/Mesas.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="PDV/Monitores.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="PDV/Vendedores.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Producao/Cardapio.aspx">
+      <publishTime>09/06/2012 17:42:49</publishTime>
+    </File>
+    <File Include="Producao/Fornecedores.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Producao/Grupos.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Producao/Observacoes.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Producao/Produtos.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Producao/Unidades.aspx">
+      <publishTime>08/22/2012 10:58:52</publishTime>
+    </File>
+    <File Include="Relatorios/Lista.aspx">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ar.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/be.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/cro.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/cz.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/de.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/en.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/es.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/fa.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/fr.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/hu.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/it.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ka.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/lt.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/nl.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/pl.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/pt-BR.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ro.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ru.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ser.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/sk.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/sv.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/tr.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/ua.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/zh-CHS.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Localization/zh-CHT.xml">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/Cancelamento.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/Descontos.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/Faturamento.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/Recebimentos.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/ResumoFaturamento.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/ResumoVendas.mrt">
+      <publishTime>08/14/2012 19:20:23</publishTime>
+    </File>
+    <File Include="Relatorios/MRT/Transferencia.mrt">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/Teste.aspx">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Relatorios/VerRelatorio.aspx">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Sistema/CarregaImagem.aspx">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Sistema/Empresa.aspx">
+      <publishTime>08/22/2012 10:58:53</publishTime>
+    </File>
+    <File Include="Sistema/Filial.aspx">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Sistema/Parametro.aspx">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Sistema/Perfil.aspx">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Sistema/Usuario.aspx">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>08/22/2012 10:58:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/18/2012 09:58:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

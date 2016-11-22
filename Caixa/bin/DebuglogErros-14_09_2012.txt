@@ -1,0 +1,24 @@
+--------------------------------- 14/09/2012 08:56:04--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o est? em linha
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+
+--------------------------------- 14/09/2012 08:56:05--------------------------------- 
+ACBr.Net.ACBrECFException: Impressora Bematech n?o est? em linha
+   at ACBr.Net.ACBrECF.CheckResult(Int32 ret)
+   at ACBr.Net.ACBrECF.Ativar()
+   at Artebit.Restaurante.Impressoras.Fiscal.ECF.ImpressoraFiscal.Iniciar() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\ArtebitGourmet - Caixa\ArtebitGourmet.Impressoras\Fiscal\ECF\ImpressoraFiscal.cs:line 54
+   at Artebit.Restaurante.Caixa.MainWindow..ctor() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\MainWindow.xaml.cs:line 39
+   at Artebit.Restaurante.Caixa.Splash.<load>b__1() in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Caixa\Splash.xaml.cs:line 114
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+------------------------------------------------------
+
+

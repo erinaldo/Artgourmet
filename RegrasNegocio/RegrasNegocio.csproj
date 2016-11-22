@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BC1E514-DA33-4BFA-9A34-890531F2FCD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artebit.Restaurante.Global.RegrasNegocio</RootNamespace>
+    <AssemblyName>RegrasNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Atendimento\AliquotaControl.cs" />
+    <Compile Include="Atendimento\Caixa\ControlesTela.cs" />
+    <Compile Include="Atendimento\FidelidadeControl.cs" />
+    <Compile Include="Atendimento\ImpressoraControl.cs" />
+    <Compile Include="Caixa\FormaPagtoControl.cs" />
+    <Compile Include="Caixa\OperacaoCaixaControl.cs" />
+    <Compile Include="Caixa\PeriodoFiscalControl.cs" />
+    <Compile Include="Compras\CondPagtoControl.cs" />
+    <Compile Include="Compras\EstoqueControl.cs" />
+    <Compile Include="Compras\ItemMovimentoControl.cs" />
+    <Compile Include="Compras\MovimentoControl.cs" />
+    <Compile Include="Estoque\CardapioControl.cs" />
+    <Compile Include="Estoque\CardapioItemControl.cs" />
+    <Compile Include="Estoque\ControleEstoqueControl.cs" />
+    <Compile Include="Estoque\GruposControl.cs" />
+    <Compile Include="Estoque\TabPrecoControl.cs" />
+    <Compile Include="Estoque\LocalControl.cs" />
+    <Compile Include="Estoque\ObservacaoControl.cs" />
+    <Compile Include="Estoque\UnidadesControl.cs" />
+    <Compile Include="Excecao.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Global\EmpresaControl.cs" />
+    <Compile Include="Global\FilialControl.cs" />
+    <Compile Include="Global\FornecedorControl.cs" />
+    <Compile Include="Global\GrupoMesaControl.cs" />
+    <Compile Include="Global\ImagemControl.cs" />
+    <Compile Include="Global\JanelaControl.cs" />
+    <Compile Include="Global\FuncionalidadeControl.cs" />
+    <Compile Include="Global\PermissaoControl.cs" />
+    <Compile Include="Global\PreContaControl.cs" />
+    <Compile Include="Global\VendedorControl.cs" />
+    <Compile Include="MemoriaWeb.cs" />
+    <Compile Include="Funcoes.cs" />
+    <Compile Include="ControladorBase.cs" />
+    <Compile Include="Global\PerfilControl.cs" />
+    <Compile Include="Global\UsuarioControl.cs" />
+    <Compile Include="Atendimento\MonitorControl.cs" />
+    <Compile Include="Estoque\ProdutoControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserva\EsperaControl.cs" />
+    <Compile Include="Global\MesaControl.cs" />
+    <Compile Include="Reserva\ReservaControl.cs" />
+    <Compile Include="Reserva\ParametrosControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessoBD\Modelo.csproj">
+      <Project>{13D32F9B-A219-4FCC-A669-C89B444FD003}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecaoModelo\AcessoDados.csproj">
+      <Project>{F18DD79B-6EAC-454E-9385-5EDFE3405D76}</Project>
+      <Name>AcessoDados</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

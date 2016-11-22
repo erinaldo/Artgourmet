@@ -1,0 +1,54 @@
+﻿<Window x:Class="Artebit.Restaurante.Caixa.Fiscal.LeituraMFD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Leitura MFD" Height="362" Width="450"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <Label Content="Geração Espelho MFD" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="lbTitulo"
+               VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="64,47,0,0" Name="txtArquivo" VerticalAlignment="Top"
+                 Width="258" />
+        <Button Content="Procurar" Height="23" HorizontalAlignment="Left" Margin="327,47,0,0" Name="btProcurar"
+                VerticalAlignment="Top" Width="75" Click="btProcurar_Click" />
+        <Label Content="Arquivo:" Height="28" HorizontalAlignment="Left" Margin="13,45,0,0" Name="label2"
+               VerticalAlignment="Top" />
+        <GroupBox Header="Período" Height="85" HorizontalAlignment="Left" Margin="13,176,0,0" Name="groupPeriodo"
+                  VerticalAlignment="Top" Width="200">
+            <Grid>
+                <telerik:RadDatePicker DateTimeWatermarkContent="" HorizontalAlignment="Left" Margin="35,5,0,0"
+                                       Name="data1" VerticalAlignment="Top" Width="117" />
+                <Label Content="De:" Height="28" HorizontalAlignment="Left" Margin="0,4,0,0" Name="label3"
+                       VerticalAlignment="Top" />
+                <Label Content="à:" Height="28" HorizontalAlignment="Left" Margin="0,28,0,0" Name="label4"
+                       VerticalAlignment="Top" />
+                <telerik:RadDatePicker DateTimeWatermarkContent="" HorizontalAlignment="Left" Margin="35,32,0,0"
+                                       Name="data2" VerticalAlignment="Top" Width="117" />
+            </Grid>
+        </GroupBox>
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="247,288,0,0" Name="btOK"
+                VerticalAlignment="Top" Width="75" Click="btOK_Click" />
+        <Button Content="Cancelar" Height="23" HorizontalAlignment="Right" Margin="0,288,18,0" Name="btCancelar"
+                VerticalAlignment="Top" Width="75" Click="btCancelar_Click" />
+        <GroupBox Header="Faixa de Dados" Height="86" HorizontalAlignment="Left" Margin="218,175,0,0" Name="groupFaixa"
+                  VerticalAlignment="Top" Width="198" Visibility="Visible" IsEnabled="False">
+            <Grid>
+                <Label Content="De:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label5"
+                       VerticalAlignment="Top" />
+                <Label Content="à:" Height="28" HorizontalAlignment="Left" Margin="6,30,0,0" Name="label6"
+                       VerticalAlignment="Top" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="40,6,0,0" Mask="######"
+                                          MaskType="Standard" Name="reducao1" VerticalAlignment="Top" Width="96" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="40,36,0,0" Mask="######" Name="reducao2"
+                                          VerticalAlignment="Top" Width="96" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Tipo de Dados" Height="85" HorizontalAlignment="Left" Margin="14,79,0,0" Name="groupBox1"
+                  VerticalAlignment="Top" Width="142">
+            <Grid>
+                <RadioButton Content="Por Data" GroupName="tipoDado" Height="16" HorizontalAlignment="Left"
+                             IsChecked="True" Margin="14,14,0,0" Name="rbtData" VerticalAlignment="Top" Checked="rbtData_Checked" />
+                <RadioButton Content="Por Redução" GroupName="tipoDado" Height="16" HorizontalAlignment="Left"
+                             Margin="14,36,0,0" Name="rbtReducao" VerticalAlignment="Top" IsEnabled="False" Checked="rbtReducao_Checked" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

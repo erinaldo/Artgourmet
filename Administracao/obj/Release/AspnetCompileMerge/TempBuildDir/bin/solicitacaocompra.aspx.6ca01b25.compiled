@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Compras/SolicitacaoCompra.aspx" hash="cf13ef477" filehash="13ff9701744a" flags="110000" assembly="App_Web_lz501qxi" type="ASP.compras_solicitacaocompra_aspx">
+    <filedeps>
+        <filedep name="/Compras/SolicitacaoCompra.aspx" />
+    </filedeps>
+</preserve>

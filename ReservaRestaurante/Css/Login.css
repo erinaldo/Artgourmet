@@ -1,0 +1,131 @@
+﻿body 
+{
+    margin: 0;
+    padding: 0;     
+}
+
+#tracoLogin
+{
+    height: 10px;
+    background: #AC2622;
+    margin: 0px;
+    width: 79px;
+    padding:0px;
+}
+
+.labelErro
+{
+    color: Red;
+    font-family: Arial;
+    font-size: 14px;
+}
+.panelErro
+{
+    margin-top: 234px;
+    text-align: center;
+}
+
+
+
+
+/* --------------------- */
+
+#fundo2 {
+    background: url("../Img/fundo2.png") no-repeat;
+    height: 158px;
+    left: 50%;
+    margin-left: -682px;
+    margin-top: -228px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#divLogo {
+    background: url("../Img/logoGourmet.png") no-repeat;
+    height: 233px;
+    left: 25%;
+    position: absolute;
+    top: 14%;
+    width: 211px; 
+}
+
+#divLogin
+{
+    background: url("../Img/fundoLogin.png") no-repeat;
+    left: 38%;
+    position: absolute;
+    top: 45%;
+    width: 387px;
+    height: 209px;
+
+   /*
+    background: white;
+    
+    Arredondar bordas
+ 
+    -moz-border-radius: 10px; - Para Firefox 
+    -webkit-border-radius: 10px; - Para Safari e Chrome 
+    border-radius: 10px; - Para Opera 10.5+
+    
+    Efeito de transparência
+ 
+    opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);  
+    */
+	  
+}
+
+.labelLogin
+{
+    border-bottom: 4px solid #AC2622;
+    color: #FFFFFF;
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0 0 32px;
+    position: absolute;
+}
+
+.panelLogin
+{
+    position: absolute;
+    height:200px;
+    width:300px;
+    top:83px;
+    left: 35px;
+    z-index: 1; /* Necessário para o IE */
+}
+
+#imagemSistema {
+    background: url("../Img/imagemSistema.png") no-repeat;
+    height: 62px;
+    left: 76.7%;
+    position: absolute;
+    top: 80%;
+    width: 319px;
+}
+
+.labelSistema
+{
+    color: #000000;
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: bold;
+    left: 3%;
+    position: absolute;
+    top: 62%;
+}
+
+#divFundo
+{
+    background: url("../Img/imagemFundo.jpg") repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;   
+}   

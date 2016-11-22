@@ -1,0 +1,131 @@
+﻿<Window x:Class="Artebit.Restaurante.AtendimentoProducao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        Title="MainWindow"
+        ShowInTaskbar="False"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    <Window.CommandBindings>
+        <CommandBinding Command="GoToPage"
+                        Executed="AbrirPagina"/>
+        <CommandBinding Command="Find"
+                        Executed="BotoesAcao"/>
+    </Window.CommandBindings>
+
+    <!--Teclas de atalho-->
+    <!--<Window.InputBindings>
+        <KeyBinding Command="GoToPage" Key="Home"  Modifiers="Alt" CommandParameter="Home"/>
+    </Window.InputBindings>-->
+
+    <!--Grid geral-->
+    <Grid Name="janela" MinWidth="1000" MinHeight="740" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!--Layout da Grid, linhas e colulas-->
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="55" />
+            <RowDefinition MinHeight="48" />
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Borda da Grid-->
+        <Border 
+            CornerRadius="5" BorderBrush="#49181A" 
+            BorderThickness="1" 
+            Margin="-2"
+            Grid.ColumnSpan="1" Grid.RowSpan="3">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" BlurRadius="10" />
+            </Border.Effect>
+
+            <Border 
+                CornerRadius="5" 
+                Background="Transparent"
+                BorderBrush="DarkGray" 
+                BorderThickness="1" 
+                ClipToBounds="True">
+                <Grid>
+                    <Button Name="btIncio" Height="25" Width="88" HorizontalContentAlignment="Left" CommandParameter="Inicio" Command="Find" HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Margin="0,80,0,0" Padding="0" Style="{StaticResource BotaoMenor3}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="pack://application:,,,/Img/home.png" Height="18" Width="20" HorizontalAlignment="Left" Margin="10 0 0 0" />
+                            <TextBlock Text=" Início" HorizontalAlignment="Left" Grid.Column="1" Margin="6,4,-51,1" />
+                        </Grid>
+                    </Button>
+                </Grid>
+
+            </Border>
+
+            <Border.Background>
+                <ImageBrush ImageSource="/AtendimentoProducao;component/Img/imagemFundo.png" />
+            </Border.Background>
+        </Border>
+
+        <!-- Primeira linha, titulo -->
+        <Grid 
+            Grid.ColumnSpan="2" 
+            Grid.RowSpan="2" 
+            Height="70"
+            Margin="-5 0 -9 0"
+            VerticalAlignment="Center" >
+            <Grid.Background>
+                <ImageBrush ImageSource="/AtendimentoProducao;component/Img/fundoTopoWPF.png" Stretch="Fill" />
+            </Grid.Background>
+
+            <WrapPanel 
+                VerticalAlignment="Center"
+                >
+
+                <Image 
+                    Source="/AtendimentoProducao;component/Img/logo1.png"
+                    HorizontalAlignment="Left"
+                    Margin="5 0 0 0"
+                    VerticalAlignment="Center"
+                    Height="55"
+                    />
+
+                <Label 
+                    x:Name="TituloSistema" 
+                    Content="Atendimento - Produção" 
+                    Foreground="White"
+                    FontSize="30"
+                    Width="477"
+                    HorizontalAlignment="Left"
+                    Margin="10 0 0 0"
+                    VerticalAlignment="Center"
+                    />
+            </WrapPanel>
+
+        </Grid>
+
+
+        <!-- Terceira linha, tela principal -->
+
+        <!-- Parte principal da tela -->
+        <Grid Grid.Column="1" Grid.Row="2" Margin="5 10 5 5">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200*" />
+            </Grid.RowDefinitions>
+                
+            <Border/>
+            
+            <!-- Corpo -->
+            <telerik:RadBusyIndicator x:Name="busyIndicator" IsBusy="False" telerik:Theming.Theme="Expression_Dark">
+            
+            <telerik:RadTransitionControl x:Name="principal" MinHeight="200" Duration="0"  >
+            </telerik:RadTransitionControl>
+
+            </telerik:RadBusyIndicator>
+
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,84 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Cadastro.FormClientes"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="453" Width="657" ResizeMode="NoResize" CanMove="True"
+                   Header="Cliente" WindowStartupLocation="CenterScreen" Background="Transparent"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid Background="White">
+        <Label Content="Nome:" Height="28" HorizontalAlignment="Left" Margin="23,21,0,0" Name="label1"
+               VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="74,21,0,0" Name="txtNome" VerticalAlignment="Top"
+                 Width="274" />
+        <Label Content="CPF:" Height="28" HorizontalAlignment="Left" Margin="23,55,0,0" Name="lbCPF"
+               VerticalAlignment="Top" />
+
+        <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="74,55,0,0" Name="txtCPF" VerticalAlignment="Top"
+                                  Width="152" Mask="###.###.###-##" MaskedText="" MaskType="Standard" />
+        <CheckBox Content="Ativo" Height="16" HorizontalAlignment="Left" Margin="398,24,0,0" Name="ckbAtivo"
+                  VerticalAlignment="Top" Width="77" />
+
+        <GroupBox Header="Endereço" Height="172" HorizontalAlignment="Left" Margin="17,98,0,0" Name="groupBox1"
+                  VerticalAlignment="Top" Width="616">
+            <Grid>
+                <Label Content="Rua:" Height="28" HorizontalAlignment="Left" Margin="14,11,0,0" Name="label3"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="65,11,0,0" Name="txtRua"
+                         VerticalAlignment="Top" Width="247" />
+
+                <Label Content="Número:" Height="28" HorizontalAlignment="Left" Margin="324,11,0,0" Name="label5"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="412,11,0,0" Name="txtNumero"
+                         VerticalAlignment="Top" Width="120" />
+
+                <Label Content="Bairro:" Height="28" HorizontalAlignment="Left" Margin="14,45,0,0" Name="label4"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="65,45,0,0" Name="txtBairro"
+                         VerticalAlignment="Top" Width="220" />
+
+                <Label Content="Complemento:" Height="28" HorizontalAlignment="Left" Margin="324,43,0,0" Name="label6"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="412,45,0,0" Name="txtComplemento"
+                         VerticalAlignment="Top" Width="159" />
+
+                <Label Content="Cidade:" Height="28" HorizontalAlignment="Left" Margin="14,79,0,0" Name="label7"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="65,79,0,0" Name="txtCidade"
+                         VerticalAlignment="Top" Width="220" />
+
+                <Label Content="UF:" Height="28" HorizontalAlignment="Left" Margin="324,79,0,0" Name="label8"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="412,79,0,0" Name="txtUF"
+                         VerticalAlignment="Top" Width="102" />
+
+                <Label Content="CEP:" Height="28" HorizontalAlignment="Left" Margin="14,111,0,0" Name="label9"
+                       VerticalAlignment="Top" Width="38" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Right" Margin="0,113,419,0" Name="txtCEP"
+                                          VerticalAlignment="Top" Width="120" Mask="#####-###" MaskedText="" MaskType="Standard" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Contato" Height="90" HorizontalAlignment="Left" Margin="17,276,0,0" Name="groupBox2"
+                  VerticalAlignment="Top" Width="616">
+            <Grid>
+                <Label Content="Telefone:" Height="28" HorizontalAlignment="Left" Margin="14,6,0,0" Name="label10"
+                       VerticalAlignment="Top" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="78,6,0,0" Name="txtDDD"
+                                          VerticalAlignment="Top" Width="25" Mask="##" MaskedText="" MaskType="Standard" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="110,6,0,0" Name="txtTelefone"
+                                          VerticalAlignment="Top" Width="109" Mask="####################" MaskedText="" MaskType="Standard" />
+
+                <Label Content="Email:" Height="28" HorizontalAlignment="Left" Margin="14,30,0,0" Name="label11"
+                       VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="78,35,0,0" Name="txtEmail"
+                         VerticalAlignment="Top" Width="195" />
+
+            </Grid>
+        </GroupBox>
+        <Border VerticalAlignment="Bottom" Grid.Row="1" Background="GhostWhite" Width="650" Height="50">
+            <Grid>
+                <telerik:RadButton Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                   HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+    </Grid>
+</telerik:RadWindow>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Relatorios/VerRelatorio.aspx" hash="cf13ef477" filehash="fffff1c4dfaf834f" flags="110000" assembly="App_Web_5jk3wev3" type="ASP.relatorios_verrelatorio_aspx">
+    <filedeps>
+        <filedep name="/Relatorios/VerRelatorio.aspx" />
+    </filedeps>
+</preserve>

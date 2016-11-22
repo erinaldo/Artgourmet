@@ -1,0 +1,16 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\ArtebitGourmetWS.exe.config
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\ArtebitGourmetWS.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\ArtebitGourmetWS.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\bin\Release\AcessoDados.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\WindowsService.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\Artebit.Restaurante.ArtebitGourmetWS.Service1.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\WindowsService.csproj.GenerateResource.Cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\ArtebitGourmetWS.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\ArtebitGourmetWS.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsService\obj\x86\Release\Artebit.Restaurante.ArtebitGourmetWS.ProjectInstaller.resources

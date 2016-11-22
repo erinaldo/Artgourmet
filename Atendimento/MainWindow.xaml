@@ -1,0 +1,13 @@
+﻿<Window x:Class="Artebit.Restaurante.AtendimentoPDV.MainWindow" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:z="clr-namespace:Artebit.Restaurante.AtendimentoPDV.Controles" Title="Artebit Gourmet" ShowInTaskbar="True"
+        WindowStyle="None" WindowState="Maximized" Background="GhostWhite">
+
+    <StackPanel HorizontalAlignment="Center" Height="768" VerticalAlignment="Top" MinWidth="1024">
+        <Frame x:Name="principal" Height="768" Source="Telas/Login.xaml" />
+        <Label x:Name="TituloSistema"></Label>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="/AtendimentoPDV;component/Img/imagemFundo.png" />
+        </StackPanel.Background>
+    </StackPanel>
+</Window>

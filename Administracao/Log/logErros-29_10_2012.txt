@@ -1,0 +1,30 @@
+--------------------------------- 29/10/2012 09:42:38--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Global.AcessoDados.Global.PerfilDAL.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\Global\PerfilDAL.cs:line 0
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.ExecutaFuncao(GPERFIL obj, Funcoes funcao, List`1 compl) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 27
+------------------------------------------------------
+
+
+--------------------------------- 29/10/2012 09:42:51--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Global.AcessoDados.Global.PerfilDAL.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\Global\PerfilDAL.cs:line 0
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.ExecutaFuncao(GPERFIL obj, Funcoes funcao, List`1 compl) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 27
+------------------------------------------------------
+
+
+--------------------------------- 29/10/2012 09:44:30--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Global.AcessoDados.Global.PerfilDAL.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\Global\PerfilDAL.cs:line 157
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 154
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.ExecutaFuncao(GPERFIL obj, Funcoes funcao, List`1 compl) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 48
+------------------------------------------------------
+
+
+--------------------------------- 29/10/2012 09:45:00--------------------------------- 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Artebit.Restaurante.Global.AcessoDados.Global.PerfilDAL.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\SecaoModelo\Global\PerfilDAL.cs:line 157
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.Verificar(GPERFIL obj, String janela, Int32 funcionalidade) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 154
+   at Artebit.Restaurante.Global.RegrasNegocio.Global.PerfilControl.ExecutaFuncao(GPERFIL obj, Funcoes funcao, List`1 compl) in d:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\RegrasNegocio\Global\PerfilControl.cs:line 48
+------------------------------------------------------
+
+

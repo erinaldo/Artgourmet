@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Producao/Fornecedores.aspx" hash="cf13ef477" filehash="ffffed0c9d7e8604" flags="110000" assembly="App_Web_pv1wzz5o" type="ASP.producao_fornecedores_aspx">
+    <filedeps>
+        <filedep name="/Producao/Fornecedores.aspx" />
+    </filedeps>
+</preserve>

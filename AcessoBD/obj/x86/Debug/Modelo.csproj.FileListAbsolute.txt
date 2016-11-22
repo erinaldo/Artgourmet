@@ -1,0 +1,15 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Modelo.dll.config
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.Charting.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.Data.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.Docking.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.GridView.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.Input.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.Navigation.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Controls.RibbonBar.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\bin\x86\Debug\Telerik.Windows.Data.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\obj\x86\Debug\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\obj\x86\Debug\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\AcessoBD\obj\x86\Debug\Modelo.csprojResolveAssemblyReference.cache

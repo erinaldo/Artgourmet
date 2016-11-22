@@ -1,0 +1,95 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Caixas.Janelas.FecharConta"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Header="Fechar Conta" ResizeMode="NoResize"
+                   WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Width="840" Height="580" Background="GhostWhite">
+    <telerik:RadBusyIndicator x:Name="busyIndicator" BusyContent="Processando..." IsBusy="False" >
+    <Grid>
+        <Label Content="CPF:" FontSize="14" Height="28" HorizontalAlignment="Left" Margin="12,5,0,0" Name="label4"
+               VerticalAlignment="Top" RenderTransformOrigin="0.44,0.643" />
+        <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="70,7,0,0" Name="txtCpf" VerticalAlignment="Top"
+                                  Width="250" Height="20" MaskedText="" Mask="###.###.###-##" MaskType="Standard" TextAlignment="Right"
+                                   />
+        <RadioButton GroupName="Os" Content="CPF" Name="chkCPF" IsChecked="True" Margin="330,10,0,0"
+                     Click="TrocaCPFCNPJ" />
+        <RadioButton GroupName="Os" Content="CNPJ" Name="chkCNPJ" Margin="370,10,0,0" Click="TrocaCPFCNPJ" />
+
+
+        <telerik:RadGridView Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="12,35,0,0" Name="gridPagamentos"
+                             VerticalAlignment="Top" ShowGroupPanel="False" Width="390" IsScrolling="False" Height="460" AutoGenerateColumns="False"
+                             IsFilteringAllowed="False" EditTriggers="CellClick" GridLinesVisibility="Horizontal" UseLayoutRounding="False"
+                             CellEditEnded="gridPagamentos_CellEditEnded" CellValidating="gridPagamentos_CellValidating" Language="pt-BR"
+                             SelectedCellsChanged="gridPagamentos_SelectedCellsChanged" RowIndicatorVisibility="Collapsed">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn Header="Forma Pagamento" Width="300*"
+                                            DataMemberBinding="{Binding AFORMAPGTO.descricao}" IsReadOnly="True" />
+                <telerik:GridViewDataColumn Header="Valor" Width="100*"
+                                            DataMemberBinding="{Binding valorRecebido,StringFormat={}{0:c}}" Language="pt-br">
+                </telerik:GridViewDataColumn>
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+        <telerik:RadGridView HorizontalAlignment="Right" Margin="0,35,8,0" Name="gridRecebimentos"
+                             VerticalAlignment="Top" ShowGroupPanel="False" Width="390" IsScrolling="False" Height="340" AutoGenerateColumns="False"
+                             IsFilteringAllowed="False" EditTriggers="CellClick" GridLinesVisibility="Horizontal" UseLayoutRounding="False" Language="pt-BR"
+                             CellEditEnded="gridRecebimentos_CellEditEnded" Grid.Column="1" d:LayoutOverrides="GridBox" RowIndicatorVisibility="Collapsed" CellValidating="gridRecebimentos_CellValidating">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn Header="Forma Pagamento" Width="200*"
+                                            DataMemberBinding="{Binding DescricaoFormaPgto}" IsReadOnly="True" />
+                <telerik:GridViewDataColumn Header="Valor" Width="100"
+                                            DataMemberBinding="{Binding valorRecebido,StringFormat={}{0:c}}"></telerik:GridViewDataColumn>
+                <telerik:GridViewDataColumn Header="Excluir" Width="45" IsReadOnly="True">
+                    <telerik:GridViewDataColumn.CellTemplate>
+                        <DataTemplate>
+                            <telerik:RadButton Height="28" Width="32" HorizontalAlignment="Left" Margin="0,0,0,0"
+                                               Name="btExcluir" VerticalAlignment="Top" Click="btExcluir_Click">
+                                <telerik:RadButton.Content>
+                                    <Image Source="pack://application:,,,/Img/cancelarItens.png" Height="20" Width="20"
+                                           HorizontalAlignment="Left" Margin="1" />
+                                </telerik:RadButton.Content>
+                            </telerik:RadButton>
+                        </DataTemplate>
+                    </telerik:GridViewDataColumn.CellTemplate>
+                </telerik:GridViewDataColumn>
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+
+
+        <Border VerticalAlignment="Bottom" HorizontalAlignment="Right" Background="#EFEFEF" Width="390" Height="120"
+                Grid.ColumnSpan="2" Margin="0,0,8,40" d:LayoutOverrides="GridBox">
+            <Grid>
+                <Label Content="Valor Recebido :" Height="28" HorizontalAlignment="Left" Margin="0,0,0,0"
+                       Name="label3" VerticalAlignment="Top" FontSize="16" Grid.Column="1" />
+                <Label Height="28" HorizontalAlignment="Right" Content="teste" Margin="0,0,0,0"
+                       Name="lbValorRecebido" VerticalAlignment="Top" FontSize="16" FontWeight="Black" Grid.Column="1" Width="129" />
+                <Label Content="Valor Total :" Height="28" HorizontalAlignment="Left" Margin="0,25,0,0"
+                       x:Name="label3_Copy" VerticalAlignment="Top" FontSize="16" Grid.Column="1" />
+                <Label Content="Diferença :" Height="28" HorizontalAlignment="Left" Margin="0,50,0,0"
+                       x:Name="label3_Copy1" VerticalAlignment="Top" FontSize="16"  Grid.Column="1" />
+                <Label Content="Troco :" Height="28" HorizontalAlignment="Left" Margin="0,75,0,0"
+                       x:Name="label3_Copy2" VerticalAlignment="Top" FontSize="16" Grid.Column="1" />
+                <Label Height="28" HorizontalAlignment="Right" Content="teste" Margin="0,25,0,0"
+                       x:Name="lbValorTotal" VerticalAlignment="Top" FontSize="16" FontWeight="Black" Grid.Column="1" Width="129" />
+                <Label Height="28" HorizontalAlignment="Right" Content="teste" Margin="0,50,0,0"
+                       x:Name="lbValorDiferença" VerticalAlignment="Top" FontSize="16" FontWeight="Black" Grid.Column="1" Width="129" />
+                <Label Height="28" HorizontalAlignment="Right" Content="teste" Margin="0,75,0,0"
+                       x:Name="lbValorTroco" VerticalAlignment="Top" FontSize="16" FontWeight="Black" Grid.Column="1" Width="129" />
+            </Grid>
+        </Border>
+
+
+        <Border VerticalAlignment="Bottom" Background="#EFEFEF" Width="840" Height="35" Grid.ColumnSpan="2"
+                Margin="0,0,0,0" d:LayoutOverrides="GridBox">
+            <Grid>
+                <telerik:RadButton Name="btnOK" Content="OK" Margin="0 0 110 0" HorizontalAlignment="Right" Width="80"
+                                   Height="25" Click="btnOK_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 20 0" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Content="Plano de Fidelidade" Height="25" HorizontalAlignment="Left"
+                                   Margin="10,5,0,5" Name="btPlanos" Style="{StaticResource BotaoMenor2}" Width="127" Click="btPlanos_Click" />
+            </Grid>
+        </Border>
+        
+    </Grid>
+    </telerik:RadBusyIndicator>
+</telerik:RadWindow>

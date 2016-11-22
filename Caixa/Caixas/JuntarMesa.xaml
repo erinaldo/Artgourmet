@@ -1,0 +1,38 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Caixas.JuntarMesa"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Header="Juntar Mesa" ResizeMode="NoResize"
+                   WindowStartupLocation="CenterScreen" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="210" Width="414" Background="GhostWhite">
+    <telerik:RadWindow.Resources>
+        <Style TargetType="telerik:RadButton">
+            <Setter Property="telerik:StyleManager.Theme" Value="Windows7" />
+        </Style>
+        <Style TargetType="telerik:RadGridView">
+            <Setter Property="telerik:StyleManager.Theme" Value="Metro" />
+        </Style>
+        <Style TargetType="telerik:RadComboBox">
+            <Setter Property="telerik:StyleManager.Theme" Value="Summer" />
+        </Style>
+    </telerik:RadWindow.Resources>
+    <Grid>
+
+        <Image Margin="7,45,0,57" Source="/Artebit.Restaurante.Caixa;component/Img/transferirMesa.png" Stretch="Fill"
+               HorizontalAlignment="Left" Width="133" />
+
+
+        <Label Content="Mesa :" Margin="166,45,0,0" FontSize="13" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,69,110,0" Name="txtNuMesa" VerticalAlignment="Top"
+                 Width="120" />
+
+
+        <Border VerticalAlignment="Bottom" Grid.Row="1" Background="GhostWhite" Width="400" Height="35">
+            <Grid>
+                <telerik:RadButton Name="btnOK" Content="OK" Margin="0 0 100 0" HorizontalAlignment="Right" Width="80"
+                                   Height="25" Click="btnOK_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 0" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+    </Grid>
+</telerik:RadWindow>

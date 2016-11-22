@@ -1,0 +1,17 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe.config
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\obj\Debug\WindowsServiceTest.csprojResolveAssemblyReference.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Integracao\Bematech\MP2032_2.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Integracao\Bematech\MP2032.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Integracao\Bematech\SiUSBXp.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\WindowsServiceTest.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\AcessoDados.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\ArtebitGourmetWS.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Modelo.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Util.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Modelo.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\AcessoDados.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\Util.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\bin\Debug\ArtebitGourmetWS.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\obj\Debug\WindowsServiceTest.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\WindowsServiceTest\obj\Debug\WindowsServiceTest.pdb

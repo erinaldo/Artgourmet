@@ -1,0 +1,10 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Caixas.Janelas.CupomFiscal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Header="Fechamento de Conta" Height="550" Width="550" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" CanClose="False" CanMove="False" >
+    <Grid>
+        <telerik:RadBusyIndicator BusyContent="Processando Fechamento..." HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" VerticalAlignment="Top" Width="550" IsBusy="True" />
+        <TextBox x:Name="txtTexto" HorizontalAlignment="Left" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="460" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="543" FontSize="14" FontWeight="Bold" FontFamily="Global Monospace"/>
+
+    </Grid>
+</telerik:RadWindow>

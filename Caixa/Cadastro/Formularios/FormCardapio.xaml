@@ -1,0 +1,432 @@
+﻿<telerik:RadWindow xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   x:Class="Artebit.Restaurante.Caixa.Cadastro.FormCardapio"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d" d:DesignHeight="600" d:DesignWidth="930"
+                   ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Header="Cardápio" Background="Transparent">
+
+    <Grid Width="930" Background="White">
+        <StackPanel>
+            <telerik:RadTabControl Height="530" HorizontalAlignment="Center" VerticalAlignment="Top" Name="tabControl1" Width="900"
+                                   BackgroundVisibility="Collapsed" BorderBrush="{x:Null}">
+
+                <telerik:RadTabItem Header="Identificação" Name="abaIdentificacao" Width="110" Background="#EEEEEE">
+
+                    <Grid Margin="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition Height="5*" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="99*" />
+                            <ColumnDefinition Width="454*" />
+                            <ColumnDefinition Width="198*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!--Coluna 0-->
+
+                        <TextBlock Text="Nome :" VerticalAlignment="Center" Margin="3" />
+                        <TextBlock Text="Ativo :" Grid.Row="2" VerticalAlignment="Center" FontWeight="Normal"
+                                   Margin="3" />
+                        <TextBlock Text="Horário Ativo:" Grid.Row="1" VerticalAlignment="Center" Margin="3" />
+                        <TextBlock Text="Dia Todo :" Grid.Row="3" VerticalAlignment="Center" FontWeight="Normal"
+                                   Margin="3" />
+
+
+
+                        <!--Coluna 2 linha 0-->
+                        <Image Name="imgImagemView" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="4" Grid.Row="2"
+                               Margin="14" />
+
+
+                        <!--Coluna 1-->
+
+                        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Grid.Column="1" Width="374" Height="25"
+                                 Margin="0,2" />
+                        <CheckBox Name="ckbAtivo" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2"
+                                  Grid.Column="1" Margin="3" />
+
+                        <telerik:RadMaskedTextBox x:Name="txtHor1" HorizontalContentAlignment="Left" Culture="pt-BR"
+                                                  MaskType="DateTime" Mask="HH:mm" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="42" Height="25"
+                                                  Margin="0,2" />
+                        <TextBlock Text="à" Width="10" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"
+                                   HorizontalAlignment="Left" FontSize="14" FontWeight="Normal" Margin="55 3 3 3" />
+
+                        <telerik:RadMaskedTextBox x:Name="txtHor2" HorizontalContentAlignment="Left" Culture="pt-BR"
+                                                  MaskType="DateTime" Mask="HH:mm" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="42" Height="25"
+                                                  Margin="75,0,0,0" />
+                        <CheckBox Name="ckbDiaTodo" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3"
+                                  Grid.Column="1" Margin="3" />
+
+                        <Grid Grid.ColumnSpan="2" Grid.Row="5" Margin="10,0,188,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--Dias da semana-->
+                            <TextBlock Text="Dias da semana ativo:" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                                       HorizontalAlignment="Left" Margin="0" />
+
+
+                            <CheckBox Name="ckbSegunda" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="1" Margin="3" />
+                            <TextBlock Text="Segunda" Grid.Column="1" VerticalAlignment="Center" Grid.Row="1"
+                                       FontWeight="Normal" Margin="3" />
+                            <CheckBox Name="ckbQuarta" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="2" Margin="3" />
+                            <TextBlock Text="Quarta" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+                            <CheckBox Name="ckbSexta" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="3" Margin="3" />
+                            <TextBlock Text="Sexta" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+                            <CheckBox Name="ckbDomingo" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="4" Margin="3" />
+                            <TextBlock Text="Domingo" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+
+                            <CheckBox Name="ckbTerca" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="1" Grid.Column="2" Margin="3" />
+                            <TextBlock Text="Terça" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+                            <CheckBox Name="ckbQuinta" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="2" Grid.Column="2" Margin="3" />
+                            <TextBlock Text="Quinta" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+                            <CheckBox Name="ckbSabado" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                      Grid.Row="3" Grid.Column="2" Margin="3" />
+                            <TextBlock Text="Sábado" Grid.Column="3" Grid.Row="3" VerticalAlignment="Center"
+                                       FontWeight="Normal" Margin="3" />
+
+                        </Grid>
+
+                    </Grid>
+                </telerik:RadTabItem>
+                
+                <telerik:RadTabItem Header="Itens" Name="abaItens" Width="110" Background="#EEEEEE"
+                                    VerticalAlignment="Top">
+                    <StackPanel>
+                        <Border Margin="4" BorderBrush="DarkRed" BorderThickness="1,1,1,1" CornerRadius="3"
+                                VerticalAlignment="Top">
+                            <StackPanel Height="115" VerticalAlignment="Top" Margin="10">
+                                <WrapPanel>
+                                    <TextBlock TextWrapping="Wrap" Text="Cozinha" Foreground="Black" FontSize="16"
+                                               VerticalAlignment="Center" FontFamily="Segoe UI" Margin="0 0 10 0" />
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG1Add" VerticalAlignment="Top"
+                                                       Click="btAdd1_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/add.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG1Edit" VerticalAlignment="Top"
+                                                       Click="btG1Edit_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/editar.png" Height="20"
+                                                   Width="20" HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadColorPicker x:Name="colocPickBG1" AutomaticColor="Blue"
+                                                            MainPalette="Metro" MainPaletteHeaderText="Cor de Fundo" SelectedColorChanged="colocPickBG1_SelectedColorChanged" />
+                                    <telerik:RadColorPicker x:Name="colocPickFG1" AutomaticColor="Black"
+                                                            MainPalette="Metro" MainPaletteHeaderText="Cor da Fonte" SelectedColorChanged="colocPickFG1_SelectedColorChanged" />
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG1Ativar" VerticalAlignment="Top"
+                                                       Click="btG1Ativar_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/on.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG1Inativar" VerticalAlignment="Top"
+                                                       Click="btG1Inativar_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/off.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadDataPager x:Name="pager"
+                                                          BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" PageSize="12"
+                                                          IsTotalItemCountFixed="False" DisplayMode="FirstLastPreviousNext" />
+                                </WrapPanel>
+
+                                <ItemsControl x:Name="grid_cozinha" Height="85">
+
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid Columns="6">
+                                            </UniformGrid>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <ToggleButton x:Name="btItem" Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                                          BorderThickness="2" Foreground="{Binding corFonte}" Background="{Binding cor}" FontFamily="Segoe UI" FontSize="14"
+                                                          DataContext="{Binding}" Click="btGrupo_Click" Content="{Binding descricao}" Width="120" Height="35" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+
+                                </ItemsControl>
+
+                            </StackPanel>
+                        </Border>
+                        <Border Margin="4" BorderBrush="DarkRed" BorderThickness="1,1,1,1" CornerRadius="3"
+                                VerticalAlignment="Top">
+                            <StackPanel Height="110" VerticalAlignment="Top" Margin="10">
+                                <WrapPanel>
+                                    <TextBlock TextWrapping="Wrap" Text="Bar" Foreground="Black" FontSize="16"
+                                               VerticalAlignment="Center" FontFamily="Segoe UI" Margin="0 0 10 0" />
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG2Add" VerticalAlignment="Top"
+                                                       Click="btAdd2_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/add.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG2Edit" VerticalAlignment="Top"
+                                                       Click="btG2Edit_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/editar.png" Height="20"
+                                                   Width="20" HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadColorPicker x:Name="colocPickBG2" AutomaticColor="Blue"
+                                                            MainPalette="Metro" MainPaletteHeaderText="Cor de Fundo" SelectedColorChanged="colocPickBG2_SelectedColorChanged" />
+                                    <telerik:RadColorPicker x:Name="colocPickFG2" AutomaticColor="Black"
+                                                            MainPalette="Metro" MainPaletteHeaderText="Cor da Fonte" SelectedColorChanged="colocPickFG2_SelectedColorChanged" />
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG2Ativar" VerticalAlignment="Top"
+                                                       Click="btG2Ativar_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/on.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadButton Height="28" Width="32" Background="{x:Null}"
+                                                       BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btG2Inativar" VerticalAlignment="Top"
+                                                       Click="btG2Inativar_Click">
+                                        <telerik:RadButton.Content>
+                                            <Image Source="pack://application:,,,/Img/off.png" Height="20" Width="20"
+                                                   HorizontalAlignment="Left" Margin="1" />
+                                        </telerik:RadButton.Content>
+                                    </telerik:RadButton>
+                                    <telerik:RadDataPager x:Name="pager2"
+                                                          BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" PageSize="12"
+                                                          IsTotalItemCountFixed="False" DisplayMode="FirstLastPreviousNext" />
+
+                                </WrapPanel>
+
+                                <ItemsControl x:Name="grid_bar" Height="80">
+
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid Columns="6">
+                                            </UniformGrid>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <ToggleButton  x:Name="btItem" Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                                          Foreground="{Binding corFonte}" Background="{Binding cor}" FontFamily="Segoe UI" FontSize="14" DataContext="{Binding}"
+                                                          Click="btGrupo_Click" Content="{Binding descricao}" Width="120" Height="35" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+
+                                </ItemsControl>
+
+                            </StackPanel>
+                        </Border>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Toolbar CATEGORIA 1 -->
+                            <Border Margin="2" BorderBrush="DarkRed" BorderThickness="1,1,1,1" CornerRadius="3"
+                                    VerticalAlignment="Top">
+                                <StackPanel Height="190" VerticalAlignment="Top" Margin="2" Grid.Column="0">
+                                    <WrapPanel>
+                                        <TextBlock TextWrapping="Wrap" Text="Cat1" Foreground="Black" FontSize="15"
+                                                   VerticalAlignment="Center" FontFamily="Segoe UI" Margin="0 0 5 0" />
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat1Add" VerticalAlignment="Top"
+                                                           Click="btAdd3_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/add.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat1Edit" VerticalAlignment="Top"
+                                                           Click="btC1Edit_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/editar.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadColorPicker x:Name="colocPickBCat1" AutomaticColor="Blue" 
+                                                                MainPalette="Metro" MainPaletteHeaderText="Cor de Fundo"  SelectedColorChanged="colocPickBC1_SelectedColorChanged" />
+                                        <telerik:RadColorPicker x:Name="colocPickFCat1" AutomaticColor="Black"
+                                                                MainPalette="Metro" MainPaletteHeaderText="Cor da Fonte"  SelectedColorChanged="colocPickFC1_SelectedColorChanged" />
+                                        <telerik:RadButton Height="28" Width="28" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat1Ativar" VerticalAlignment="Top"
+                                                           Click="btC1Ativar_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/on.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadButton Height="28" Width="28" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat1Inativar" VerticalAlignment="Top"
+                                                           Click="btC1Inativar_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/off.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadDataPager x:Name="pagerCat1" BorderBrush="{x:Null}"
+                                                              HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" PageSize="12" IsTotalItemCountFixed="False"
+                                                              DisplayMode="FirstLastPreviousNext" />
+
+                                    </WrapPanel>
+
+                                    <ItemsControl x:Name="grid_Cat1" Height="160">
+
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <UniformGrid Columns="3">
+                                                </UniformGrid>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <ToggleButton x:Name="btItem"  Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                                              Foreground="{Binding corFonte}" Background="{Binding cor}" FontFamily="Segoe UI" FontSize="14" DataContext="{Binding}"
+                                                              Content="{Binding descricao}" Width="120" Height="35" Click="btCat1_Click" />
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+
+                                    </ItemsControl>
+
+                                </StackPanel>
+                            </Border>
+                            <Border Margin="2" BorderBrush="DarkRed" BorderThickness="1,1,1,1" CornerRadius="3"
+                                    Grid.Column="1" VerticalAlignment="Top">
+                                <StackPanel Height="190" VerticalAlignment="Top" Margin="2" Grid.Column="1">
+                                    <WrapPanel>
+                                        <TextBlock TextWrapping="Wrap" Text="Cat2" Foreground="Black" FontSize="16"
+                                                   VerticalAlignment="Center" FontFamily="Segoe UI" Margin="0 0 5 0" />
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat2Add" VerticalAlignment="Top"
+                                                           Click="btAdd4_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/add.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat2Edit" VerticalAlignment="Top"
+                                                           Click="btC2Edit_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/editar.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadColorPicker x:Name="colocPickBCat2" AutomaticColor="Blue"
+                                                                MainPalette="Metro" MainPaletteHeaderText="Cor de Fundo"  SelectedColorChanged="colocPickBC2_SelectedColorChanged" />
+                                        <telerik:RadColorPicker x:Name="colocPickFCat2" AutomaticColor="Black"
+                                                                MainPalette="Metro" MainPaletteHeaderText="Cor da Fonte"  SelectedColorChanged="colocPickFC2_SelectedColorChanged" />
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat2Ativar" VerticalAlignment="Top"
+                                                           Click="btC2Ativar_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/on.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadButton Height="28" Width="27" Background="{x:Null}"
+                                                           BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,2,0" Name="btCat2Inativar" VerticalAlignment="Top"
+                                                           Click="btC2Inativar_Click">
+                                            <telerik:RadButton.Content>
+                                                <Image Source="pack://application:,,,/Img/off.png" Height="20"
+                                                       Width="20" HorizontalAlignment="Left" Margin="1" />
+                                            </telerik:RadButton.Content>
+                                        </telerik:RadButton>
+                                        <telerik:RadDataPager x:Name="pagerCat2" 
+                                                              BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" PageSize="9"
+                                                              IsTotalItemCountFixed="False" DisplayMode="FirstLastPreviousNext" />
+
+                                    </WrapPanel>
+
+                                    <ItemsControl x:Name="grid_Cat2" Height="160">
+
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <UniformGrid Columns="3">
+                                                </UniformGrid>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <ToggleButton x:Name="btItem" Margin="2 2 2 2" BorderBrush="{Binding cor}"
+                                                              Foreground="{Binding corFonte}" Background="{Binding cor}" FontFamily="Segoe UI" FontSize="14" DataContext="{Binding}"
+                                                              Content="{Binding descricao}" Width="120" Height="35" />
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+
+                                    </ItemsControl>
+
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+
+
+                    </StackPanel>
+                </telerik:RadTabItem>
+                
+
+            </telerik:RadTabControl>
+
+            <Border VerticalAlignment="top" Grid.Row="1" Height="40">
+                <Grid>
+                    <telerik:RadButton Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                       Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                    <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                       HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</telerik:RadWindow>

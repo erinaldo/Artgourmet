@@ -1,0 +1,59 @@
+﻿<telerik:RadWindow
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Artebit.Restaurante.Caixa.Cadastro.Formularios.FormPerfil"
+		Height="300" Width="600" ResizeMode="NoResize" CanMove="True"
+        Header="Perfil" WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Img/imagemFundo.png" />
+        </Grid.Background>
+
+        <telerik:RadTabControl HorizontalAlignment="Stretch" Margin="0" x:Name="radTabControl1"
+                               VerticalAlignment="Stretch" BackgroundVisibility="Collapsed">
+            <telerik:RadTabItem Header="Informações" Height="30" HorizontalAlignment="Left" x:Name="RadTabEditar"
+                                VerticalAlignment="Top" Width="120" Background="#EEEEEE">
+                <Grid Margin="15 15 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="40*" />
+                        <RowDefinition Height="40*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="130*" />
+                        <ColumnDefinition Width="366*" />
+                        <ColumnDefinition Width="67*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Nome:" Grid.Row="0"  VerticalAlignment="Center" Height="16" Margin="0,6,0,11" />
+                    <TextBlock Text="Sistema:"  VerticalAlignment="Center" Height="16" Margin="0,1,0,17" Grid.Row="1" />
+                    <TextBlock Text="Expiração Senha(dias):" Grid.Row="2" VerticalAlignment="Center" Height="16" Margin="0,1,0,14" />
+
+                    <telerik:RadMaskedTextBox x:Name="txtboxNome" Grid.Column="1" Grid.Row="0" Value="{Binding descricao}" Height="30" VerticalAlignment="Center"
+                                              MaskType="None" EmptyContent="Digite o nome" Width="270" HorizontalAlignment="Left" Margin="0,4" />
+                    <telerik:RadComboBox x:Name="cbSistema" Grid.Column="1" Grid.Row="1" DisplayMemberPath="descricao" SelectedValuePath="codSistema" SelectedValue="{Binding codSistema}" Height="30" VerticalAlignment="Center" />
+
+                    <telerik:RadMaskedTextBox x:Name="txtDiasExpira" Grid.Column="1" Grid.Row="2" Value="{Binding valSenha}" Height="30" VerticalAlignment="Center"
+                                              MaskType="None" Width="270" HorizontalAlignment="Left" Margin="0,4" />
+
+                    <CheckBox x:Name="chAtivo" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Content="Ativo" IsChecked="{Binding ativo}" VerticalAlignment="Center" />
+
+
+                </Grid>
+            </telerik:RadTabItem>
+        </telerik:RadTabControl>
+        <Border VerticalAlignment="Bottom" Grid.Row="1" Background="GhostWhite" Width="600" Height="55">
+            <Grid>
+                <telerik:RadButton x:Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton x:Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                   HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+    </Grid>
+</telerik:RadWindow>

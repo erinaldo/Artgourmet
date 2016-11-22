@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"
+              GeneratedClassNamespace="Caixa.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StrgCon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+        Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Artebit\Desktop\login.mdb;
+      </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

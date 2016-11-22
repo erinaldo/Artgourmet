@@ -1,0 +1,91 @@
+﻿<telerik:RadWindow xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   x:Class="Artebit.Restaurante.Caixa.Cadastro.FormMonitor"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="400" Width="600" ResizeMode="NoResize" CanMove="True"
+                   Header="Monitor" WindowStartupLocation="CenterScreen">
+    <telerik:RadWindow.Resources>
+        <Style TargetType="telerik:RadButton">
+            <Setter Property="telerik:StyleManager.Theme" Value="Windows7" />
+        </Style>
+        <Style TargetType="telerik:RadGridView">
+            <Setter Property="telerik:StyleManager.Theme" Value="Metro" />
+        </Style>
+        <Style TargetType="telerik:RadComboBox">
+            <Setter Property="telerik:StyleManager.Theme" Value="Summer" />
+        </Style>
+    </telerik:RadWindow.Resources>
+
+    <Grid Margin="1">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Img/imagemFundo.png" />
+        </Grid.Background>
+        <telerik:RadTabControl HorizontalAlignment="Stretch" Margin="0" Name="radTabControl1"
+                               VerticalAlignment="Stretch" BackgroundVisibility="Collapsed">
+            <telerik:RadTabItem Header="Informações" Height="30" HorizontalAlignment="Left" Name="RadTabEditar"
+                                VerticalAlignment="Top" Width="120" Background="#EEEEEE">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition Height="3*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="4*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Descrição:" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="Ativo:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <telerik:RadMaskedTextBox Name="txtboxDescricao" Grid.Column="1" Grid.Row="1" Height="25"
+                                              MaskType="None" EmptyContent="Digite a descrição" Width="400" HorizontalAlignment="Left" />
+                    <CheckBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Name="checkAtivo" />
+                </Grid>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem Header="Mesas" Height="30" HorizontalAlignment="Left" Name="RadTabAddMesa"
+                                VerticalAlignment="Top" Width="120" Background="#EEEEEE">
+                <telerik:RadGridView x:Name="gridMesas" MaxHeight="484" Height="276" CanUserFreezeColumns="False"
+                                     RowIndicatorVisibility="Collapsed" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Top"
+                                     ShowGroupPanel="False" SelectionMode="Multiple">
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewSelectColumn></telerik:GridViewSelectColumn>
+                        <telerik:GridViewDataColumn Header="Número Mesa" DataMemberBinding="{Binding nuMesa}"
+                                                    Width="100" IsGroupable="True" IsFilterable="False" />
+                        <telerik:GridViewDataColumn Header="Observações" DataMemberBinding="{Binding observacao}"
+                                                    Width="100" IsGroupable="True" IsFilterable="False" />
+                    </telerik:RadGridView.Columns>
+
+                </telerik:RadGridView>
+            </telerik:RadTabItem>
+            <telerik:RadTabItem Header="Produto" Height="30" HorizontalAlignment="Left" Name="RadTabAddProduto"
+                                VerticalAlignment="Top" Width="120" Background="#EEEEEE">
+                <telerik:RadGridView x:Name="gridProduto" MaxHeight="484" Height="276" CanUserFreezeColumns="False"
+                                     RowIndicatorVisibility="Collapsed" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Top"
+                                     ShowGroupPanel="False" SelectionMode="Multiple">
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewSelectColumn></telerik:GridViewSelectColumn>
+                        <telerik:GridViewDataColumn Header="Código Produto" DataMemberBinding="{Binding idProduto}"
+                                                    Width="100" IsGroupable="True" IsFilterable="False" />
+                        <telerik:GridViewDataColumn Header="Produto" DataMemberBinding="{Binding nome}" Width="100"
+                                                    IsGroupable="True" IsFilterable="False" />
+                    </telerik:RadGridView.Columns>
+
+                </telerik:RadGridView>
+            </telerik:RadTabItem>
+        </telerik:RadTabControl>
+        <Border VerticalAlignment="Bottom" Grid.Row="1" Background="GhostWhite" Width="590" Height="55">
+            <Grid>
+                <telerik:RadButton Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                   HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+
+    </Grid>
+</telerik:RadWindow>

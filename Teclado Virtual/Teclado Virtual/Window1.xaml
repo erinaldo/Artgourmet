@@ -1,0 +1,22 @@
+﻿<Window x:Class="VKbrd.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:l="clr-namespace:VKbrd"
+    Title="Window1" Height="300" Width="300">
+    <UniformGrid>
+        <StackPanel l:VKeyboard.AttachVKeyboard="true">
+            <TextBox/>
+            <TextBox/>
+            <Button>Duh!</Button>
+        </StackPanel>
+        <TextBox/>
+        <TextBox l:VKeyboard.AttachVKeyboard="true"/>
+        <Button>Duh!</Button>
+        <Border l:VKeyboard.AttachVKeyboard="true">
+            <TextBox/>
+        </Border>
+        <Border>
+            <TextBox/>
+        </Border>
+    </UniformGrid>
+</Window>

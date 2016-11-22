@@ -1,0 +1,48 @@
+﻿<Window x:Class="Artebit.Restaurante.Caixa.Fiscal.MemoriaFiscal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Memória Fiscal" Height="262" Width="420"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <GroupBox Header="Tipo de Dados" Height="85" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox1"
+                  VerticalAlignment="Top" Width="142">
+            <Grid>
+                <RadioButton Content="Por Data" Height="16" HorizontalAlignment="Left" Margin="14,14,0,0"
+                             Name="rbtData" VerticalAlignment="Top" GroupName="tipoDado" IsChecked="True" />
+                <RadioButton Content="Por CRZ" Height="16" HorizontalAlignment="Left" Margin="14,36,0,0"
+                             Name="rbtReducao" VerticalAlignment="Top" GroupName="tipoDado" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Período" Height="85" HorizontalAlignment="Left" Margin="192,12,0,0" Name="groupBox2"
+                  VerticalAlignment="Top" Width="200">
+            <Grid>
+                <telerik:RadDatePicker DateTimeWatermarkContent="" HorizontalAlignment="Left" Margin="35,5,0,0"
+                                       Name="data1" VerticalAlignment="Top" Width="117" />
+                <Label Content="De:" Height="28" HorizontalAlignment="Left" Margin="0,4,0,0" Name="label1"
+                       VerticalAlignment="Top" />
+                <Label Content="à:" Height="28" HorizontalAlignment="Left" Margin="0,28,0,0" Name="label2"
+                       VerticalAlignment="Top" />
+                <telerik:RadDatePicker DateTimeWatermarkContent="" HorizontalAlignment="Left" Margin="35,32,0,0"
+                                       Name="data2" VerticalAlignment="Top" Width="117" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Faixa de Dados" Height="86" HorizontalAlignment="Left" Margin="192,97,0,0" Name="groupBox3"
+                  VerticalAlignment="Top" Width="198">
+            <Grid>
+                <Label Content="De:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label3"
+                       VerticalAlignment="Top" />
+                <Label Content="à:" Height="28" HorizontalAlignment="Left" Margin="6,30,0,0" Name="label4"
+                       VerticalAlignment="Top" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="40,6,0,0" Name="reducao1"
+                                          VerticalAlignment="Top" Width="96" Mask="####" MaskType="Standard" />
+                <telerik:RadMaskedTextBox HorizontalAlignment="Left" Margin="40,36,0,0" Name="reducao2"
+                                          VerticalAlignment="Top" Width="96" Mask="####" />
+            </Grid>
+        </GroupBox>
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="103,191,0,0" Name="btOK"
+                VerticalAlignment="Top" Width="75" Click="btOK_Click" />
+        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="204,191,0,0" Name="btCancelar"
+                VerticalAlignment="Top" Width="75" Click="btCancelar_Click" />
+        <CheckBox Content="Imprimir em Arquivo" Height="16" HorizontalAlignment="Left" Margin="18,114,0,0"
+                  Name="chkArquivo" VerticalAlignment="Top" />
+    </Grid>
+</Window>

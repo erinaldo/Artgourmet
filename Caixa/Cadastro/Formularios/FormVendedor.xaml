@@ -1,0 +1,61 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Cadastro.FormVendedor"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="350" Width="500" ResizeMode="NoResize" CanMove="True"
+                   Header="Vendedor" WindowStartupLocation="CenterScreen" Background="Transparent"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <telerik:RadWindow.Resources>
+        <Style TargetType="telerik:RadButton">
+            <Setter Property="telerik:StyleManager.Theme" Value="Windows7" />
+        </Style>
+        <Style TargetType="telerik:RadGridView">
+            <Setter Property="telerik:StyleManager.Theme" Value="Metro" />
+        </Style>
+        <Style TargetType="telerik:RadComboBox">
+            <Setter Property="telerik:StyleManager.Theme" Value="Summer" />
+        </Style>
+    </telerik:RadWindow.Resources>
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="0.2*" />
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Text="Cod Usuário:" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Código:" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Nome:" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Comissão:" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Ativo:" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <telerik:RadComboBox Name="comboCodigoUsu" SelectedValuePath="codusuario" DisplayMemberPath="codusuario"
+                             Grid.Column="1" Height="25" Margin="0,7,0,5" />
+        <PasswordBox Name="txboxCodigo" Grid.Column="1" Grid.Row="1" Height="25" />
+        <telerik:RadMaskedTextBox Name="txboxNome" Grid.Column="1" Grid.Row="2" Height="25" MaskType="None"
+                                  Mask="######" />
+        <telerik:RadNumericUpDown Name="txboxComissao" Grid.Column="1" Grid.Row="3" Height="25"
+                                  ValueFormat="Numeric" Maximum="100" NumberDecimalDigits="2" HorizontalContentAlignment="Left" />
+        <CheckBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Name="checkAtivo" />
+
+
+        <Border VerticalAlignment="Bottom" Background="GhostWhite" Width="490" Height="50" Grid.Row="6"
+                Grid.ColumnSpan="3">
+            <Grid>
+                <telerik:RadButton Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                   HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+
+    </Grid>
+</telerik:RadWindow>

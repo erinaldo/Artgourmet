@@ -1,0 +1,32 @@
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\bin\Debug\VKbrd.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\bin\Debug\VKbrd.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\bin\Debug\InputSimulator.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\bin\Debug\ManagedWinapi.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\bin\Debug\TransparentWindowLibrary.dll
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\tela1.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\tela2.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\App.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad3.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad2.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\tela1.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\tela2.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Window1.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Window2.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\App.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd_Content.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd_MarkupCompile.cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd_MarkupCompile.lref
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad3.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\KeyPad2.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Themes\Generic.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Window1.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Window2.baml
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd.g.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd.Properties.Resources.resources
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Teclado Virtual.csproj.GenerateResource.Cache
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd.exe
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\VKbrd.pdb
+D:\Artebit\Projetos\Artebit Gourmet - New\Artebit Gourmet\Restaurante\Teclado Virtual\Teclado Virtual\obj\Debug\Teclado Virtual.csprojResolveAssemblyReference.cache

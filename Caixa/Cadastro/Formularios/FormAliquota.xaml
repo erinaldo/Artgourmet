@@ -1,0 +1,49 @@
+﻿<telerik:RadWindow x:Class="Artebit.Restaurante.Caixa.Cadastro.FormAliquota"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="300" Width="457" ResizeMode="NoResize" CanMove="True"
+                   Header="Aliquotas" WindowStartupLocation="CenterScreen"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <Grid Background="White">
+
+        <Grid>
+            <Label Content="Posicao:" Height="28" HorizontalAlignment="Left" Margin="23,21,0,0" Name="label1"
+                   VerticalAlignment="Top" />
+            <telerik:RadMaskedTextBox MaskType="Numeric" Mask="f3" Height="23" HorizontalAlignment="Left"
+                                      Margin="90,21,0,0" Name="txtPosicao" VerticalAlignment="Top" Width="100" />
+
+            <Label Content="Nome:" Height="28" HorizontalAlignment="Left" Margin="23,55,0,0" Name="lbCPF"
+                   VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="90,55,0,0" Name="txtAliquota"
+                     VerticalAlignment="Top" Width="254" />
+
+            <CheckBox Content="Ativo" Height="16" IsChecked="True" HorizontalAlignment="Left" Margin="380,24,0,0"
+                      Name="ckbAtivo" VerticalAlignment="Top" Width="77" />
+
+            <Label Content="Tipo Imposto:" Height="28" HorizontalAlignment="Left" Margin="23, 93, 0,0" Name="lblTipo"
+                   VerticalAlignment="Top" />
+            <RadioButton Name="radioICMS" Margin="114, 97, 0,0 " Content="ICMS" GroupName="tipo" />
+            <RadioButton Name="radioISS" Margin="214, 97, 0,0 " Content="ISS" GroupName="tipo" />
+
+            <Label Content="ALQ:" Height="28" HorizontalAlignment="Left" Margin="23,127,0,0" Name="label3"
+                   VerticalAlignment="Top" />
+            <telerik:RadMaskedTextBox MaskType="Numeric" Mask="f3" Height="23" HorizontalAlignment="Left"
+                                      Margin="90,127,0,0" Name="txtALQ" VerticalAlignment="Top" Width="100" />
+
+
+        </Grid>
+
+
+        <Border VerticalAlignment="Bottom" Grid.Row="1" HorizontalAlignment="Left" Background="GhostWhite" Width="444"
+                Height="50">
+            <Grid>
+                <telerik:RadButton Name="btnSalvar" Content="Salvar" Margin="0 0 100 -10" HorizontalAlignment="Right"
+                                   Width="80" Height="25" Click="btnSalvar_Click" Style="{StaticResource BotaoMenor2}" />
+                <telerik:RadButton Name="btnCancelar" Content="Cancelar" Margin="0 0 10 -10"
+                                   HorizontalAlignment="Right" Width="80" Height="25" Click="btnCancelar_Click" Style="{StaticResource BotaoMenor2}" />
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</telerik:RadWindow>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Compras/NotaFiscal.aspx" hash="cf13ef477" filehash="ffffe1b8b0067c1d" flags="110000" assembly="App_Web_1va0pa3r" type="ASP.compras_notafiscal_aspx">
+    <filedeps>
+        <filedep name="/Compras/NotaFiscal.aspx" />
+    </filedeps>
+</preserve>

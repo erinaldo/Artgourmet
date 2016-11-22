@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="9.1" version="9.1" Modules="architect" RootPath="." Language="en" Id="{1D0A457F-61B1-4769-8DDC-E06161C7B583}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiValidationComponent">
+    <ROW Table="File" Column="Sequence" MinValue="1" MaxValue="32767" Description="Sequence with respect to the media images; order must track cabinet order." Options="0" ColumnType="2" ColumnIndex="7" ColumnSize="2" MsiKey="File#Sequence"/>
+    <ROW Table="Media" Column="LastSequence" MinValue="0" MaxValue="32767" Description="File sequence number for the last file for this media." Options="0" ColumnType="2" ColumnIndex="1" ColumnSize="2" MsiKey="Media#LastSequence"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_CF_TYPE" Value="2" MultiBuildValue="DefaultBuild:0" Type="4" MsiKey="AI_CF_TYPE"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_FrameBtnsColor" Value="powderblue" MsiKey="AI_FrameBtnsColor"/>
+    <ROW Property="AI_FrameColor" Value="powderblue" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_INTERNET_CONNECTION" MultiBuildValue="DefaultBuild:AI_INET_CON_SUCCESS" ValueLocId="-"/>
+    <ROW Property="AI_ImagesColor" Value="powderblue" MsiKey="AI_ImagesColor"/>
+    <ROW Property="AI_MINIISVERSION" MultiBuildValue="DefaultBuild:5.0" ValueLocId="-"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="2" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="www.artebit.com.br"/>
+    <ROW Property="ARPHELPTELEPHONE" Value="6130373616"/>
+    <ROW Property="ARPPRODUCTICON" Value="artebitGoumet_1.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="www.artebit.com.br"/>
+    <ROW Property="AiPreferFastOem" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="GlassBackground" Value="teste1.png" Type="1" MsiKey="GlassBackground"/>
+    <ROW Property="Manufacturer" Value="Artebit Informatica" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{136CCA6E-1914-434E-BF56-E9EFBC4174F3} 1046:{B4891EBA-C741-4F54-8817-3A2C0270CC09} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Artebit Gourmet - Controle Reservas" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="SqlConnectionTimeout" Value="20"/>
+    <ROW Property="UpgradeCode" Value="{A4379161-B696-46D7-9445-1FFEFD973973}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Css_Dir" Directory_Parent="Reservas_Dir" DefaultDir="Css"/>
+    <ROW Directory="DLL_Dir" Directory_Parent="Reservas_Dir" DefaultDir="DLL"/>
+    <ROW Directory="Img_Dir" Directory_Parent="Reservas_Dir" DefaultDir="Img"/>
+    <ROW Directory="LayoutEmails_Dir" Directory_Parent="Reservas_Dir" DefaultDir="Layout~1|LayoutEmails"/>
+    <ROW Directory="Reservas_Dir" Directory_Parent="APPDIR" DefaultDir="Reservas"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_Dir" Directory_Parent="Reservas_Dir" DefaultDir="bin"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{E027F10A-71F3-4C46-ACD3-F916B7E7A005}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="AcessoDados.dll" ComponentId="{C417A5CF-7A61-4605-8C8A-C9507E7C688C}" Directory_="bin_Dir" Attributes="0" KeyPath="AcessoDados.dll"/>
+    <ROW Component="Default.aspx" ComponentId="{ABD78476-591E-445F-9F6C-1A1916AB42C2}" Directory_="Reservas_Dir" Attributes="0" KeyPath="Default.aspx" Type="0"/>
+    <ROW Component="Ext.Net.UX.dll" ComponentId="{03600614-1EF1-43E3-AAFD-C92EF0E3ED9C}" Directory_="bin_Dir" Attributes="0" KeyPath="Ext.Net.UX.dll"/>
+    <ROW Component="Ext.Net.UX.dll_1" ComponentId="{3A7DC308-8D18-4BFE-AD9E-AD96C026A97A}" Directory_="DLL_Dir" Attributes="0" KeyPath="Ext.Net.UX.dll_1"/>
+    <ROW Component="Ext.Net.Utilities.dll" ComponentId="{882377D1-A6FE-431E-BB29-7F691668DD5E}" Directory_="bin_Dir" Attributes="0" KeyPath="Ext.Net.Utilities.dll"/>
+    <ROW Component="Ext.Net.Utilities.dll_1" ComponentId="{F5C750BE-1679-4945-8EA0-D5A4F17012B7}" Directory_="DLL_Dir" Attributes="0" KeyPath="Ext.Net.Utilities.dll_1"/>
+    <ROW Component="Ext.Net.dll" ComponentId="{3239B9A9-1ADB-4FAC-B37E-D3C2114B5143}" Directory_="bin_Dir" Attributes="0" KeyPath="Ext.Net.dll"/>
+    <ROW Component="Ext.Net.dll_1" ComponentId="{A1C6D16D-54B3-4ABE-975F-1758A26D9E36}" Directory_="DLL_Dir" Attributes="0" KeyPath="Ext.Net.dll_1"/>
+    <ROW Component="Login.css" ComponentId="{8F7EC633-3D2C-4A27-A456-F5B30CCCB789}" Directory_="Css_Dir" Attributes="0" KeyPath="Login.css" Type="0"/>
+    <ROW Component="Modelo.dll" ComponentId="{ADED7F66-FF9F-4E36-9700-C127F246D632}" Directory_="bin_Dir" Attributes="0" KeyPath="Modelo.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{59115FEE-5394-4D80-886B-7F3212C72B19}" Directory_="bin_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Newtonsoft.Json.dll_1" ComponentId="{DE74A21E-5E0F-4463-9ABA-5A9FAEEE642D}" Directory_="DLL_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_1"/>
+    <ROW Component="ProductInformation" ComponentId="{0CD0DA47-8C09-4F35-899D-FBAD254E2FE3}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RegrasNegocio.dll" ComponentId="{D435252B-09A4-416D-8AD0-042DCD2BBA99}" Directory_="bin_Dir" Attributes="0" KeyPath="RegrasNegocio.dll"/>
+    <ROW Component="Reserva.dll" ComponentId="{950D0DF7-F626-4801-8F95-60641F078FEF}" Directory_="bin_Dir" Attributes="0" KeyPath="Reserva.dll"/>
+    <ROW Component="SolicitaSenha.htm" ComponentId="{52703D97-AFFA-4AC8-BE4A-D13589C64703}" Directory_="LayoutEmails_Dir" Attributes="0" KeyPath="SolicitaSenha.htm" Type="0"/>
+    <ROW Component="filaEspera.png" ComponentId="{011A52A0-4CAE-4A77-93A7-8D580541C49B}" Directory_="Img_Dir" Attributes="0" KeyPath="filaEspera.png" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath AcessoDados.dll Default.aspx Ext.Net.UX.dll Ext.Net.UX.dll_1 Ext.Net.Utilities.dll Ext.Net.Utilities.dll_1 Ext.Net.dll Ext.Net.dll_1 Login.css Modelo.dll Newtonsoft.Json.dll Newtonsoft.Json.dll_1 ProductInformation RegrasNegocio.dll Reserva.dll SolicitaSenha.htm filaEspera.png"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AcessoDados.dll" Component_="AcessoDados.dll" FileName="Acesso~1.dll|AcessoDados.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\AcessoDados.dll" SelfReg="false" NextFile="AcessoDados.pdb"/>
+    <ROW File="AcessoDados.pdb" Component_="AcessoDados.dll" FileName="Acesso~1.pdb|AcessoDados.pdb" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\AcessoDados.pdb" SelfReg="false" NextFile="Ext.Net.dll"/>
+    <ROW File="Default.aspx" Component_="Default.aspx" FileName="Defaul~1.asp|Default.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Default.aspx" SelfReg="false" NextFile="Ext.Net.dll_1"/>
+    <ROW File="Espera.aspx" Component_="Default.aspx" FileName="Espera~1.asp|Espera.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Espera.aspx" SelfReg="false" NextFile="Home.aspx"/>
+    <ROW File="Ext.Net.UX.dll" Component_="Ext.Net.UX.dll" FileName="ExtNet~3.dll|Ext.Net.UX.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Ext.Net.UX.dll" SelfReg="false" NextFile="Modelo.dll"/>
+    <ROW File="Ext.Net.UX.dll_1" Component_="Ext.Net.UX.dll_1" FileName="ExtNet~3.dll|Ext.Net.UX.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\DLL\Ext.Net.UX.dll" SelfReg="false" NextFile="Newtonsoft.Json.dll_1"/>
+    <ROW File="Ext.Net.Utilities.dll" Component_="Ext.Net.Utilities.dll" FileName="ExtNet~2.dll|Ext.Net.Utilities.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Ext.Net.Utilities.dll" SelfReg="false" NextFile="Ext.Net.UX.dll"/>
+    <ROW File="Ext.Net.Utilities.dll_1" Component_="Ext.Net.Utilities.dll_1" FileName="ExtNet~2.dll|Ext.Net.Utilities.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\DLL\Ext.Net.Utilities.dll" SelfReg="false" NextFile="Ext.Net.UX.dll_1"/>
+    <ROW File="Ext.Net.dll" Component_="Ext.Net.dll" FileName="ExtNet~1.dll|Ext.Net.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Ext.Net.dll" SelfReg="false" NextFile="Ext.Net.Utilities.dll"/>
+    <ROW File="Ext.Net.dll_1" Component_="Ext.Net.dll_1" FileName="ExtNet~1.dll|Ext.Net.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\DLL\Ext.Net.dll" SelfReg="false" NextFile="Ext.Net.Utilities.dll_1"/>
+    <ROW File="Home.aspx" Component_="Default.aspx" FileName="Home~1.asp|Home.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Home.aspx" SelfReg="false" NextFile="filaEspera.png"/>
+    <ROW File="LogOut.aspx" Component_="Default.aspx" FileName="LogOut~1.asp|LogOut.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\LogOut.aspx" SelfReg="false" NextFile="Mesa.aspx"/>
+    <ROW File="Login.aspx" Component_="Default.aspx" FileName="Login~1.asp|Login.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Login.aspx" SelfReg="false" NextFile="LogOut.aspx"/>
+    <ROW File="Login.css" Component_="Login.css" FileName="Login.css" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Css\Login.css" SelfReg="false" NextFile="Default.aspx"/>
+    <ROW File="Mesa.aspx" Component_="Default.aspx" FileName="Mesa~1.asp|Mesa.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Mesa.aspx" SelfReg="false" NextFile="Reserva.aspx"/>
+    <ROW File="Modelo.dll" Component_="Modelo.dll" FileName="Modelo.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Modelo.dll" SelfReg="false" NextFile="Modelo.pdb"/>
+    <ROW File="Modelo.pdb" Component_="Modelo.dll" FileName="Modelo.pdb" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Modelo.pdb" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="Newton~1.dll|Newtonsoft.Json.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Newtonsoft.Json.dll" SelfReg="false" NextFile="RegrasNegocio.dll"/>
+    <ROW File="Newtonsoft.Json.dll_1" Component_="Newtonsoft.Json.dll_1" FileName="Newton~1.dll|Newtonsoft.Json.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\DLL\Newtonsoft.Json.dll" SelfReg="false" NextFile="Espera.aspx"/>
+    <ROW File="RegrasNegocio.dll" Component_="RegrasNegocio.dll" FileName="Regras~1.dll|RegrasNegocio.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\RegrasNegocio.dll" SelfReg="false" NextFile="RegrasNegocio.pdb"/>
+    <ROW File="RegrasNegocio.pdb" Component_="RegrasNegocio.dll" FileName="Regras~1.pdb|RegrasNegocio.pdb" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\RegrasNegocio.pdb" SelfReg="false" NextFile="Reserva.dll"/>
+    <ROW File="Reserva.aspx" Component_="Default.aspx" FileName="Reserv~1.asp|Reserva.aspx" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Reserva.aspx" SelfReg="false"/>
+    <ROW File="Reserva.dll" Component_="Reserva.dll" FileName="Reserva.dll" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Reserva.dll" SelfReg="false" NextFile="Reserva.pdb"/>
+    <ROW File="Reserva.pdb" Component_="Reserva.dll" FileName="Reserva.pdb" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\bin\Reserva.pdb" SelfReg="false" NextFile="Login.css"/>
+    <ROW File="SolicitaSenha.htm" Component_="SolicitaSenha.htm" FileName="Solici~1.htm|SolicitaSenha.htm" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\LayoutEmails\SolicitaSenha.htm" SelfReg="false" NextFile="Login.aspx"/>
+    <ROW File="filaEspera.png" Component_="filaEspera.png" FileName="filaEs~1.png|filaEspera.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\filaEspera.png" SelfReg="false" NextFile="fundo1.jpg"/>
+    <ROW File="fundo1.jpg" Component_="filaEspera.png" FileName="fundo1.jpg" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\fundo1.jpg" SelfReg="false" NextFile="fundo2.png"/>
+    <ROW File="fundo2.png" Component_="filaEspera.png" FileName="fundo2.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\fundo2.png" SelfReg="false" NextFile="fundoLogin.png"/>
+    <ROW File="fundoLogin.png" Component_="filaEspera.png" FileName="fundoL~1.png|fundoLogin.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\fundoLogin.png" SelfReg="false" NextFile="fundoSobMenu.png"/>
+    <ROW File="fundoSobMenu.png" Component_="filaEspera.png" FileName="fundoS~1.png|fundoSobMenu.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\fundoSobMenu.png" SelfReg="false" NextFile="iconAdmin.png"/>
+    <ROW File="iconAdmin.png" Component_="filaEspera.png" FileName="iconAd~1.png|iconAdmin.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\iconAdmin.png" SelfReg="false" NextFile="imagemFundo.jpg"/>
+    <ROW File="imagemFundo.jpg" Component_="filaEspera.png" FileName="imagem~1.jpg|imagemFundo.jpg" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\imagemFundo.jpg" SelfReg="false" NextFile="imagemSistema.png"/>
+    <ROW File="imagemSistema.png" Component_="filaEspera.png" FileName="imagem~1.png|imagemSistema.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\imagemSistema.png" SelfReg="false" NextFile="logoAdmin.png"/>
+    <ROW File="logoAdmin.png" Component_="filaEspera.png" FileName="logoAd~1.png|logoAdmin.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\logoAdmin.png" SelfReg="false" NextFile="logoGourmet.png"/>
+    <ROW File="logoGourmet.png" Component_="filaEspera.png" FileName="logoGo~1.png|logoGourmet.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\logoGourmet.png" SelfReg="false" NextFile="mesa.png"/>
+    <ROW File="mesa.png" Component_="filaEspera.png" FileName="mesa.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesa.png" SelfReg="false" NextFile="mesa1.png"/>
+    <ROW File="mesa1.png" Component_="filaEspera.png" FileName="mesa1.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesa1.png" SelfReg="false" NextFile="mesa2.png"/>
+    <ROW File="mesa2.png" Component_="filaEspera.png" FileName="mesa2.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesa2.png" SelfReg="false" NextFile="mesa3.png"/>
+    <ROW File="mesa3.png" Component_="filaEspera.png" FileName="mesa3.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesa3.png" SelfReg="false" NextFile="mesa4.png"/>
+    <ROW File="mesa4.png" Component_="filaEspera.png" FileName="mesa4.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesa4.png" SelfReg="false" NextFile="mesaS1.png"/>
+    <ROW File="mesaS1.png" Component_="filaEspera.png" FileName="mesaS1.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesaS1.png" SelfReg="false" NextFile="mesaS2.png"/>
+    <ROW File="mesaS2.png" Component_="filaEspera.png" FileName="mesaS2.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesaS2.png" SelfReg="false" NextFile="mesaS3.png"/>
+    <ROW File="mesaS3.png" Component_="filaEspera.png" FileName="mesaS3.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesaS3.png" SelfReg="false" NextFile="mesaS4.png"/>
+    <ROW File="mesaS4.png" Component_="filaEspera.png" FileName="mesaS4.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\mesaS4.png" SelfReg="false" NextFile="rest.png"/>
+    <ROW File="rest.png" Component_="filaEspera.png" FileName="rest.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\rest.png" SelfReg="false" NextFile="rest2.png"/>
+    <ROW File="rest2.png" Component_="filaEspera.png" FileName="rest2.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\rest2.png" SelfReg="false" NextFile="sair.png"/>
+    <ROW File="sair.png" Component_="filaEspera.png" FileName="sair.png" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\sair.png" SelfReg="false" NextFile="skull.ico"/>
+    <ROW File="skull.ico" Component_="filaEspera.png" FileName="skull.ico" Attributes="0" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Reservas\Img\skull.ico" SelfReg="false" NextFile="SolicitaSenha.htm"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPoolComponent">
+    <ROW AppPoolId="0" Name="ArtebitGourmet" Condition="1" Flags="113" ManagedRuntimeVersion="v4.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" GeneralOptions="bh" EulaPathLocId="*" IntroTextPathLocId="*"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="\\artebit-server\Desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Instaladores" PackageFileName="[|ProductName]" Languages="en;pt_BR" LangOpt="1" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" PackageType="1" FilesInsideExe="true" ExeIconPath="C:\Users\Naldo-S\Desktop\artebitGoumet.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="[|ProductName]"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_pt_BR.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;air\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SQLConnectionDlg.aip" Path="&lt;AI_THEMES&gt;air\fragments\SQLConnectionDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;air\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="SetupTypeDlg.aip" Path="&lt;AI_THEMES&gt;air\fragments\SetupTypeDlg.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;air\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_IIsConfig" Description="Configuring Internet Information Services" Template="Installing &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_IIsConfig" TemplateLocId="ActionText.Template.AI_IIsConfig"/>
+    <ROW Action="AI_IIsInstall" Description="Generating actions to configure Internet Information Services" DescriptionLocId="ActionText.Description.AI_IIsInstall"/>
+    <ROW Action="AI_IIsRemove" Description="Configuring Internet Information Services" Template="Removing &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_IIsRemove" TemplateLocId="ActionText.Template.AI_IIsRemove"/>
+    <ROW Action="AI_IIsRollback" Description="Rolling back IIS configuration" Template="Restoring metabase configuration." DescriptionLocId="ActionText.Description.AI_IIsRollback" TemplateLocId="ActionText.Template.AI_IIsRollback"/>
+    <ROW Action="AI_IIsUninstall" Description="Generating actions to configure Internet Information Services" DescriptionLocId="ActionText.Description.AI_IIsUninstall"/>
+    <ROW Action="AI_SqlConfig" Description="Executing install SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlConfig" TemplateLocId="ActionText.Template.AI_SqlConfig"/>
+    <ROW Action="AI_SqlInstall" Description="Generating actions to configure databases for install SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlInstall"/>
+    <ROW Action="AI_SqlMaint" Description="Executing maintenance SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlMaint" TemplateLocId="ActionText.Template.AI_SqlMaint"/>
+    <ROW Action="AI_SqlRemove" Description="Executing uninstall SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRemove" TemplateLocId="ActionText.Template.AI_SqlRemove"/>
+    <ROW Action="AI_SqlRollback" Description="Executing rollback SQL scripts" Template="Connection: [1]  Script: [2]" DescriptionLocId="ActionText.Description.AI_SqlRollback" TemplateLocId="ActionText.Template.AI_SqlRollback"/>
+    <ROW Action="AI_SqlUninstall" Description="Generating actions to configure databases for uninstall SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlUninstall"/>
+    <ROW Action="AI_XmlCommit" Description="Committing XML file configurations." Template="Committing XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlCommit" TemplateLocId="ActionText.Template.AI_XmlCommit"/>
+    <ROW Action="AI_XmlConfig" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlConfig" TemplateLocId="ActionText.Template.AI_XmlConfig"/>
+    <ROW Action="AI_XmlInstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlInstall"/>
+    <ROW Action="AI_XmlRemove" Description="Executing XML file configurations" Template="Configuring XML file: &quot;[1]&quot;" DescriptionLocId="ActionText.Description.AI_XmlRemove" TemplateLocId="ActionText.Template.AI_XmlRemove"/>
+    <ROW Action="AI_XmlRollback" Description="Rolling back XML file configurations." Template="Rolling back XML file configurations." DescriptionLocId="ActionText.Description.AI_XmlRollback" TemplateLocId="ActionText.Template.AI_XmlRollback"/>
+    <ROW Action="AI_XmlUninstall" Description="Generating actions to configure XML files" DescriptionLocId="ActionText.Description.AI_XmlUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH" Signature_="AI_IISSearchSgn" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH_EX" Signature_="AI_IISSearchSgnEx" Builds="DefaultBuild"/>
+    <ROW Property="AI_IISSEARCH_SERVICE" Signature_="AI_IISSearchSgnService" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="iis.dll" SourcePath="&lt;AI_CUSTACTS&gt;iis.dll"/>
+    <ROW Name="logo.bmp" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\logo.bmp"/>
+    <ROW Name="logoico.ico" SourcePath="C:\Users\Naldo-S\Desktop\Artebit\Design Artebit\logo ico.ico"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="sql.dll" SourcePath="&lt;AI_CUSTACTS&gt;sql.dll"/>
+    <ROW Name="teste1.png" SourcePath="C:\Users\Naldo-S\Desktop\teste1.png"/>
+    <ROW Name="xmlCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;xmlCfg.dll"/>
+    <ATTRIBUTE name="DeletedRows" value="glassbackground"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="ExitDialog" Control="SubTitle" Type="Text" X="25" Y="45" Width="303" Height="20" Attributes="196611" Text="Obrigado" TextStyle="SubTitle" Order="1000" TextLocId="-" MsiKey="ExitDialog#SubTitle"/>
+    <ROW Dialog_="WelcomeDlg" Control="Description" Type="Text" X="28" Y="173" Width="314" Height="26" Attributes="196611" Text="The [Wizard] will install [ProductName] on your computer.  Click &quot;Next&quot; to continue or &quot;Cancel&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.WelcomeDlg#Description" MsiKey="WelcomeDlg#Description"/>
+    <ROW Dialog_="WelcomeDlg" Control="Title" Type="Text" X="24" Y="7" Width="332" Height="11" Attributes="65539" Text="[ProductName]" TextStyle="Title" Order="600" TextLocId="Air.Control.Text.WelcomeDlg#Title" MsiKey="WelcomeDlg#Title"/>
+    <ROW Dialog_="WelcomeDlg" Control="SubTitle" Type="Text" X="77" Y="143" Width="216" Height="18" Attributes="65539" Text="[ProductName]" TextStyle="SubTitle" Order="700" TextLocId="-" MsiKey="WelcomeDlg#SubTitle"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Back" Type="ImageButton" X="0" Y="2" Width="22" Height="21" Attributes="3" Text="[BackButton]" Help="Back|" Order="500" HelpLocId="Air.Control.Help#Back" MsiKey="SetupTypeDlg#Back" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Back]"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Cancel" Type="ImageButton" X="306" Y="277" Width="56" Height="20" Attributes="3" Text="[NextCancelButtons]" TextStyle="ImageButton" Order="400" MsiKey="SetupTypeDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Next" Type="PushButton" X="246" Y="277" Width="56" Height="20" Attributes="0" Text="[ButtonText_Next]" TextStyle="ImageButton" Order="300" TextLocId="-" MsiKey="SetupTypeDlg#Next" Options="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Title" Type="Text" X="46" Y="7" Width="302" Height="15" Attributes="196611" Text="[ProductName] [Wizard]" TextStyle="Title" Order="700" TextLocId="Air.Control.Text.WelcomeDlg#Title" MsiKey="SetupTypeDlg#Title"/>
+    <ROW Dialog_="SetupTypeDlg" Control="TitleIcon" Type="Icon" X="27" Y="5" Width="16" Height="16" Attributes="3145729" Text="[CustomSetupIcon]" Order="600" MsiKey="SetupTypeDlg#TitleIcon"/>
+    <ROW Dialog_="SetupTypeDlg" Control="TypicalButton" Type="PushButton" X="122" Y="176" Width="127" Height="44" Attributes="3" Text="[ButtonText_Install]" TextStyle="BlueText" Help="Instalar|" Order="200" HelpLocId="-" MsiKey="SetupTypeDlg#TypicalButton"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Bitmap_1" Type="Bitmap" X="71" Y="32" Width="190" Height="84" Attributes="1048577" Text="logo.bmp" Order="800"/>
+    <ROW Dialog_="SetupTypeDlg" Control="SubTitle" Type="Text" X="77" Y="143" Width="216" Height="18" Attributes="65539" Text="[ProductName]" TextStyle="SubTitle" Order="900" TextLocId="-"/>
+    <ROW Dialog_="FolderDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1700"/>
+    <ROW Dialog_="SetupTypeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1000"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Back" Type="ImageButton" X="0" Y="2" Width="22" Height="21" Attributes="3" Text="[BackButton]" Help="Back|" Order="800" HelpLocId="Air.Control.Help#Back" MsiKey="SQLConnectionDlg#Back" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Back]"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Cancel" Type="ImageButton" X="306" Y="277" Width="56" Height="20" Attributes="3" Text="[NextCancelButtons]" TextStyle="ImageButton" Order="700" MsiKey="SQLConnectionDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Next" Type="ImageButton" X="246" Y="277" Width="56" Height="20" Attributes="3" Text="[NextCancelButtons]" TextStyle="ImageButton" Order="600" MsiKey="SQLConnectionDlg#Next" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Next]"/>
+    <ROW Dialog_="SetupTypeDlg" Control="SetupTypeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1"/>
+    <ROW Dialog_="WelcomeDlg" Control="Bitmap_1" Type="Bitmap" X="71" Y="32" Width="190" Height="84" Attributes="1048577" Text="logo.bmp" Order="900"/>
+    <ROW Dialog_="WelcomeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1000"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="TitleIcon" Type="Icon" X="27" Y="5" Width="16" Height="16" Attributes="3145729" Text="[SqlLogoIcon]" Order="900" MsiKey="SQLConnectionDlg#TitleIcon"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Title" Type="Text" X="46" Y="7" Width="237" Height="11" Attributes="65539" Text="[ProductName] [Wizard]" TextStyle="Title" Order="1000" TextLocId="Air.Control.Text.WelcomeDlg#Title" MsiKey="SQLConnectionDlg#Title"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="SubTitle" Type="Text" X="25" Y="45" Width="304" Height="18" Attributes="65539" Text="Configurar Conexão" TextStyle="SubTitle" Order="1100" TextLocId="-" MsiKey="SQLConnectionDlg#SubTitle"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="600"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ServerEdit" Type="Edit" X="78" Y="74" Width="251" Height="18" Attributes="3" Property="SERVER_PROP" Text="{255}" Order="200" TextLocId="Control.Text.SQLConnectionDlg#ServerEdit" MsiKey="SQLConnectionDlg#ServerEdit"/>
+    <ROW Dialog_="ProgressDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1200"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="DatabaseEdit" Type="Edit" X="78" Y="101" Width="251" Height="18" Attributes="3" Property="DATABASE_PROP" Text="{255}" Order="300" TextLocId="Control.Text.SQLConnectionDlg#DatabaseEdit" MsiKey="SQLConnectionDlg#DatabaseEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="UsernameEdit" Type="Edit" X="78" Y="127" Width="251" Height="18" Attributes="3" Property="USERNAME_PROP" Text="{255}" Order="400" TextLocId="Control.Text.SQLConnectionDlg#UsernameEdit" MsiKey="SQLConnectionDlg#UsernameEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PasswordEdit" Type="Edit" X="78" Y="153" Width="251" Height="18" Attributes="2097155" Property="PASSWORD_PROP" Text="{255}" Order="500" TextLocId="Control.Text.SQLConnectionDlg#PasswordEdit" MsiKey="SQLConnectionDlg#PasswordEdit"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="ServerLabel" Type="Text" X="35" Y="78" Width="33" Height="11" Attributes="65539" Text="Servidor:" Order="1200" TextLocId="-" MsiKey="SQLConnectionDlg#ServerLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="DatabaseLabel" Type="Text" X="35" Y="105" Width="40" Height="11" Attributes="65539" Text="Banco:" Order="1300" TextLocId="-" MsiKey="SQLConnectionDlg#DatabaseLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="UsernameLabel" Type="Text" X="35" Y="130" Width="39" Height="11" Attributes="65539" Text="Usuário:" Order="1400" TextLocId="-" MsiKey="SQLConnectionDlg#UsernameLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="PasswordLabel" Type="Text" X="35" Y="158" Width="40" Height="11" Attributes="65539" Text="Senha:" Order="1500" TextLocId="-" MsiKey="SQLConnectionDlg#PasswordLabel"/>
+    <ROW Dialog_="SQLConnectionDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1600"/>
+    <ROW Dialog_="ExitDialog" Control="ViewReadmeCheckBox" Type="ImageButton" X="25" Y="174" Width="54" Height="54" Attributes="3" Property="VIEWREADME" Text="[ViewReadMeButton]" Help="View readme file|" Order="700" HelpLocId="Air.Control.Help.ExitDialog#ViewReadmeCheckBox" MsiKey="ExitDialog#ViewReadmeCheckBox" Options="1" ExtType="ImageButton" ExtData="[ViewReadMeButtonText]"/>
+    <ROW Dialog_="ExitDialog" Control="LaunchProdCheckBox" Type="ImageButton" X="158" Y="125" Width="54" Height="54" Attributes="3" Property="RUNAPPLICATION" Text="[RunApplicationButton]" Help="Run the application|" Order="800" HelpLocId="Air.Control.Help.ExitDialog#LaunchProdCheckBox" MsiKey="ExitDialog#LaunchProdCheckBox" Options="1" ExtType="ImageButton" ExtData="[LaunchApplicationButtonText]"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Description" Type="Text" X="35" Y="83" Width="308" Height="53" Attributes="196611" Text="The [Wizard] will create a server image of [ProductName], at a specified network location.  Click &quot;Next&quot; to continue or &quot;Cancel&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.AdminWelcomeDlg#Description" MsiKey="AdminWelcomeDlg#Description"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="SubTitle" Type="Text" X="5" Y="45" Width="365" Height="28" Attributes="65539" Text="Welcome to the [ProductName] [Wizard]" TextStyle="SubTitle" Order="700" TextLocId="Control.Text.AdminWelcomeDlg#Title" MsiKey="AdminWelcomeDlg#SubTitle"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Description" Type="Text" X="35" Y="83" Width="308" Height="53" Attributes="196611" Text="The [Wizard] will allow you to change the way [ProductName] features are installed on your computer or even to remove [ProductName] from your computer.  Click &quot;Next&quot; to continue or &quot;Cancel&quot; to exit the [Wizard]." Order="500" TextLocId="Control.Text.MaintenanceWelcomeDlg#Description" MsiKey="MaintenanceWelcomeDlg#Description"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="SubTitle" Type="Text" X="5" Y="45" Width="365" Height="28" Attributes="65539" Text="Welcome to the [ProductName] [Wizard]" TextStyle="SubTitle" Order="800" TextLocId="Control.Text.AdminWelcomeDlg#Title" MsiKey="MaintenanceWelcomeDlg#SubTitle"/>
+    <ROW Dialog_="ResumeDlg" Control="Description" Type="Text" X="35" Y="83" Width="308" Height="53" Attributes="196611" Text="The [Wizard] will complete the installation of [ProductName] on your computer.  Click &quot;Install&quot; to continue or &quot;Cancel&quot; to exit the [Wizard]." Order="800" TextLocId="Control.Text.ResumeDlg#Description" MsiKey="ResumeDlg#Description"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="SubTitle" Type="Text" X="25" Y="45" Width="327" Height="29" Attributes="65539" Text="Welcome to the [ProductName] Patch [Wizard]" TextStyle="SubTitle" Order="400" TextLocId="Modern.Control.Text.PatchWelcomeDlg#Title" MsiKey="PatchWelcomeDlg#SubTitle"/>
+    <ROW Dialog_="ExitDialog" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1100"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="2000"/>
+    <ROW Dialog_="CustomizeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1400"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="ResumeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="AdminWelcomeDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="AdminInstallPointDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1100"/>
+    <ROW Dialog_="AdminBrowseDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1200"/>
+    <ROW Dialog_="BrowseDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1200"/>
+    <ROW Dialog_="DiskCostDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="600"/>
+    <ROW Dialog_="FatalError" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="1200"/>
+    <ROW Dialog_="FilesInUse" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="800"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="800"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="800"/>
+    <ROW Dialog_="UserExit" Control="Icon_1" Type="Icon" X="5" Y="277" Width="26" Height="26" Attributes="5242881" Text="logoico.ico" Order="900"/>
+    <ROW Dialog_="PrepareDlg" Control="IntroProductName" Type="Text" X="16" Y="140" Width="338" Height="44" Attributes="65539" Text="[ProductName]" TextStyle="ProductName" Order="500" TextLocId="Modern.Control.Text.Dlg#AppName" MsiKey="PrepareDlg#IntroProductName"/>
+    <ATTRIBUTE name="DeletedRows" value="SetupTypeDlg#CustomCommandLinkButton@SetupTypeDlg#SubTitle@SetupTypeDlg#CustomLabel@SetupTypeDlg#CustomText@SetupTypeDlg#CustomButton@SetupTypeDlg#TypicalCommandLinkButton@SetupTypeDlg#TypicalLabel@SQLConnectionDlg#OdbcResourceEdit@SetupTypeDlg#TypicalText@SQLConnectionDlg#OdbcResourceLabel@SQLConnectionDlg#PortLabel@SQLConnectionDlg#PortEdit"/>
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlConditionComponent">
+    <ATTRIBUTE name="DeletedRows" value="SetupTypeDlg#CustomCommandLinkButton#Hide#NOT AIEXTERNALUI@SetupTypeDlg#CustomLabel#Show#NOT AIEXTERNALUI@SetupTypeDlg#TypicalText#Show#NOT AIEXTERNALUI@SetupTypeDlg#CustomText#Show#NOT AIEXTERNALUI@SetupTypeDlg#TypicalLabel#Show#NOT AIEXTERNALUI@SetupTypeDlg#CustomButton#Show#NOT AIEXTERNALUI@SetupTypeDlg#TypicalCommandLinkButton#Default#AIEXTERNALUI@SetupTypeDlg#TypicalCommandLinkButton#Hide#NOT AIEXTERNALUI"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Back" Event="NewDialog" Argument="SQLConnectionDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalButton" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="299"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="102"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalButton" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="501"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalButton" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="502"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="TypicalButton" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="503"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="SetupTypeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="0"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="SetupTypeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="2"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="SQLConnectionDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SQLConnectionDlg" Control_="Next" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL AND ( SqlConnectionOK = &quot;1&quot; )" Ordering="1"/>
+    <ROW Dialog_="SQLConnectionDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SQLConnectionDlg" Control_="Next" Event="[SqlConnectionString]" Argument="Driver=[\{]SQL Server[\}];Server=[SERVER_PROP];Port=[PORT_PROP];Uid=[USERNAME_PROP];Pwd=[PASSWORD_PROP];" Condition="AI_INSTALL" Ordering="2"/>
+    <ROW Dialog_="SQLConnectionDlg" Control_="Next" Event="DoAction" Argument="TestODBCConnection" Condition="AI_INSTALL AND ( NOT (SqlConnectionString = &quot;&quot;) )" Ordering="3"/>
+    <ATTRIBUTE name="DeletedRows" value="SetupTypeDlg#CustomCommandLinkButton#[AiEventsControl]#CustomButton#1@SetupTypeDlg#CustomButton#[InstallMode]#[InstallModeCustom]#1@SetupTypeDlg#TypicalCommandLinkButton#[AiEventsControl]#TypicalButton#1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_IIsConfig" Type="11265" Source="iis.dll" Target="OnIIsConfig" WithoutSeq="true"/>
+    <ROW Action="AI_IIsInstall" Type="1" Source="iis.dll" Target="OnIIsInstall"/>
+    <ROW Action="AI_IIsRemove" Type="11265" Source="iis.dll" Target="OnIIsRemove" WithoutSeq="true"/>
+    <ROW Action="AI_IIsRollback" Type="11521" Source="iis.dll" Target="OnIIsRollback" WithoutSeq="true"/>
+    <ROW Action="AI_IIsUninstall" Type="1" Source="iis.dll" Target="OnIIsUninstall"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_Internet" Type="1" Source="aicustact.dll" Target="ActiveInternetConnection"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SqlConfig" Type="11265" Source="sql.dll" Target="OnSqlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_SqlInstall" Type="1" Source="sql.dll" Target="OnSqlInstall"/>
+    <ROW Action="AI_SqlMaint" Type="11265" Source="sql.dll" Target="OnSqlMaint" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRemove" Type="11265" Source="sql.dll" Target="OnSqlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRollback" Type="11521" Source="sql.dll" Target="OnSqlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_SqlUninstall" Type="1" Source="sql.dll" Target="OnSqlUninstall"/>
+    <ROW Action="AI_XmlCommit" Type="11777" Source="xmlCfg.dll" Target="OnXmlCommit" WithoutSeq="true"/>
+    <ROW Action="AI_XmlConfig" Type="11265" Source="xmlCfg.dll" Target="OnXmlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_XmlInstall" Type="1" Source="xmlCfg.dll" Target="OnXmlInstall"/>
+    <ROW Action="AI_XmlRemove" Type="11265" Source="xmlCfg.dll" Target="OnXmlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_XmlRollback" Type="11521" Source="xmlCfg.dll" Target="OnXmlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_XmlUninstall" Type="1" Source="xmlCfg.dll" Target="OnXmlUninstall"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="TestODBCConnection" Type="1" Source="sql.dll" Target="TestSqlConnection" WithoutSeq="true" Options="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDialogComponent">
+    <ROW Dialog="WelcomeDlg" HCentering="50" VCentering="50" Width="370" Height="304" Attributes="6" Title="[ProductName]" Control_Default="Next" Control_Cancel="Cancel" TitleLocId="-" MsiKey="WelcomeDlg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDrLocatorComponent">
+    <ROW Signature_="AI_IISSearchSgn" Path="[SystemFolder]inetsrv" Depth="0"/>
+    <ROW Signature_="AI_IISSearchSgnEx" Path="[SystemFolder]inetsrv" Depth="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="artebitGoumet_1.exe" SourcePath="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\artebitGoumet.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_Internet" Condition="1" Sequence="399" Builds="DefaultBuild"/>
+    <ROW Action="AI_IIsInstall" Condition="(VersionNT &gt;= 500) AND (NOT Installed)" Sequence="6509"/>
+    <ROW Action="AI_IIsUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_SqlInstall" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5499"/>
+    <ROW Action="AI_SqlUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1649"/>
+    <ROW Action="AI_XmlInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_XmlUninstall" Condition="(REMOVE)" Sequence="3101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_SET_EXTEND_GLASS" Sequence="76" MsiKey="AI_SET_EXTEND_GLASS"/>
+    <ROW Action="AI_SET_EXTENDER_IMAGES_SMALL" Sequence="77" MsiKey="AI_SET_EXTENDER_IMAGES_SMALL"/>
+    <ROW Action="AI_Internet" Condition="1" Sequence="399" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_IISSEARCH OR AI_IISSEARCH_EX) AND AI_IISSEARCH_SERVICE" Description="[ProductName] cannot be installed on systems with Internet Information Services version lower than [AI_MINIISVERSION]" DescriptionLocId="AI.LaunchCondition.IIS" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_IISSearchSgnService" Root="2" Key="SYSTEM\CurrentControlSet\Services\W3SVC" Name="DisplayName" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiSignatureComponent">
+    <ROW Signature="AI_IISSearchSgn" FileName="inetinfo.exe" MinVersion="[|AI_MINIISVERSION]"/>
+    <ROW Signature="AI_IISSearchSgnEx" FileName="w3wp.exe" MinVersion="[|AI_MINIISVERSION]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiTextStyleComponent">
+    <ROW TextStyle="BlueText" FaceName="Verdana" Size="12" Color="1776510" StyleBits="0" MsiKey="BlueText"/>
+    <ROW TextStyle="SubTitle" FaceName="Verdana" Size="11" Color="1908075" StyleBits="0" MsiKey="SubTitle"/>
+    <ROW TextStyle="SubTitle8" FaceName="Verdana" Size="8" Color="921978" StyleBits="0" MsiKey="SubTitle8"/>
+    <ROW TextStyle="TitleFont" FaceName="Verdana" Size="13" Color="789628" StyleBits="0" MsiKey="TitleFont"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="air"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" DisplayName=".NET Framework 4.0" VersionMin="4.0" SetupFileUrl="http://download.microsoft.com/download/1/B/E/1BE39E79-7E39-46A3-96FF-047F95396215/dotNetFx40_Full_setup.exe" Location="1" ExactSize="0" Win9xVersions="Windows 9x/ME" WinNTVersions="Windows NT 4.0, Windows NT 4.0 Service Pack 1, Windows NT 4.0 Service Pack 2, Windows NT 4.0 Service Pack 3, Windows NT 4.0 Service Pack 4, Windows NT 4.0 Service Pack 5, Windows NT 4.0 Service Pack 6, Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2" Operator="1"/>
+    <ATTRIBUTE name="PrereqsOrder" value="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD_NET_40_SEARCH" Prereq="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Version" VerMin="4.0" Order="1" Property="AI_NET_40_ORIGINAL_PREREQSEARCH_PROP"/>
+    <ROW SearchKey="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD_NET_45_SEARCH" Prereq="D62CCA_449F_4EB4_AA2F_C4376D7FBDAD" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Version" VerMin="4.5" Order="2" Property="AI_NET_40_45_PREREQSEARCH_PROP"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlConnectionComponent">
+    <ROW ConnectionName="PredefinedConnection" Dbms="0" OdbcResource="SQL Server" Server="[SERVER_PROP]" Port="1433" Database="[DATABASE_PROP]" Username="[USERNAME_PROP]" PassProperty="PASSWORD_PROP" Flags="4" Order="0" LoginTimeout="30"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlScriptComponent">
+    <ROW ScriptName="ALTER GFILAIMPRESSAO" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptText="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\ALTER GFILAIMPRESSAO.sql" Flags="18" Order="1"/>
+    <ROW ScriptName="Create EPRODOBSBAIXA" ConnectionName="PredefinedConnection" Condition="1" Separator="GO" ScriptText="\\artebit-server\desenvolvimento\ArquivosCompartilhados\Artebit Gourmet\Create EPRODOBSBAIXA.sql" Flags="18" Order="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VirtualDirectoriesComponent">
+    <ROW VirtualDirectoryId="0" VirtualDirectory="Reservas" WebApplication="0" Path="Reservas_Dir" Condition="1" AccessFlags="61985" AccessPerm="513" DocumentList="default.aspx" AppPool="0" AspNetVers="4.0.30319"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.WebApplicationsComponent">
+    <ROW WebSiteId="0" WebApplication="Default Web Site" Root="APPDIR" Condition="1" ServerBindings=":80:" AccessSSLFlags="0" AccessFlags="49761" AccessPerm="513" DocumentList="index.html, index.htm, default.htm"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlAttributeComponent">
+    <ROW XmlElement="2" Name="name" Flags="14" Order="0" Value="extnet"/>
+    <ROW XmlElement="2" Name="type" Flags="14" Order="1" Value="Ext.Net.GlobalConfig"/>
+    <ROW XmlElement="2" Name="requirePermission" Flags="14" Order="2" Value="false"/>
+    <ROW XmlElement="4" Name="key" Flags="14" Order="0" Value="CODSISTEMA"/>
+    <ROW XmlElement="4" Name="value" Flags="14" Order="1" Value="R"/>
+    <ROW XmlElement="5" Name="key" Flags="14" Order="0" Value="SISTEMAS"/>
+    <ROW XmlElement="5" Name="value" Flags="14" Order="1" Value="R"/>
+    <ROW XmlElement="7" Name="key" Flags="14" Order="0" Value="TIPOBD"/>
+    <ROW XmlElement="7" Name="value" Flags="14" Order="1" Value="Local"/>
+    <ROW XmlElement="8" Name="scriptMode" Flags="14" Order="0" Value="Debug"/>
+    <ROW XmlElement="8" Name="theme" Flags="14" Order="1" Value="Gray"/>
+    <ROW XmlElement="12" Name="name" Flags="14" Order="0" Value="Restaurante"/>
+    <ROW XmlElement="12" Name="connectionString" Flags="14" Order="1" Value="metadata=res://*/BD.csdl|res://*/BD.ssdl|res://*/BD.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=[SERVER_PROP];Initial Catalog=[DATABASE_PROP];Persist Security Info=True;User ID=[USERNAME_PROP];Password=[PASSWORD_PROP];MultipleActiveResultSets=True&quot;"/>
+    <ROW XmlElement="12" Name="providerName" Flags="14" Order="2" Value="System.Data.EntityClient"/>
+    <ROW XmlElement="15" Name="name" Flags="14" Order="0" Value="DirectRequestModule"/>
+    <ROW XmlElement="15" Name="type" Flags="14" Order="1" Value="Ext.Net.DirectRequestModule, Ext.Net"/>
+    <ROW XmlElement="17" Name="path" Flags="14" Order="0" Value="*/ext.axd"/>
+    <ROW XmlElement="17" Name="verb" Flags="14" Order="1" Value="*"/>
+    <ROW XmlElement="17" Name="type" Flags="14" Order="2" Value="Ext.Net.ResourceHandler"/>
+    <ROW XmlElement="17" Name="validate" Flags="14" Order="3" Value="false"/>
+    <ROW XmlElement="18" Name="targetFramework" Flags="14" Order="0" Value="4.0"/>
+    <ROW XmlElement="20" Name="assembly" Flags="14" Order="0" Value="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+    <ROW XmlElement="21" Name="assembly" Flags="14" Order="0" Value="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <ROW XmlElement="22" Name="mode" Flags="14" Order="0" Value="Forms"/>
+    <ROW XmlElement="23" Name="cookieless" Flags="14" Order="0" Value="AutoDetect"/>
+    <ROW XmlElement="23" Name="defaultUrl" Flags="14" Order="1" Value="Default.aspx"/>
+    <ROW XmlElement="23" Name="loginUrl" Flags="14" Order="2" Value="Login.aspx"/>
+    <ROW XmlElement="23" Name="timeout" Flags="14" Order="3" Value="90"/>
+    <ROW XmlElement="23" Name="protection" Flags="14" Order="4" Value="All"/>
+    <ROW XmlElement="25" Name="users" Flags="14" Order="0" Value="?"/>
+    <ROW XmlElement="28" Name="namespace" Flags="14" Order="0" Value="Artebit.Restaurante.Global.RegrasNegocio"/>
+    <ROW XmlElement="29" Name="path" Flags="14" Order="0" Value="Css"/>
+    <ROW XmlElement="32" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="33" Name="path" Flags="14" Order="0" Value="extjs"/>
+    <ROW XmlElement="36" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="37" Name="path" Flags="14" Order="0" Value="extnet"/>
+    <ROW XmlElement="40" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="41" Name="path" Flags="14" Order="0" Value="Img"/>
+    <ROW XmlElement="44" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="45" Name="path" Flags="14" Order="0" Value="icons"/>
+    <ROW XmlElement="48" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="49" Name="path" Flags="14" Order="0" Value="ux"/>
+    <ROW XmlElement="52" Name="users" Flags="14" Order="0" Value="*"/>
+    <ROW XmlElement="55" Name="validateIntegratedModeConfiguration" Flags="14" Order="0" Value="false"/>
+    <ROW XmlElement="57" Name="name" Flags="14" Order="0" Value="DirectRequestModule"/>
+    <ROW XmlElement="57" Name="preCondition" Flags="14" Order="1" Value="managedHandler"/>
+    <ROW XmlElement="57" Name="type" Flags="14" Order="2" Value="Ext.Net.DirectRequestModule, Ext.Net"/>
+    <ROW XmlElement="59" Name="name" Flags="14" Order="0" Value="DirectRequestHandler"/>
+    <ROW XmlElement="59" Name="verb" Flags="14" Order="1" Value="*"/>
+    <ROW XmlElement="59" Name="path" Flags="14" Order="2" Value="*/ext.axd"/>
+    <ROW XmlElement="59" Name="preCondition" Flags="14" Order="3" Value="integratedMode"/>
+    <ROW XmlElement="59" Name="type" Flags="14" Order="4" Value="Ext.Net.ResourceHandler"/>
+    <ROW XmlElement="62" Name="from" Flags="14" Order="0" Value="artebit1@gmail.com"/>
+    <ROW XmlElement="63" Name="host" Flags="14" Order="0" Value="smtp.gmail.com"/>
+    <ROW XmlElement="63" Name="userName" Flags="14" Order="1" Value="artebit1@gmail.com"/>
+    <ROW XmlElement="63" Name="password" Flags="14" Order="2" Value="artebit123"/>
+    <ROW XmlElement="63" Name="enableSsl" Flags="14" Order="3" Value="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlElementComponent">
+    <ROW XmlElement="0" Name="configuration" Order="0" Flags="30"/>
+    <ROW XmlElement="1" ParentElement="0" Name="configSections" Order="0" Flags="14"/>
+    <ROW XmlElement="2" ParentElement="1" Name="section" Order="0" Flags="14"/>
+    <ROW XmlElement="3" ParentElement="0" Name="appSettings" Order="1" Flags="14"/>
+    <ROW XmlElement="4" ParentElement="3" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="5" ParentElement="3" Name="add" Order="1" Flags="14"/>
+    <ROW XmlElement="6" ParentElement="3" Name="Comment" Order="2" Flags="1" Text="Tipo: Local ou Global"/>
+    <ROW XmlElement="7" ParentElement="3" Name="add" Order="3" Flags="14"/>
+    <ROW XmlElement="8" ParentElement="0" Name="extnet" Order="2" Flags="14"/>
+    <ROW XmlElement="9" ParentElement="0" Name="Comment" Order="3" Flags="1" Text="See Property Options in README.txt"/>
+    <ROW XmlElement="10" ParentElement="0" Name="Comment" Order="4" Flags="1" Text="The following system.web section is only requited for running ASP.NET AJAX under Internet&#13;&#10;&#9;&#9;Information Services 6.0 (or earlier).  This section is not necessary for IIS 7.0 or later."/>
+    <ROW XmlElement="11" ParentElement="0" Name="connectionStrings" Order="5" Flags="14"/>
+    <ROW XmlElement="12" ParentElement="11" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="13" ParentElement="0" Name="system.web" Order="6" Flags="14"/>
+    <ROW XmlElement="14" ParentElement="13" Name="httpModules" Order="0" Flags="14"/>
+    <ROW XmlElement="15" ParentElement="14" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="16" ParentElement="13" Name="httpHandlers" Order="1" Flags="14"/>
+    <ROW XmlElement="17" ParentElement="16" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="18" ParentElement="13" Name="compilation" Order="2" Flags="14"/>
+    <ROW XmlElement="19" ParentElement="18" Name="assemblies" Order="0" Flags="14"/>
+    <ROW XmlElement="20" ParentElement="19" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="21" ParentElement="19" Name="add" Order="1" Flags="14"/>
+    <ROW XmlElement="22" ParentElement="13" Name="authentication" Order="3" Flags="14"/>
+    <ROW XmlElement="23" ParentElement="22" Name="forms" Order="0" Flags="14"/>
+    <ROW XmlElement="24" ParentElement="13" Name="authorization" Order="4" Flags="14"/>
+    <ROW XmlElement="25" ParentElement="24" Name="deny" Order="0" Flags="14"/>
+    <ROW XmlElement="26" ParentElement="13" Name="pages" Order="5" Flags="14"/>
+    <ROW XmlElement="27" ParentElement="26" Name="namespaces" Order="0" Flags="14"/>
+    <ROW XmlElement="28" ParentElement="27" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="29" ParentElement="0" Name="location" Order="7" Flags="14"/>
+    <ROW XmlElement="30" ParentElement="29" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="31" ParentElement="30" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="32" ParentElement="31" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="33" ParentElement="0" Name="location" Order="8" Flags="14"/>
+    <ROW XmlElement="34" ParentElement="33" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="35" ParentElement="34" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="36" ParentElement="35" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="37" ParentElement="0" Name="location" Order="9" Flags="14"/>
+    <ROW XmlElement="38" ParentElement="37" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="39" ParentElement="38" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="40" ParentElement="39" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="41" ParentElement="0" Name="location" Order="10" Flags="14"/>
+    <ROW XmlElement="42" ParentElement="41" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="43" ParentElement="42" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="44" ParentElement="43" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="45" ParentElement="0" Name="location" Order="11" Flags="14"/>
+    <ROW XmlElement="46" ParentElement="45" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="47" ParentElement="46" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="48" ParentElement="47" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="49" ParentElement="0" Name="location" Order="12" Flags="14"/>
+    <ROW XmlElement="50" ParentElement="49" Name="system.web" Order="0" Flags="14"/>
+    <ROW XmlElement="51" ParentElement="50" Name="authorization" Order="0" Flags="14"/>
+    <ROW XmlElement="52" ParentElement="51" Name="allow" Order="0" Flags="14"/>
+    <ROW XmlElement="53" ParentElement="0" Name="Comment" Order="13" Flags="1" Text=" &#13;&#10;&#9;&#9;The system.webServer section is required for running ASP.NET AJAX under Internet Information Services 7.0.&#13;&#10;&#9;&#9;It is not necessary for previous version of IIS.&#13;&#10;&#9;"/>
+    <ROW XmlElement="54" ParentElement="0" Name="system.webServer" Order="14" Flags="14"/>
+    <ROW XmlElement="55" ParentElement="54" Name="validation" Order="0" Flags="14"/>
+    <ROW XmlElement="56" ParentElement="54" Name="modules" Order="1" Flags="14"/>
+    <ROW XmlElement="57" ParentElement="56" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="58" ParentElement="54" Name="handlers" Order="2" Flags="14"/>
+    <ROW XmlElement="59" ParentElement="58" Name="add" Order="0" Flags="14"/>
+    <ROW XmlElement="60" ParentElement="0" Name="system.net" Order="15" Flags="14"/>
+    <ROW XmlElement="61" ParentElement="60" Name="mailSettings" Order="0" Flags="14"/>
+    <ROW XmlElement="62" ParentElement="61" Name="smtp" Order="0" Flags="14"/>
+    <ROW XmlElement="63" ParentElement="62" Name="network" Order="0" Flags="14"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.XmlFileComponent">
+    <ROW XmlFile="Web.config" FileName="Web~1.con|Web.config" DirProperty="Reservas_Dir" Component="Default.aspx" RootElement="0" Flags="89" Version="1.0" Encoding="UTF-8" IndentUnits="2"/>
+  </COMPONENT>
+</DOCUMENT>

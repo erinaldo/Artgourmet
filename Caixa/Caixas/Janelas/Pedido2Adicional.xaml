@@ -1,0 +1,133 @@
+﻿<telerik:RadWindow xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   x:Class="Artebit.Restaurante.Caixa.Pedido2Adicional" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d" KeyDown="fechaDialogE"
+                   d:DesignHeight="730" d:DesignWidth="390" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+                   Header="Adicional / Guarinção" Background="Gainsboro">
+
+    <Grid MinWidth="390" MinHeight="730" x:Name="GridGlobal">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="325" />
+            <RowDefinition Height="325" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        
+        <!-- Tabela de Guarnição -->
+        <Border Grid.Row="0" Style="{StaticResource BordaClara}" x:Name="borderGuarnicao" Visibility="Visible"
+                Margin="10 10 20 10">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="27" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="243" />
+                </Grid.RowDefinitions>
+
+                <WrapPanel Grid.Row="1" Margin="5 0 5 0">
+                    <TextBlock Text="Guarnição:" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <telerik:RadComboBox x:Name="cmbGuarnicao" IsEditable="True" HorizontalAlignment="Left" Width="170"
+                                         SelectedValuePath="id" DisplayMemberPath="codnome" VerticalAlignment="Center" Margin="5 0 0 0" />
+                    <Button x:Name="btOkGu" Margin="10 5 0 0" Click="Escolhe_Cat3_cmb"
+                            Style="{StaticResource BotaoPadrao}" Content="OK" FontSize="12" Width="30" Height="25" />
+                    <TextBlock Text="" Foreground="Green" x:Name="txtMsgGu" Margin="5 0 0 0" />
+                </WrapPanel>
+
+                <ScrollViewer x:Name="VerticalScroller_Guarnicao" Visibility="Visible" Grid.Row="2"
+                              HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" CanContentScroll="True"
+                              Margin="10 10 10 10">
+
+                    <ItemsControl x:Name="grid_guarnicao">
+
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="4">
+                                </UniformGrid>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Margin="3 0 3 5" Loaded="Button_Loaded" BorderBrush="{Binding cor}"
+                                        Background="{Binding cor}" Click="Escolhe_Cat3" CommandParameter="{Binding id}" Width="85" Height="55">
+                                    <StackPanel>
+                                        <Label Content="{Binding codigo}" HorizontalAlignment="Center" />
+                                        <Label Content="{Binding nome}" />
+                                    </StackPanel>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+
+                    </ItemsControl>
+
+                </ScrollViewer>
+
+            </Grid>
+
+        </Border>
+
+        <!-- Tabela de Adicionais -->
+        <Border Grid.Row="1" Style="{StaticResource BordaClara}" x:Name="borderAdicionais" Visibility="Visible"
+                Margin="10 10 20 10">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="27" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="243" />
+                </Grid.RowDefinitions>
+
+                <WrapPanel Grid.Row="1" Margin="5 0 5 0">
+                    <TextBlock Text="Adicional:" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <telerik:RadComboBox x:Name="cmbAdicional" IsEditable="True" HorizontalAlignment="Left" Width="170"
+                                         SelectedValuePath="id" DisplayMemberPath="codnome" VerticalAlignment="Center" Margin="5 0 0 0" />
+                    <Button x:Name="btOkAd" Margin="10 5 0 0" Style="{StaticResource BotaoPadrao}" Content="OK"
+                            FontSize="12" Width="30" Height="25" />
+                    <TextBlock Text="" Foreground="Green" x:Name="txtMsgAd" Margin="5 0 0 0" />
+                </WrapPanel>
+
+                <ScrollViewer x:Name="VerticalScroller_Adicional" Visibility="Visible" Grid.Row="2"
+                              HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" CanContentScroll="True"
+                              Margin="10 10 10 10">
+
+                    <ItemsControl x:Name="grid_adicional">
+
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="4">
+                                </UniformGrid>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Margin="3 0 3 5" Loaded="Button_Loaded" BorderBrush="{Binding cor}"
+                                        Background="{Binding cor}" Click="Escolhe_Adicional" CommandParameter="{Binding id}" Width="85" Height="55">
+                                    <StackPanel>
+                                        <Label Content="{Binding codigo}" HorizontalAlignment="Center" />
+                                        <Label Content="{Binding nome}" />
+                                    </StackPanel>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+
+                    </ItemsControl>
+
+                </ScrollViewer>
+
+            </Grid>
+
+        </Border>
+        
+        <!-- Botão 'Fechar' -->
+        <Border Grid.Row="2" HorizontalAlignment="Center">
+            <Button x:Name="Fechar" Click="fechaDialog" Margin="10 0 60 0" Style="{StaticResource BotaoPadrao}"
+                    Content="Fechar" Width="112" Height="30" />
+        </Border>
+
+    </Grid>
+
+</telerik:RadWindow>
